@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr">
+<!-- BEGIN: Head-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <meta name="description" content="Frest admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
+    <meta name="keywords" content="admin template, Frest admin template, dashboard template, flat admin template, responsive admin template, web app">
+    <meta name="author" content="PIXINVENT">
+    <title>Whoflex</title>
+    <!-- favicon -->
+	<link rel="apple-touch-icon" sizes="57x57" href="../../../app-assets/whoflex_img/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="../../../app-assets/whoflex_img/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../../../app-assets/whoflex_img/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="../../../app-assets/whoflex_img/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../../../app-assets/whoflex_img/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/../../../app-assets/whoflex_img/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="../../../app-assets/whoflex_img/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="../../../app-assets/whoflex_img/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="../../../app-assets/whoflex_img/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="../../../app-assets/whoflex_img/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../../../app-assets/whoflex_img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="../../../app-assets/whoflex_img/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../../../app-assets/whoflex_img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="../../../app-assets/whoflex_img/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="../../../app-assets/whoflex_img/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<!-- // favicon -->
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,600%7CIBM+Plex+Sans:300,400,500,600,700" rel="stylesheet">
+
+    <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/vendors.min.css">
+    <!-- END: Vendor CSS-->
+
+    <!-- BEGIN: Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/bootstrap-extended.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/colors.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/components.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/themes/dark-layout.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/themes/semi-dark-layout.css">
+    <!-- END: Theme CSS-->
+
+    <!-- BEGIN: Page CSS-->
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/core/menu/menu-types/vertical-menu.css">
+    <!-- END: Page CSS-->
+
+    <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="../../../assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/css/newbird_k.css">
+    <!-- END: Custom CSS-->
+
+	<!-- BEGIN: Rating js-->
+	<script src="http://52.79.241.249/assets/js/plugin/jquery-1.12.4.min.js"></script>
+	<script src="http://52.79.241.249/assets/js/plugin/jquery-ui.min.js"></script><!-- ratingbar 관련 -->
+	<script src="http://52.79.241.249/assets/js/plugin/jquery.ui.touch-punch.min.js"></script>
+	<!-- END: Rating js-->
+
+</head>
+<!-- END: Head-->
+
+<!-- BEGIN: Body-->
+
+<body class="vertical-layout vertical-menu-modern 2-columns  navbar-sticky footer-static  " data-open="click" data-menu="vertical-menu-modern" data-col="2-columns">
+
+    <!-- BEGIN: Header-->
+    <div class="header-navbar-shadow"></div>
+    <nav class="header-navbar main-header-navbar navbar-expand-lg navbar navbar-with-menu fixed-top ">
+        <div class="navbar-wrapper">
+            <div class="navbar-container content">
+                <div class="navbar-collapse" id="navbar-mobile">
+                    <div class="mr-auto float-left bookmark-wrapper d-flex align-items-center">
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item mobile-menu d-xl-none mr-auto"><a class="nav-link nav-menu-main menu-toggle hidden-xs" href="javascript:void(0);"><i class="ficon bx bx-menu"></i></a></li>
+                        </ul>
+                    </div>
+                    <ul class="nav navbar-nav float-right">
+                        <li class="d-flex align-items-center dropdown dropdown-user nav-item">
+							<a href="http://ec2-52-79-241-249.ap-northeast-2.compute.amazonaws.com/" class="btn btn-primary" target="_balnk">Student</a>
+							<a class="dropdown-toggle nav-link dropdown-user-link" href="javascript:void(0);" data-toggle="dropdown">
+                                <div class="user-nav d-sm-flex d-none">
+									<span class="user-name">John Doe</span><span class="user-status text-muted">Available</span>
+								</div>
+								<span class="nav-avatar-wrap">
+									<img class="round" src="../../../app-assets/images/portrait/small/avatar-s-11.jpg" alt="avatar" height="40" width="40">
+								</span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+								<a class="dropdown-item" href="auth-login.html"><i class="bx bx-power-off mr-50"></i> Logout</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- END: Header-->
+
+
+    <!-- BEGIN: Main Menu-->
+    <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
+        <div class="navbar-header">
+            <ul class="nav navbar-nav flex-row">
+                <li class="nav-item mr-auto"><a class="navbar-brand" href="../../../html/ltr/vertical-menu-template/index.html">
+                        <div class="brand-logo">
+                            <img src="../../../app-assets/whoflex_img/logo.png" alt="whoflex">
+                        </div>
+                    </a>
+				</li>
+            </ul>
+        </div>
+        <div class="shadow-bottom"></div>
+        <div class="main-menu-content">
+            <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation" data-icon-style="lines">
+                <li class=" nav-item">
+					<a href="../../../html/ltr/vertical-menu-template/index.html">
+						<!-- <i class="menu-livicon" data-icon="desktop"></i> -->
+						<i class="bx bx-desktop" data-icon="desktop"></i>
+						<span class="menu-title text-truncate" data-i18n="Dashboard">Dashboard</span>
+						<span class="badge badge-light-primary badge-pill badge-round float-right mr-50 ml-auto">2</span>
+					</a>
+                </li>
+				<li class=" nav-item">
+					<a href="javascript:;">
+						<i class="bx bx-user-circle font-medium-5" data-icon="desktop"></i>
+						<span class="menu-title text-truncate" data-i18n="Profile">Profile</span>
+						<span class="badge badge-light-primary badge-pill badge-round float-right mr-50 ml-auto">2</span>
+					</a>
+					<ul class="menu-content">
+						<li>
+							<a class="d-flex align-items-center" href="./profile_author.html">
+								<i class="bx bx-right-arrow-alt"></i>
+								<span class="menu-item text-truncate" data-i18n="About the Author">About the Author</span>
+								<span class="badge badge-light-primary badge-pill badge-round float-right mr-50 ml-auto">2</span>
+							</a>
+						</li>
+						<li>
+							<a class="d-flex align-items-center" href="./profile_resume.html">
+								<i class="bx bx-right-arrow-alt"></i>
+								<span class="menu-item text-truncate" data-i18n="Resume">Resume</span>
+								<span class="badge badge-light-primary badge-pill badge-round float-right mr-50 ml-auto">2</span>
+							</a>
+						</li>
+					</ul>
+                </li>
+				<li class=" nav-item">
+					<a href="./classes.html">
+						<i class="bx bxs-school font-medium-5" data-icon="desktop"></i>
+						<span class="menu-title text-truncate" data-i18n="Classes">Classes</span>
+						<span class="badge badge-light-primary badge-pill badge-round float-right mr-50 ml-auto">2</span>
+					</a>
+                </li>
+				<li class=" nav-item">
+					<a href="javascript:;">
+						<i class="bx bxs-group font-medium-5" data-icon="desktop"></i>
+						<span class="menu-title text-truncate" data-i18n="Coaching">Coaching</span>
+						<span class="badge badge-light-primary badge-pill badge-round float-right mr-50 ml-auto">2</span>
+					</a>
+					<ul class="menu-content">
+						<li>
+							<a class="d-flex align-items-center" href="./coaching_product.html">
+								<i class="bx bx-right-arrow-alt"></i>
+								<span class="menu-item text-truncate" data-i18n="Product">Product</span>
+								<span class="badge badge-light-primary badge-pill badge-round float-right mr-50 ml-auto">2</span>
+							</a>
+						</li>
+						<li>
+							<a class="d-flex align-items-center" href="./coaching_progress.html">
+								<i class="bx bx-right-arrow-alt"></i>
+								<span class="menu-item text-truncate" data-i18n="Coaching in Progress">Coaching in Progress</span>
+								<span class="badge badge-light-primary badge-pill badge-round float-right mr-50 ml-auto">2</span>
+							</a>
+						</li>
+						<li>
+							<a class="d-flex align-items-center" href="./coaching_completed.html">
+								<i class="bx bx-right-arrow-alt"></i>
+								<span class="menu-item text-truncate" data-i18n="Coaching Completed">Coaching Completed</span>
+								<span class="badge badge-light-primary badge-pill badge-round float-right mr-50 ml-auto">2</span>
+							</a>
+						</li>
+					</ul>
+                </li>
+				<li class=" nav-item open">
+					<a href="javascript:;">
+						<i class="bx bx-comment-dots font-medium-5" data-icon="desktop"></i>
+						<span class="menu-title text-truncate" data-i18n="Communication">Communication</span>
+						<span class="badge badge-light-primary badge-pill badge-round float-right mr-50 ml-auto">2</span>
+					</a>
+					<ul class="menu-content">
+						<li class="active">
+							<a class="d-flex align-items-center" href="./communication_assign.html">
+								<i class="bx bx-right-arrow-alt"></i>
+								<span class="menu-item text-truncate" data-i18n="Homework">Homework</span>
+								<span class="badge badge-light-primary badge-pill badge-round float-right mr-50 ml-auto">2</span>
+							</a>
+						</li>
+						<li>
+							<a class="d-flex align-items-center" href="./communication_reviews.html">
+								<i class="bx bx-right-arrow-alt"></i>
+								<span class="menu-item text-truncate" data-i18n="Reviews">Reviews</span>
+								<span class="badge badge-light-primary badge-pill badge-round float-right mr-50 ml-auto">2</span>
+							</a>
+						</li>
+						<li>
+							<a class="d-flex align-items-center" href="./communication_qna.html">
+								<i class="bx bx-right-arrow-alt"></i>
+								<span class="menu-item text-truncate" data-i18n="Q&As">Q&As</span>
+								<span class="badge badge-light-primary badge-pill badge-round float-right mr-50 ml-auto">2</span>
+							</a>
+						</li>
+					</ul>
+                </li>
+				<li class=" nav-item">
+					<a href="javascript:;">
+						<i class="bx bx-info-circle font-medium-5" data-icon="desktop"></i>
+						<span class="menu-title text-truncate" data-i18n="Performance">Performance</span>
+						<span class="badge badge-light-primary badge-pill badge-round float-right mr-50 ml-auto">2</span>
+					</a>
+					<ul class="menu-content">
+						<li>
+							<a class="d-flex align-items-center" href="./performance_overview.html">
+								<i class="bx bx-right-arrow-alt"></i>
+								<span class="menu-item text-truncate" data-i18n="Overview">Overview</span>
+								<span class="badge badge-light-primary badge-pill badge-round float-right mr-50 ml-auto">2</span>
+							</a>
+						</li>
+						<li>
+							<a class="d-flex align-items-center" href="./performance_revenue.html">
+								<i class="bx bx-right-arrow-alt"></i>
+								<span class="menu-item text-truncate" data-i18n="Revenue Report">Revenue Report</span>
+								<span class="badge badge-light-primary badge-pill badge-round float-right mr-50 ml-auto">2</span>
+							</a>
+						</li>
+						<li>
+							<a class="d-flex align-items-center" href="./performance_payment.html">
+								<i class="bx bx-right-arrow-alt"></i>
+								<span class="menu-item text-truncate" data-i18n="Payment Information">Payment Information</span>
+								<span class="badge badge-light-primary badge-pill badge-round float-right mr-50 ml-auto">2</span>
+							</a>
+						</li>
+					</ul>
+                </li>
+				<li class=" nav-item">
+					<a href="./student.html">
+						<i class="bx bx-group font-medium-5" data-icon="desktop"></i>
+						<span class="menu-title text-truncate" data-i18n="Student">Student</span>
+						<span class="badge badge-light-primary badge-pill badge-round float-right mr-50 ml-auto">2</span>
+					</a>
+                </li>
+				<li class=" nav-item">
+					<a href="./teachers_manual.html">
+						<i class="bx bxs-book font-medium-5" data-icon="desktop"></i>
+						<span class="menu-title text-truncate" data-i18n="Teacher's Manual">Teacher's Manual</span>
+						<span class="badge badge-light-primary badge-pill badge-round float-right mr-50 ml-auto">2</span>
+					</a>
+                </li>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- END: Main Menu-->
+
+    <!-- BEGIN: Content-->
+    <div class="app-content content">
+        <div class="content-overlay"></div>
+        <div class="content-wrapper">
+            <div class="content-header row">
+            </div>
+            <div class="content-body">
+                <!-- Dashboard Ecommerce Starts -->
+                <section>
+					<div class="card">
+						<div class="card-header">
+							<h2>Homework</h2>
+						</div>
+						<div class="card-body">
+							<div class="top-filter">
+								<dl>
+									<dt>Filter</dt>
+									<dd>
+										<fieldset class="form-group	">
+											<div class="checkbox ml-2">
+                                                <input type="checkbox" class="checkbox-input" id="checkbox1">
+                                                <label for="checkbox1">Unread</label>
+                                            </div>
+											 <div class="checkbox ml-1">
+                                                <input type="checkbox" class="checkbox-input" id="checkbox2">
+                                                <label for="checkbox2">No Feedback</label>
+                                            </div>
+											 <div class="checkbox ml-1">
+                                                <input type="checkbox" class="checkbox-input" id="checkbox3">
+                                                <label for="checkbox3">Completed</label>
+                                            </div>
+										</fieldset>
+									</dd>
+								</dl>
+								<dl>
+									<dt>Feedback Type</dt>
+									<dd>
+										<fieldset class="form-group	">
+											<div class="checkbox ml-2">
+                                                <input type="checkbox" class="checkbox-input" id="checkbox4">
+                                                <label for="checkbox4">TA</label>
+                                            </div>
+											 <div class="checkbox ml-1">
+                                                <input type="checkbox" class="checkbox-input" id="checkbox5">
+                                                <label for="checkbox5">Instructor</label>
+                                            </div>
+										</fieldset>
+									</dd>
+								</dl>
+								<dl>
+									<dt>Ratings</dt>
+									<dd>
+										<div class="rating_wrap">
+                                            <div class="rating_bg_wrap">
+                                                <span class="rating_bg_bar">
+                                                    <span class="rating_dot">
+                                                        <span class="rating_num">1</span>
+                                                    </span>
+                                                    <span class="rating_dot">
+                                                        <span class="rating_num">1.5</span>
+                                                    </span>
+                                                    <span class="rating_dot">
+                                                        <span class="rating_num">2</span>
+                                                    </span>
+                                                    <span class="rating_dot">
+                                                        <span class="rating_num">2.5</span>
+                                                    </span>
+                                                    <span class="rating_dot">
+                                                        <span class="rating_num">3</span>
+                                                    </span>
+                                                    <span class="rating_dot">
+                                                        <span class="rating_num">3.5</span>
+                                                    </span>
+                                                    <span class="rating_dot">
+                                                        <span class="rating_num">4</span>
+                                                    </span>
+                                                    <span class="rating_dot">
+                                                        <span class="rating_num">4.5</span>
+                                                    </span>
+                                                    <span class="rating_dot">
+                                                        <span class="rating_num">5</span>
+                                                    </span>
+                                                </span>
+        
+                                                <div class="rating_drag">
+                                                </div>
+                                            </div>
+                                        </div>
+									</dd>
+								</dl>
+
+								<script>
+								//rating bar 
+								$(".rating_drag").slider({
+									range: true,
+									min: 1,
+									max: 5,
+									step: 0.5,
+									values: [1, 5.5],
+									slide: function(e, ui) {
+										var min = (ui.values[0]).toFixed(1);
+										$('.startScore').html(min);
+		
+										var max = (ui.values[1]).toFixed(1);
+										$('.endScore').html(max);
+		
+										if (min == 5 && max == 5) {
+											//console.log('둘다 5임');
+											$('.rating_txt').addClass('pos_end');
+										} else {
+											$('.rating_txt').removeClass('pos_end');
+										}
+		
+										if (min == 4.5 && max == 5) {
+											//console.log('4.5 -5');
+											$('.rating_txt').addClass('pos_4to5');
+										} else {
+											$('.rating_txt').removeClass('pos_4to5');
+										}
+		
+										if (min == 1 && max == 1) {
+											//console.log('둘다 1임');
+											$('.rating_txt').addClass('pos_start');
+										} else {
+											$('.rating_txt').removeClass('pos_start');
+										}
+		
+										if (min == 1 && max == 1.5) {
+											//console.log('1 - 1.5');
+											$('.rating_txt').addClass('pos_1to2');
+										} else {
+											$('.rating_txt').removeClass('pos_1to2');
+										}
+									}
+								});
+								$('.ui-slider-range').append(
+									'<div class="rating_txt"><s></s><span class="rating_scroe_01 startScore">1.0</span>~<span class="rating_scroe_02 endScore">5.0</span></div>'
+								);
+								</script>
+							</div>	
+						</div>
+					</div>
+					
+					<div class="card">
+						<!-- <div class="card-header">
+						</div> -->
+						<div class="card-body">
+							<div class="search-mutiple">
+								<fieldset class="form-group search-top">
+									<select class="form-control">
+										<option>All Class</option>
+										<option>등록된 강의 이름</option>
+										<option>등록된 강의 이름</option>
+									</select>
+									
+									<div class="input-group">
+										<input type="text" class="form-control" placeholder="Button on right" aria-describedby="button-addon2">
+										<div class="input-group-append" id="button-addon2">
+											<button class="btn btn-primary" type="button"><i class="bx bx-search"></i></button>
+										</div>
+									</div>
+								</fieldset>
+
+								<fieldset class="form-group search-right">
+									<select class="form-control">
+										<option>Newest First</option>
+										<option>Oldest First</option>
+										<option>Student's name</option>
+									</select>
+							   </fieldset>
+						    </div>
+
+						    <p class="result">result 20</p>
+
+						    <ul class="lec_cont_li_box list-group list-group-flush">
+								<li class="lec_cont_list list-group-item draggable">
+									<div class="class_common_list_box">
+										<div class="class_common_txt">
+											<div class="badge badge-reply badge-pill badge-primary">답변대기</div>
+											<div class="list-top-txt">강의 제목 | 과제물 제목</div>
+											<h5 class="list-title clickable" data-toggle="modal" data-target="#classModal">Diversity, Inclusion, and Belonging</h5>
+											
+											<div class="list-info">
+												<div class="writer">작성자 : Jonne</div>
+												<div class="right">
+													<span class="date">등록일(수정일) : Nov 09, 2020</span>
+													<button type="button" class="btn btn-primary ml-1" data-toggle="modal" data-target="#classModal">View</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="lec_cont_list list-group-item draggable">
+									<div class="class_common_list_box">
+										<div class="class_common_txt">
+											<div class="badge badge-reply badge-pill badge-secondary">답변 완료</div>
+											<div class="list-top-txt">강의 제목 | 과제물 제목</div>
+											<h5 class="list-title clickable" data-toggle="modal" data-target="#classModal">Diversity, Inclusion, and Belonging</h5>
+											
+											<div class="list-info">
+												<div class="writer">작성자 : Jonne</div>
+												<div class="right">
+													<span class="date">등록일(수정일) : Nov 09, 2020</span>
+													<button type="button" class="btn btn-primary ml-1" data-toggle="modal" data-target="#classModal">View</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="lec_cont_list list-group-item draggable">
+									<div class="class_common_list_box">
+										<div class="class_common_txt">
+											<div class="badge badge-reply badge-pill badge-secondary">답변 완료</div>
+											<div class="list-top-txt">강의 제목 | 과제물 제목</div>
+											<h5 class="list-title clickable" data-toggle="modal" data-target="#classModal">Diversity, Inclusion, and Belonging</h5>
+											
+											<div class="list-info">
+												<div class="writer">작성자 : Jonne</div>
+												<div class="right">
+													<span class="date">등록일(수정일) : Nov 09, 2020</span>
+													<button type="button" class="btn btn-primary ml-1" data-toggle="modal" data-target="#classModal">View</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="lec_cont_list list-group-item draggable">
+									<div class="class_common_list_box">
+										<div class="class_common_txt">
+											<div class="badge badge-reply badge-pill badge-secondary">답변 완료</div>
+											<div class="list-top-txt">강의 제목 | 과제물 제목</div>
+											<h5 class="list-title clickable" data-toggle="modal" data-target="#classModal">Diversity, Inclusion, and Belonging</h5>
+											
+											<div class="list-info">
+												<div class="writer">작성자 : Jonne</div>
+												<div class="right">
+													<span class="date">등록일(수정일) : Nov 09, 2020</span>
+													<button type="button" class="btn btn-primary ml-1" data-toggle="modal" data-target="#classModal">View</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="lec_cont_list list-group-item draggable">
+									<div class="class_common_list_box">
+										<div class="class_common_txt">
+											<div class="badge badge-reply badge-pill badge-secondary">답변 완료</div>
+											<div class="list-top-txt">강의 제목 | 과제물 제목</div>
+											<h5 class="list-title clickable" data-toggle="modal" data-target="#classModal">Diversity, Inclusion, and Belonging</h5>
+											
+											<div class="list-info">
+												<div class="writer">작성자 : Jonne</div>
+												<div class="right">
+													<span class="date">등록일(수정일) : Nov 09, 2020</span>
+													<button type="button" class="btn btn-primary ml-1" data-toggle="modal" data-target="#classModal">View</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="lec_cont_list list-group-item draggable">
+									<div class="class_common_list_box">
+										<div class="class_common_txt">
+											<div class="badge badge-reply badge-pill badge-secondary">답변 완료</div>
+											<div class="list-top-txt">강의 제목 | 과제물 제목</div>
+											<h5 class="list-title clickable" data-toggle="modal" data-target="#classModal">Diversity, Inclusion, and Belonging</h5>
+											
+											<div class="list-info">
+												<div class="writer">작성자 : Jonne</div>
+												<div class="right">
+													<span class="date">등록일(수정일) : Nov 09, 2020</span>
+													<button type="button" class="btn btn-primary ml-1" data-toggle="modal" data-target="#classModal">View</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+					   
+							<nav aria-label="Page navigation example">
+								<ul class="pagination justify-content-center mt-2">
+								  <li class="page-item previous disabled"><a class="page-link" href="javascript:void(0);">
+									  <i class="bx bx-chevron-left"></i>
+									</a></li>
+								  <li class="page-item active" aria-current="page"><a class="page-link" href="javascript:void(0);">1</a></li>
+								  <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+								  <li class="page-item"><a class="page-link" href="javascript:void(0);">3</a></li>
+								  <li class="page-item"><a class="page-link" href="javascript:void(0);">4</a></li>
+								  <li class="page-item"><a class="page-link" href="javascript:void(0);">5</a></li>
+								  <li class="page-item"><a class="page-link" href="javascript:void(0);">6</a></li>
+								  <li class="page-item"><a class="page-link" href="javascript:void(0);">7</a></li>
+								  <li class="page-item next"><a class="page-link" href="javascript:void(0);">
+									  <i class="bx bx-chevron-right"></i>
+									</a></li>
+								</ul>
+							</nav>
+					   </div>
+					</div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- END: Content-->
+
+    <!-- Class popup start -->
+    <div class="modal fade" id="classModal" tabindex="-1" aria-labelledby="classModalTitle" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header position-relative">
+                    <h3 class="modal-title">How can one create a USP in skill selling?</h3>
+                    <button type="button" class="close rounded-pill" data-dismiss="modal" aria-label="Close">
+						<i class="bx bx-x"></i>
+					</button>
+                </div>
+                <div class="modal-body">
+					<div class="comment_box">
+						<div class="comment_user_info">
+							<div class="comment_user_pic" style="background-image: url('http://ec2-52-79-241-249.ap-northeast-2.compute.amazonaws.com/assets/images/class/user_basic.jpg');">
+							</div>
+							 <div class="">
+								 <span class="comment_user_id">Sac*********</span>
+								 <span class="comment_time">Nov 18 2021</span>
+							 </div>
+								 
+						 </div>
+						 <div class="re_cont">
+							 <p>I applied the example from the 03 05 spreadsheet on an existing company but I get a
+								 negative Spare Debt Capacity, what do you think ?</p>
+
+							<div class="comment_setting	">
+								<a href="file" class="comment_file_wrap">
+									<span class="down">File download </span>
+									<span class="file_neme">effective_tim.zip</span>	
+								</a>
+							</div>
+						</div>
+					</div>
+				
+					<div class="mt-2">
+						<div class="homework-dl-div">
+							<dl>
+								<dt>Rating</dt>
+								<dd>
+									<div class="fake_select score_select">
+										<button type="button" class="select_tit">
+											<div class="score score_color">
+												<div class="star_wr">
+													<div class="star" style="width:100%;"></div>
+												</div>
+												<span class="sound_only">scroe 5</span>
+											</div>
+
+											<s></s>
+										</button>
+										<div class="select_option">
+											<ul>
+												<li>
+													<a href="javascript:;" data-width="100%">
+														<div class="score score_color">
+															<div class="star_wr">
+																<div class="star" style="width:100%;"></div>
+															</div>
+															<span class="sound_only">scroe 5</span>
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="javascript:;" data-width="80%">
+														<div class="score score_color">
+															<div class="star_wr">
+																<div class="star" style="width:80%;"></div>
+															</div>
+															<span class="sound_only">scroe 4</span>
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="javascript:;" data-width="60%">
+														<div class="score score_color">
+															<div class="star_wr">
+																<div class="star" style="width:60%;"></div>
+															</div>
+															<span class="sound_only">scroe 3</span>
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="javascript:;" data-width="40%">
+														<div class="score score_color">
+															<div class="star_wr">
+																<div class="star" style="width:40%;"></div>
+															</div>
+															<span class="sound_only">scroe 2</span>
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="javascript:;" data-width="20%">
+														<div class="score score_color">
+															<div class="star_wr">
+																<div class="star" style="width:20%;"></div>
+															</div>
+															<span class="sound_only">scroe 1</span>
+														</div>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</dd>
+							</dl>
+							<dl>
+								<dt>Message</dt>
+								<dd>
+									<div class="pop_gray_txtarea_wrap">
+										<textarea placeholder="Please enter any questions you have or details of the coaching" name="" id="" cols="30" rows="10"></textarea>
+										<!-- 파일 추가 -->
+										<label for="homeworkFile" class="btn_file"><img src="http://52.79.241.249/assets/images/class/clip_file_icon.png" alt="">Attach files for the instructor to revise here. 
+										<!-- 파일 추가시, 파일 이름 하단에 노출 -->
+										<span class="file_name" style="display:none;">(file_name.pdf)</span>
+										</label>
+										<input type="file" id="homeworkFile" class="btn_file_input">
+									</div>
+								</dd>
+							</dl>
+						</div>
+
+						
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#classModal2">
+						<i class="bx bx-x d-block d-sm-none"></i>
+						<span class="d-none d-sm-block">post</span>
+					</button>
+				</div>
+            </div>
+        </div>
+    </div>
+    <!-- Class popup end -->
+
+	<!-- Class popup start -->
+    <div class="modal fade" id="classModal2" tabindex="-1" aria-labelledby="classModalTitle" style="" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header position-relative">
+                    <h3 class="modal-title">How can one create a USP in skill selling?</h3>
+                    <button type="button" class="close rounded-pill" data-dismiss="modal" aria-label="Close">
+						<i class="bx bx-x"></i>
+					</button>
+                </div>
+                <div class="modal-body">
+					<div class="comment_box" style="background-color: #fff;">
+						<div class="comment_user_info">
+							<div class="comment_user_pic" style="background-image: url('http://ec2-52-79-241-249.ap-northeast-2.compute.amazonaws.com/assets/images/class/user_basic.jpg');">
+							</div>
+							 <div class="">
+								 <span class="comment_user_id">Sac*********</span>
+								 <span class="comment_time">Nov 18 2021</span>
+							 </div>
+								 
+						 </div>
+						 <div class="re_cont">
+							 <p>I applied the example from the 03 05 spreadsheet on an existing company but I get a
+								 negative Spare Debt Capacity, what do you think ?</p>
+
+							<div class="comment_setting	">
+								<a href="file" class="comment_file_wrap">
+									<span class="down">File download </span>
+									<span class="file_neme">effective_tim.zip</span>	
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- 피드백있을때 보이기 -->
+					 <div class="c_reply_box mt-2" style="width: 100%; margin-left: 0; padding-top:0;">
+						 <div class="comment_box">
+							 <div class="comment_user_info">
+								 <div class="comment_user_pic" style="background-image: url('http://ec2-52-79-241-249.ap-northeast-2.compute.amazonaws.com/assets/images/class/user_basic.jpg');"></div>
+								 <div class="">
+									 <span class="comment_user_id">Sac*********</span>
+									 <span class="comment_time">Nov 18 2021</span>
+								 </div>
+								 <div class="score score_color">
+									 <span class="score_num_color">3.0</span>
+									 <div class="star_wr">
+										 <div class="star" style="width:80%;"></div>
+									 </div>
+								 </div>
+							 </div>
+							 <div class="re_cont">
+								 <p>I applied the example from the 03 05 spreadsheet on an existing company but I get a
+									 negative Spare Debt Capacity, what do you think ?</p>
+							 </div>
+							 <div class="comment_setting	">
+								 <a href="file" class="comment_file_wrap">
+									 <span class="down">Download Homework Files </span>
+									 <span class="file_neme">effective_tim.zip</span>
+								 </a>
+							 </div>
+						 </div>
+					</div>
+					 <!-- 피드백있을때 보이기 -->
+                </div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-light" data-dismiss="modal">
+						<i class="bx bx-x d-block d-sm-none"></i>
+						<span class="d-none d-sm-block">close</span>
+					</button>
+				</div>
+            </div>
+        </div>
+    </div>
+    <!-- Class popup end -->
+
+    
+    <div class="sidenav-overlay"></div>
+    <div class="drag-target"></div>
+
+   <!-- BEGIN: Footer-->
+    <footer class="footer footer-static footer-light clearfix">
+        <p class="float-right clearfix mb-0"><span class="float-left d-inline-block">2021 &copy; WHOFLEX</span>
+		
+		<!-- <span class="float-right d-sm-inline-block d-none">Crafted with<i class="bx bxs-heart pink mx-50 font-small-3"></i>by<a class="text-uppercase" href="https://1.envato.market/pixinvent_portfolio" target="_blank">Pixinvent</a></span>
+		            <button class="btn btn-primary btn-icon scroll-top" type="button"><i class="bx bx-up-arrow-alt"></i></button>
+		        </p> -->
+    </footer>
+    <!-- END: Footer-->
+
+
+    <!-- BEGIN: Vendor JS-->
+    <script src="../../../app-assets/vendors/js/vendors.min.js"></script>
+    <script src="../../../app-assets/fonts/LivIconsEvo/js/LivIconsEvo.tools.js"></script>
+    <script src="../../../app-assets/fonts/LivIconsEvo/js/LivIconsEvo.defaults.js"></script>
+    <script src="../../../app-assets/fonts/LivIconsEvo/js/LivIconsEvo.min.js"></script>
+    <!-- BEGIN Vendor JS-->
+
+    <!-- BEGIN: Page Vendor JS-->
+    <script src="../../../app-assets/vendors/js/forms/repeater/jquery.repeater.min.js"></script>
+    <!-- END: Page Vendor JS-->
+
+    <!-- BEGIN: Theme JS-->
+    <script src="../../../app-assets/js/scripts/configs/vertical-menu-light.js"></script>
+    <script src="../../../app-assets/js/core/app-menu.js"></script>
+    <script src="../../../app-assets/js/core/app.js"></script>
+    <script src="../../../app-assets/js/scripts/components.js"></script>
+    <script src="../../../app-assets/js/scripts/footer.js"></script>
+    <!-- END: Theme JS-->
+
+    <!-- BEGIN: Page JS-->
+	<script src="../../../assets/js/scripts.js"></script>
+    <script src="../../../app-assets/js/scripts/forms/form-repeater.js"></script>
+    <!-- END: Page JS-->
+
+</body>
+<!-- END: Body-->
+
+</html>
