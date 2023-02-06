@@ -740,6 +740,10 @@ html .newclss_crt_cont.content.app-content {
     margin: 0;
 }
 
+.form-group.form-group_space{
+    margin-bottom: 10px;
+}
+
 .search-top {
     display: flex;
     flex-wrap: wrap;
