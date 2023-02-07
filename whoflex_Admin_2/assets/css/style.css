@@ -58,6 +58,14 @@ import from whoflex
     fill: #000;
 }
 
+.coaching-reviews .class_delete{
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 .counter-symbols{
     position: absolute;
     right: 20px;
@@ -104,7 +112,16 @@ import from whoflex
 #more{
     display: none;
 }
-
+.samples-form-name {
+    font-size: 22px;
+    margin-right: 10px;
+    text-transform: uppercase;
+}
+.samples-form {
+    background: #f2f2f2;
+    padding: 25px 35px 25px 14px;
+    width: 65%;
+}
 
 
 @media screen and (min-width: 1200px){
@@ -218,6 +235,18 @@ import from whoflex
     max-width: 100%;
     height: 120px;
     border: 2px solid #000;
+}
+.coaching-wrap .form-group {
+    margin-left: 27px;
+    margin-top: 7px;
+}
+.coaching-wrap .form-group .form-control {
+    max-width: 200px;
+}
+
+.coaching-wrap .checkbox label {
+    font-weight: 400;
+    font-size: 17px;
 }
 
 

@@ -726,6 +726,33 @@ html .newclss_crt_cont.content.app-content {
 
 /* search top */
 
+.search-checbox {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    background: #f9f9f9;
+    border: 1px solid #cdcdcd;
+    margin-bottom: 20px;
+    width: calc(100% - 230px);
+    align-items: center;
+}
+
+.search-checbox-block {
+    width: calc(100% - 258px);
+    display: flex;
+    justify-content: space-between;
+    margin-left: 80px;
+}
+
+.search-checbox-block label {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    text-transform: none;
+    font-weight: 400;
+}
+
 .search-mutiple {
     display: flex;
     flex-wrap: wrap;
@@ -749,7 +776,7 @@ html .newclss_crt_cont.content.app-content {
     flex-wrap: wrap;
 }
 .search-top-classes {
-    width: calc(100% - 200px);
+    width: calc(100% - 230px);
     flex-wrap: nowrap;
 }
 
