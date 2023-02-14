@@ -50,11 +50,11 @@ import from whoflex
     height: auto;
     max-width: 100%;
 }
-.class_delete{
+.class_delete, .class_settings{
     border: none;
     background-color: transparent;
 }
-.class_delete:hover path{
+.class_delete:hover path, .class_settings:hover path{
     fill: #000;
 }
 
