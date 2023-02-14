@@ -158,7 +158,7 @@
                             <div class="collapse-deletable w-100 ">
                                 <div class="coaching-reviews w-65-200 mb-2">
                                     <div class="d-flex align-items-center">
-                                        <div>Reviews 1</div>
+                                        <div>Reviews <span class="reviews-numb"></span></div>
                                         <div class="del-btn-wrap ml-1">
                                             <button class="btn btn-icon btn-light rounded-circle text-nowrap px-1 removeReviews" data-repeater-delete="" type="button">
                                                 <i class="bx bx-x"></i>
@@ -344,14 +344,13 @@
         let idPreview2;
         if(addBtn){
             addBtn.addEventListener('click', function(){
-                idReviews = idReviews + 1;
                 const addAccItem = document.createElement('div');
                 addAccItem.className = 'coaching-reviews  mb-2 ';
                 addAccItem.innerHTML =  `
                                     <hr>
                                     <div class=" w-65-200 mb-2">
                                     <div class="d-flex align-items-center">
-                                        <div>Reviews `+ idReviews +`</div>
+                                        <div>Reviews <span class="reviews-numb"></span> </div>
                                         <div class="del-btn-wrap ml-1">
                                             <button class="btn btn-icon btn-light rounded-circle text-nowrap px-1 removeReviews" data-repeater-delete="" type="button">
                                                 <i class="bx bx-x"></i>
@@ -403,6 +402,7 @@
                                     
                 wrapReviews.append(addAccItem);
                 removeReviews();
+                Numbering();
             })
         }
 
@@ -438,6 +438,15 @@
             });
         }());
 
+        // block numbering
+        function Numbering() {
+            let elements = document.querySelectorAll('.reviews-numb');
+            elements.forEach(function(item, i, arr) {
+                item.innerHTML = i+1;
+            });
+        }
+        Numbering();
+
         // remove reviews
         function removeReviews(){
             const btnClose = document.querySelectorAll('.removeReviews')
@@ -446,6 +455,7 @@
                     btn.addEventListener('click', function(){
                         const itemVideo = btn.closest('.coaching-reviews');
                         itemVideo.remove();
+                        Numbering();
                     })
                 })
             }
