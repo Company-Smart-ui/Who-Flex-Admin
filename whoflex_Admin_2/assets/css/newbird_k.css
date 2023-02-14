@@ -733,12 +733,13 @@ html .newclss_crt_cont.content.app-content {
     background: #f9f9f9;
     border: 1px solid #cdcdcd;
     margin-bottom: 20px;
-    width: calc(100% - 230px);
+    max-width: 993px;
+    width: 100%;
     align-items: center;
 }
 
 .search-checbox-block {
-    width: calc(100% - 258px);
+    width: 80%;
     display: flex;
     justify-content: space-between;
     margin-left: 80px;
@@ -758,6 +759,7 @@ html .newclss_crt_cont.content.app-content {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    gap: 10px 0;
     margin-bottom: 2rem;
 }
 
@@ -776,8 +778,9 @@ html .newclss_crt_cont.content.app-content {
     flex-wrap: wrap;
 }
 .search-top-classes {
-    width: calc(100% - 230px);
-    flex-wrap: nowrap;
+    max-width: 999px;
+    gap: 10px 0;
+    width: 100%;
 }
 
 .search-top select.form-control {

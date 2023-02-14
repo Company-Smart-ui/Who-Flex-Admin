@@ -226,6 +226,7 @@
                             <div class="d-flex justify-content-between">
                                 <a href="./create_coaching_samples.html" class="btn btn-lg btn-outline-primary">Previous</a>
                                 <div>
+                                    <button type="button" class="btn btn-lg btn-outline-primary">Draft</button>
                                     <button type="button" class="btn btn-lg btn-outline-primary">Save</button>
                                     <a href="#" class="btn btn-lg btn-primary">Continue</a>
                                 </div>
@@ -345,8 +346,10 @@
             addBtn.addEventListener('click', function(){
                 idReviews = idReviews + 1;
                 const addAccItem = document.createElement('div');
-                addAccItem.className = 'coaching-reviews w-65-200 mb-2';
+                addAccItem.className = 'collapse-deletable w-100 ';
                 addAccItem.innerHTML =  `
+                                    <hr>
+                                    <div clas="coaching-reviews w-65-200 mb-2">
                                     <div class="d-flex align-items-center">
                                         <div>Reviews `+ idReviews +`</div>
                                         <div class="del-btn-wrap ml-1">
@@ -395,7 +398,9 @@
                                             </fieldset>
                                         </div>
                                         <!-- </form> -->
-                                    </div>`
+                                    </div>
+                                </div>`
+                                    
                 wrapReviews.append(addAccItem);
                 removeReviews();
             })
@@ -439,8 +444,9 @@
             if(btnClose){
                 btnClose.forEach(btn => {
                     btn.addEventListener('click', function(){
-                        const itemVideo = btn.closest('.coaching-reviews');
+                        const itemVideo = btn.closest('.collapse-deletable');
                         itemVideo.remove();
+                        idReviews = idReviews -1;
                     })
                 })
             }

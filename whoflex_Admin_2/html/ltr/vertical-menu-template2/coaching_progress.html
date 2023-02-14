@@ -157,24 +157,26 @@
 						<li>
 							<a class="d-flex align-items-center" href="./coaching_product.html">
 								<i class="bx bx-right-arrow-alt"></i>
-								<span class="menu-item text-truncate" data-i18n="Product">Product</span>
-								<span class="badge badge-light-primary badge-pill badge-round float-right mr-50 ml-auto">2</span>
-							</a>
-						</li>
-						<li>
-							<a class="d-flex align-items-center" href="./coaching_progress.html">
-								<i class="bx bx-right-arrow-alt"></i>
-								<span class="menu-item text-truncate" data-i18n="Coaching in Progress">Coaching in Progress</span>
+								<span class="menu-item text-truncate" data-i18n="Product">Products</span>
 								<span class="badge badge-light-primary badge-pill badge-round float-right mr-50 ml-auto">2</span>
 							</a>
 						</li>
 						<li class="active">
-							<a class="d-flex align-items-center" href="./coaching_completed.html">
-								<i class="bx bx-right-arrow-alt"></i>
-								<span class="menu-item text-truncate" data-i18n="Coaching Completed">Coaching Completed</span>
-								<span class="badge badge-light-primary badge-pill badge-round float-right mr-50 ml-auto">2</span>
-							</a>
-						</li>
+                            <a class="d-flex align-items-center" href="./coaching_progress.html">
+                                <i class="bx bx-right-arrow-alt"></i>
+                                <span class="menu-item text-truncate" data-i18n="In Progress">In Progress</span>
+                                <span
+                                        class="badge badge-light-primary badge-pill badge-round float-right mr-50 ml-auto">2</span>
+                            </a>
+                        </li>
+                        <li >
+                            <a class="d-flex align-items-center" href="./coaching_completed.html">
+                                <i class="bx bx-right-arrow-alt"></i>
+                                <span class="menu-item text-truncate" data-i18n="Completed">Completed</span>
+                                <span
+                                        class="badge badge-light-primary badge-pill badge-round float-right mr-50 ml-auto">2</span>
+                            </a>
+                        </li>
 					</ul>
                 </li>
 				<li class=" nav-item">
@@ -309,7 +311,9 @@
 
                                     <select class="form-control">
                                         <option>Newest</option>
-                                        <option>Student name</option>
+										<optgroup label="Oldest">
+											<option value="1">Student name</option>
+										</optgroup>
                                         <option>A-Z</option>
                                         <option>Z-A</option>
                                         <option>Published first</option>
@@ -318,9 +322,9 @@
 
                                     <select class="form-control">
                                         <option>All Coaching</option>
-                                        <option>Coaching  01</option>
-                                        <option>Coaching  02</option>
-                                        <option>Coaching  03</option>
+                                        <option>Coaching 1</option>
+                                        <option>Coaching 2</option>
+                                        <option>Coaching 3</option>
                                     </select>
 
                                     <div class="input-group">
