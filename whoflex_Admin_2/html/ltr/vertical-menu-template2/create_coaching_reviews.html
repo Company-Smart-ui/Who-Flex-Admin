@@ -346,10 +346,10 @@
             addBtn.addEventListener('click', function(){
                 idReviews = idReviews + 1;
                 const addAccItem = document.createElement('div');
-                addAccItem.className = 'collapse-deletable w-100 ';
+                addAccItem.className = 'coaching-reviews  mb-2 ';
                 addAccItem.innerHTML =  `
                                     <hr>
-                                    <div clas="coaching-reviews w-65-200 mb-2">
+                                    <div class=" w-65-200 mb-2">
                                     <div class="d-flex align-items-center">
                                         <div>Reviews `+ idReviews +`</div>
                                         <div class="del-btn-wrap ml-1">
@@ -444,9 +444,8 @@
             if(btnClose){
                 btnClose.forEach(btn => {
                     btn.addEventListener('click', function(){
-                        const itemVideo = btn.closest('.collapse-deletable');
+                        const itemVideo = btn.closest('.coaching-reviews');
                         itemVideo.remove();
-                        idReviews = idReviews -1;
                     })
                 })
             }

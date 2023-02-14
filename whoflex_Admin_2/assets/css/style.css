@@ -54,7 +54,7 @@ import from whoflex
     border: none;
     background-color: transparent;
 }
-.class_delete:hover path, .class_settings:hover path{
+.class_delete:hover path, .class_settings:hover path {
     fill: #000;
 }
 
