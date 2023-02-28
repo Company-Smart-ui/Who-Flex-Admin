@@ -178,7 +178,7 @@
                                     class="badge badge-light-primary badge-pill badge-round float-right mr-50 ml-auto">2</span>
                             </a>
                         </li>
-                        <li>
+                        <li class="active">
                             <a class="d-flex align-items-center" href="./members_teacher.html">
                                 <i class="bx bx-right-arrow-alt"></i>
                                 <span class="menu-item text-truncate" data-i18n="강사 회원 리스트">강사 회원 리스트</span>
@@ -186,7 +186,7 @@
                                     class="badge badge-light-primary badge-pill badge-round float-right mr-50 ml-auto">2</span>
                             </a>
                         </li>
-                        <li class="active">
+                        <li>
                             <a class="d-flex align-items-center" href="./members_message.html">
                                 <i class="bx bx-right-arrow-alt"></i>
                                 <span class="menu-item text-truncate" data-i18n="알림 메시지 발송">알림 메시지 발송</span>
@@ -568,330 +568,233 @@
                 <!-- Dashboard Ecommerce Starts -->
                 <section>
                     <div class="card">
-                        <div class="card-header">
-                            <div>
-                                <h2 class="">알림 메세지 발송</h2>
-                            </div>
+                        <div class="card-header card-header flex-column align-items-start">
+                            <h2 class="mb-1">Instructor Details</h2>
+                           
                         </div>
 
-                        <div class="card-body">
-                            <div class="search-top">
-                                <select name="" id="" class="form-control">
-                                    <option value="">회원아이디(이메일)</option>
-                                    <option value="">회원이름</option>
-                                </select>
-                                <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="Search"
-                                        aria-describedby="button-addon2">
-                                    <div class="input-group-append" id="button-addon2">
-                                        <button class="btn btn-primary" type="button"><i
-                                                class="bx bx-search"></i></button>
+                        <div class="card-body collapsible collapse-icon accordion-icon-rotate">
+                            <!-- START :: 분류 1  -->
+                            <div class="card collapse-header open">
+                                <div id="" class="card-header collapsed" data-toggle="collapse" data-target="#profile01"
+                                    aria-expanded="false" aria-controls="profile01" role="tablist">
+                                    <span class="collapse-title">
+                                        <span class="align-middle">기본정보</span>
+                                    </span>
+                                </div>
+
+                                <div id="profile01" class="card-content collapse show">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="form-title">
+                                                    <h4 class="card-title">Name</h4>
+                                                </div>
+                                                <div class="form-body">
+                                                    <div class="d-flex">
+                                                        <input type="text" class="form-control mr-1" value="First name">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="form-title">
+                                                    <h4 class="card-title">Job</h4>
+                                                </div>
+                                                <div class="form-body">
+                                                    <div class="d-flex">
+                                                        <input type="text" class="form-control mr-1" value="First name">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="form-title">
+                                                    <h4 class="card-title">Email Address</h4>
+                                                </div>
+                                                <div class="form-body">
+                                                    <input type="text" class="form-control"
+                                                        value="whoflex123@gmail.com">
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="form-title">
+                                                    <h4 class="card-title">PassWord</h4>
+                                                </div>
+                                                <div class="form-body">
+                                                    <input type="password" class="form-control" value="newbird1234">
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-xl-6">
+                                                <div class="d-flex">
+                                                    <div class="mr-3" style="width: 45%;">
+                                                        <div class="form-title">
+                                                            <h4 class="card-title">가입일</h4>
+                                                        </div>
+                                                        <div class="form-body">
+                                                            <input type="text" class="form-control" value="20-11-2020 15:12:08" readonly>
+                                                        </div>
+                                                    </div>
+                                                    <div style="width: 55%;">
+                                                        <div class="form-title">
+                                                            <div class="checkbox mr-3">
+                                                                <input type="checkbox" class="checkbox-input" id="updates">
+                                                                <label for="updates">Updates</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-body">
+                                                            <input type="text" class="form-control" value="20-11-2020 15:12:08" readonly>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <div class="form-title">
+                                                    <h4 class="card-title">최종 접속일</h4>
+                                                </div>
+                                                <div class="form-body">
+                                                    <input type="text" class="form-control" value="20-11-2020 15:12:08"
+                                                        readonly>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-xl-6 pt-2">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" class="checkbox-input" id="checkboxUpdate1">
+                                                    <label class="card-title" for="checkboxUpdate1">최종 접속일</label>
+                                                </div>
+                                                <div class="form-body  w-50 " >
+                                                    <input type="text" class="form-control" value="20-11-2020 15:12:08" readonly>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6 pt-2">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" class="checkbox-input" id="checkboxUpdate2">
+                                                    <label class="card-title" for="checkboxUpdate2">최종 접속일</label>
+                                                </div>
+                                                <div class="form-body  w-50 " >
+                                                    <input type="text" class="form-control" value="20-11-2020 15:12:08" readonly>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-xl-6 d-flex align-items-center">
+                                                <div class="checkbox mr-3">
+                                                    <input type="checkbox" class="checkbox-input" id="noti01">
+                                                    <label for="noti01">Verification</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <div class="d-flex align-items-center">
+                                                    <span style="font-weight: 600;" >Profile page:</span>
+                                                    <a href="#" class="ml-1 btn btn-primary">Go to profile</a>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="d-flex justify-content-between align-items-center mt-1 mb-1">
-                                <span>Result : 20</span>
-                                <div>
-                                    <button type="button" class="btn btn-light">선택 삭제</button>
-                                    <!-- <button type="button" class="btn btn btn-primary" data-toggle="modal"
-                                        data-target="#addBannerPop">+ Add</button> -->
-                                </div>
-                            </div>
+                            <!-- END :: 분류 1  -->
+                        </div>
 
-                            <div class="table-responsive">
-                                <table class="table">
-                                    <colgroup>
-                                        <col width="50px;">
-                                        <col width="50px;">
-                                        <col width="200px">
-                                        <col width="400px;">
-                                        <col width="150px;">
-                                        <col width="200px;">
-                                    </colgroup>
-                                    <thead>
-                                        <tr>
-                                            <th>
-                                                <div class="checkbox">
-                                                    <input type="checkbox" class="checkbox-input"
-                                                        id="list_checkbox_all">
-                                                    <label for="list_checkbox_all"></label>
-                                                </div>
-                                            </th>
-                                            <th>No</th>
-                                            <th>알림 카테고리</th>
-                                            <th>내용</th>
-                                            <th>발송일시</th>
-                                            <th>확인한 회원수</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <div class="checkbox">
-                                                    <input type="checkbox" class="checkbox-input" id="list_checkbox_01">
-                                                    <label for="list_checkbox_01"></label>
-                                                </div>
-                                            </td>
-                                            <td>10</td>
-                                            <td>Top trending classes for you</td>
-                                            <!-- Top trending classes for you/Top content suggestions for you/Popular classes for you  등 4개-->
-                                            <td class="td-title text-left"><a href="javascript:;"
-                                                    class="text-ellipsis01 " data-toggle="modal"
-                                                    data-target="#messagePop">내용글 일부가
-                                                    노출됩니다</a></td>
-                                            <td>Jul 22, 2021 12:20</td>
-                                            <td>
-                                                1/143
-                                            </td>
-                                        </tr>
 
-                                        <tr>
-                                            <td>
-                                                <div class="checkbox">
-                                                    <input type="checkbox" class="checkbox-input" id="list_checkbox_01">
-                                                    <label for="list_checkbox_01"></label>
-                                                </div>
-                                            </td>
-                                            <td>9</td>
-                                            <td>Top content suggestions for you</td>
-                                            <!-- Top trending classes for you/Top content suggestions for you/Popular classes for you  등 4개-->
-                                            <td class="td-title text-left"><a href="javascript:;"
-                                                    class="text-ellipsis01 " data-toggle="modal"
-                                                    data-target="#messagePop">내용글 일부가
-                                                    노출됩니다</a></td>
-                                            <td>Jul 22, 2021 12:20</td>
-                                            <td>
-                                                1/143
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="checkbox">
-                                                    <input type="checkbox" class="checkbox-input" id="list_checkbox_01">
-                                                    <label for="list_checkbox_01"></label>
-                                                </div>
-                                            </td>
-                                            <td>8</td>
-                                            <td>TPopular classes for you</td>
-                                            <!-- Top trending classes for you/Top content suggestions for you/Popular classes for you  등 4개-->
-                                            <td class="td-title text-left"><a href="javascript:;"
-                                                    class="text-ellipsis01 " data-toggle="modal"
-                                                    data-target="#messagePop">내용글 일부가
-                                                    노출됩니다</a></td>
-                                            <td>Jul 22, 2021 12:20</td>
-                                            <td>
-                                                1/143
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                        <div class="form-btns-wrap">
+                            <hr>
+                            <div class="col-12 d-flex mt-1">
+                                <button type="reset" class="btn btn-light mr-1">Class</button>
+                                <button type="submit" class="btn btn-primary">Published</button>
                             </div>
-                            <!-- pagination -->
-                            <nav aria-label="Page navigation ">
-                                <ul class="pagination justify-content-center mt-2">
-                                    <li class="page-item previous disabled"><a class="page-link"
-                                            href="javascript:void(0);">
-                                            <i class="bx bx-chevron-left"></i>
-                                        </a></li>
-                                    <li class="page-item active" aria-current="page"><a class="page-link"
-                                            href="javascript:void(0);">1</a></li>
-                                    <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
-                                    <li class="page-item"><a class="page-link" href="javascript:void(0);">3</a></li>
-                                    <li class="page-item"><a class="page-link" href="javascript:void(0);">4</a></li>
-                                    <li class="page-item"><a class="page-link" href="javascript:void(0);">5</a></li>
-                                    <li class="page-item"><a class="page-link" href="javascript:void(0);">6</a></li>
-                                    <li class="page-item"><a class="page-link" href="javascript:void(0);">7</a></li>
-                                    <li class="page-item next"><a class="page-link" href="javascript:void(0);">
-                                            <i class="bx bx-chevron-right"></i>
-                                        </a></li>
-                                </ul>
-                            </nav>
                         </div>
                     </div>
-                </section>
-                <!-- Dashboard Ecommerce ends -->
-
             </div>
+            </section>
+            <!-- Dashboard Ecommerce ends -->
+
         </div>
     </div>
     <!-- END: Content-->
 
-    <!-- main product Modal start -->
-    <div class="modal fade" id="messagePop" tabindex="-1" aria-labelledby="mainPrdPop" style="display: none;"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-centered modal-dialog-scrollable modal-lg">
-            <div class="modal-content modal-content-1200">
-                <div class="modal-header position-relative">
-                    <h3 class="modal-title">강의/코칭 추천 알림 메시지 발송하기</h3>
+
+    <!-- modal start -->
+    <div class="modal fade text-left" id="earningDetailPop" tabindex="-1" role="dialog"
+        aria-labelledby="earningDetailPop" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">상세보기</h3>
                     <button type="button" class="close rounded-pill" data-dismiss="modal" aria-label="Close">
                         <i class="bx bx-x"></i>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <div class="search-mutiple">
-                        <div class="form-group search-top">
-                            <select class="form-control">
-                                <option value="">카테고리(1차)</option>
-                            </select>
-                            <select class="form-control">
-                                <option value="">카테고리(2차)</option>
-                            </select>
-                            <select class="form-control">
-                                <option value="">카테고리(3차)</option>
-                            </select>
-                        </div>
-                        <div class="search-right">
-                            <select class="form-control mr-1" id="classType">
-                                <option value="class">Class</option>
-                                <option value="coaching">Coaching</option>
-                            </select>
-                            <select class="form-control" id="classLevel">
-                                <option value="">level</option>
-                                <option value="">Beginner</option>
-                                <option value="">Intermediate</option>
-                                <option value="">Advanced</option>
-                            </select>
-                            <select class="form-control" id="coachingLevel" style="display: none;">
-                                <option value="">level</option>
-                                <option value="">Black</option>
-                                <option value="">Gold</option>
-                                <option value="">Silver</option>
-                            </select>
-                        </div>
+                    <div class="cus-dl-wrap">
+                        <dl>
+                            <dt>Price paid</dt>
+                            <dd>$10.44</dd>
+                        </dl>
+                        <dl>
+                            <dt>Net amount</dt>
+                            <dd>$10.44</dd>
+                        </dl>
+                        <dl>
+                            <dt>Your revenue</dt>
+                            <dd>$4.18</dd>
+                        </dl>
                     </div>
-                    <div>
-                        <form action="" class="form-group search-right mt-0 mb-2">
-                            <div class="input-group ml-1" style="width: 300px;">
-                                <input type="text" class="form-control" placeholder="Search"
-                                    aria-describedby="search_text">
-                                <div class="input-group-append" id="search_text">
-                                    <button class="btn btn-primary" type="button"><i class="bx bx-search"></i></button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+                    <!-- <p class="mt-1 mb-3"><span class="text-700">Note : </span> Revenue is shared between instructors on
+                        this course, your share is 40%</p> -->
 
-                    <div class="my-1 d-flex align-items-center">
-                        <span class="" style="width: 50px;">유형</span>
-                        <select name="" id="" class="form-control">
-                            <option value="">Top trending classes</option>
-                            <option value="">Top content suggestions for you</option>
-                            <option value="">Popular classes for you</option>
-                        </select>
-                    </div>
+                    <br />
+                    <br />
 
-                    <div class="table-responsive">
-                        <table class="table">
-                            <colgroup>
-                                <col width="50px;">
-                                <col width="*;">
-                                <col width="100px;">
-                                <col width="150px">
-                            </colgroup>
-                            <thead>
-                                <tr>
-                                    <th>
-                                        <div class="checkbox">
-                                            <input type="checkbox" class="checkbox-input" id="checkbox_all">
-                                            <label for="checkbox_all"></label>
-                                        </div>
-                                    </th>
-                                    <th>강의 제목</th>
-                                    <th>레벨</th>
-                                    <th>강사 이름</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <div class="checkbox">
-                                            <input type="checkbox" class="checkbox-input" id="checkbox_01">
-                                            <label for="checkbox_01"></label>
-                                        </div>
-                                    </td>
-                                    <td class="text-left">강의(코칭)제목 A</td>
-                                    <td>
-                                        Beginner
-                                        <!-- 레벨
-                                        1) 강의일 경우 (Beginner / Intermediate /Advanced) <br>
-                                        2) 코칭일 경우 (Black/ Gold / Silver) -->
-                                    </td>
-                                    <td>Chris</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="checkbox">
-                                            <input type="checkbox" class="checkbox-input" id="checkbox_02">
-                                            <label for="checkbox_02"></label>
-                                        </div>
-                                    </td>
-                                    <td class="text-left">강의(코칭)제목 A</td>
-                                    <td>
-                                        Intermediate
-                                        <!-- 레벨
-                                        1) 강의일 경우 (Beginner / Intermediate /Advanced) <br>
-                                        2) 코칭일 경우 (Black/ Gold / Silver) -->
-                                    </td>
-                                    <td>Chris</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="checkbox">
-                                            <input type="checkbox" class="checkbox-input" id="checkbox_03">
-                                            <label for="checkbox_03"></label>
-                                        </div>
-                                    </td>
-                                    <td class="text-left">강의(코칭)제목 A</td>
-                                    <td>
-                                        Advanced
-                                        <!-- 레벨
-                                        1) 강의일 경우 (Beginner / Intermediate /Advanced) <br>
-                                        2) 코칭일 경우 (Black/ Gold / Silver) -->
-                                    </td>
-                                    <td>Chris</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <!-- pagination -->
-                    <nav aria-label="Page navigation">
-                        <ul class="pagination justify-content-center mt-2">
-                            <li class="page-item previous disabled"><a class="page-link" href="javascript:void(0);">
-                                    <i class="bx bx-chevron-left"></i>
-                                </a></li>
-                            <li class="page-item active" aria-current="page"><a class="page-link"
-                                    href="javascript:void(0);">1</a></li>
-                            <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
-                            <li class="page-item"><a class="page-link" href="javascript:void(0);">3</a></li>
-                            <li class="page-item"><a class="page-link" href="javascript:void(0);">4</a></li>
-                            <li class="page-item"><a class="page-link" href="javascript:void(0);">5</a></li>
-                            <li class="page-item"><a class="page-link" href="javascript:void(0);">6</a></li>
-                            <li class="page-item"><a class="page-link" href="javascript:void(0);">7</a></li>
-                            <li class="page-item next"><a class="page-link" href="javascript:void(0);">
-                                    <i class="bx bx-chevron-right"></i>
-                                </a></li>
-                        </ul>
-                    </nav>
-                    <!-- // pagination -->
-
-                    <div class="d-flex mt-3 justify-content-center">
-                        <div class="checkbox">
-                            <input type="checkbox" class="checkbox-input" id="checkbox_agree">
-                            <label for="checkbox_agree">발송 후 취소가 불가능 합니다. 모든 내용을 확인 하였습니다.
-                            </label>
-                        </div>
+                    <div class="cus-dl-wrap">
+                        <dl>
+                            <dt>Product</dt>
+                            <dd>Class/Coaching (기획전도 Class라고 표시)</dd>
+                        </dl>
+                        <dl>
+                            <dt>Title</dt>
+                            <dd>강의나 코칭제목</dd>
+                        </dl>
+                        <dl>
+                            <dt>Customer</dt>
+                            <dd>구매자 이름</dd>
+                        </dl>
+                        <dl>
+                            <dt>Date</dt>
+                            <dd>Jul 08, 2021 00:00</dd>
+                        </dl>
+                        <dl>
+                            <dt>Expiration date</dt>
+                            <dd>Jul 08, 2021 00:00</dd>
+                        </dl>
+                        <dl>
+                            <dt>Discount</dt>
+                            <dd>쿠폰 코드나 Big 5 20% off 혹은 기획전 20% off</dd>
+                        </dl>
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="submit" class="btn btn-primary">보내기</button>
+                    <button type="button" class="btn btn-light" data-dismiss="modal">
+                        <i class="bx bx-x d-block d-sm-none"></i>
+                        <span class="d-none d-sm-block">Close</span>
+                    </button>
                 </div>
             </div>
         </div>
     </div>
-    <!-- main product Modal end -->
+    <!-- modal end -->
 
-    <!-- demo chat-->
+
 
     <div class="sidenav-overlay"></div>
     <div class="drag-target"></div>
