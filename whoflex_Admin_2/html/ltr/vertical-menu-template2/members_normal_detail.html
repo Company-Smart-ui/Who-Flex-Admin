@@ -173,23 +173,23 @@
                         <li class="active">
                             <a class="d-flex align-items-center" href="./members_normal.html">
                                 <i class="bx bx-right-arrow-alt"></i>
-                                <span class="menu-item text-truncate" data-i18n="일반 회원 리스트">일반 회원 리스트</span>
+                                <span class="menu-item text-truncate" data-i18n="Members">Members</span>
                                 <span
                                     class="badge badge-light-primary badge-pill badge-round float-right mr-50 ml-auto">2</span>
                             </a>
                         </li>
                         <li>
-                            <a class="d-flex align-items-center" href="./members_teacher.html">
+                            <a class="d-flex align-items-center" href="./instructor_application.html">
                                 <i class="bx bx-right-arrow-alt"></i>
-                                <span class="menu-item text-truncate" data-i18n="강사 회원 리스트">강사 회원 리스트</span>
+                                <span class="menu-item text-truncate" data-i18n="Instructor Application">Instructor Application</span>
                                 <span
                                     class="badge badge-light-primary badge-pill badge-round float-right mr-50 ml-auto">2</span>
                             </a>
                         </li>
-                        <li>
-                            <a class="d-flex align-items-center" href="./members_message.html">
+                        <li >
+                            <a class="d-flex align-items-center" href="./whoflex_instructors.html">
                                 <i class="bx bx-right-arrow-alt"></i>
-                                <span class="menu-item text-truncate" data-i18n="알림 메시지 발송">알림 메시지 발송</span>
+                                <span class="menu-item text-truncate" data-i18n="Whoflex Instructors">Whoflex Instructors</span>
                                 <span
                                     class="badge badge-light-primary badge-pill badge-round float-right mr-50 ml-auto">2</span>
                             </a>
@@ -569,9 +569,7 @@
                 <section>
                     <div class="card">
                         <div class="card-header card-header flex-column align-items-start">
-                            <h2 class="mb-1">일반 회원 상세</h2>
-                            <p class="">회원자료 삭제 시 다른 회원이 기존 회원아이디를 사용하지 못하도록 회원아이디, 이름, 닉네임은 삭제하지 않고 영구 보관합니다.
-                            </p>
+                            <h2 class="mb-1">Member Details</h2>
                         </div>
 
                         <div class="card-body">
@@ -605,56 +603,84 @@
                             </div>
 
                             <div class="row">
-                                <div class="col-xl-12">
-                                    <div class="form-title">
-                                        <h4 class="card-title">Email Address</h4>
-                                    </div>
-                                    <div class="form-body">
-                                        <input type="text" class="form-control" value="whoflex123@gmail.com">
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div class="row">
-                                <div class="col-xl-12">
+                                <div class="col-6">
                                     <div class="form-title">
                                         <h4 class="card-title">Name</h4>
                                     </div>
-                                    <div class="form-body">
-                                        <div class="d-flex">
-                                            <input type="text" class="form-control mr-1" value="First name">
-                                            <input type="text" class="form-control" value="First name">
+                                    <div>
+                                        <div class="form-body">
+                                            <div class="d-flex">
+                                                <input type="text" class="form-control mr-1" value="First name">
+                                                <input type="text" class="form-control" value="Last name">
+                                                <button type="button" class="btn">
+                                                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 96.000000 96.000000" preserveAspectRatio="xMidYMid meet">
+                                                        <g transform="translate(0.000000,96.000000) scale(0.100000,-0.100000)"  fill="#777" stroke="none"> <path d="M418 583 l-298 -297 0 -83 0 -83 78 0 77 0 300 299 c165 165 302 307 303 316 5 23 -116 145 -142 145 -12 0 -130 -110 -318 -297z m343 176 l21 -21 -26 -26 -26 -26 -22 22 -22 22 24 25 c13 14 25 25 27 25 2 0 13 -10 24 -21z m-106 -109 c19 -21 17 -23 -195 -235 -153 -153 -221 -215 -237 -215 -17 0 -23 6 -23 22 0 16 62 85 212 235 117 117 216 213 219 213 3 0 14 -9 24 -20z"/> </g>
+                                                    </svg>
+                                                </button>
+                                            </div>
                                         </div>
+                                    </div>
+                                   
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-title">
+                                        <h4 class="card-title">Job</h4>
+                                    </div>
+                                    <div class="d-flex">
+                                        <input type="text" class="form-control" value="Marketing specialist">
+                                        <button type="button" class="btn">
+                                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 96.000000 96.000000" preserveAspectRatio="xMidYMid meet">
+                                                <g transform="translate(0.000000,96.000000) scale(0.100000,-0.100000)"  fill="#777" stroke="none"> <path d="M418 583 l-298 -297 0 -83 0 -83 78 0 77 0 300 299 c165 165 302 307 303 316 5 23 -116 145 -142 145 -12 0 -130 -110 -318 -297z m343 176 l21 -21 -26 -26 -26 -26 -22 22 -22 22 24 25 c13 14 25 25 27 25 2 0 13 -10 24 -21z m-106 -109 c19 -21 17 -23 -195 -235 -153 -153 -221 -215 -237 -215 -17 0 -23 6 -23 22 0 16 62 85 212 235 117 117 216 213 219 213 3 0 14 -9 24 -20z"/> </g>
+                                            </svg>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
+
+                         
                             <div class="row">
-                                <div class="col-xl-12">
+                                <div class="col-6">
+                                    <div class="form-title">
+                                        <h4 class="card-title">Email</h4>
+                                    </div>
+                                    <div class="form-body d-flex">
+                                        <input type="text" class="form-control" value="whoflex123@gmail.com">
+                                        <button type="button" class="btn">
+                                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 96.000000 96.000000" preserveAspectRatio="xMidYMid meet">
+                                                <g transform="translate(0.000000,96.000000) scale(0.100000,-0.100000)"  fill="#777" stroke="none"> <path d="M418 583 l-298 -297 0 -83 0 -83 78 0 77 0 300 299 c165 165 302 307 303 316 5 23 -116 145 -142 145 -12 0 -130 -110 -318 -297z m343 176 l21 -21 -26 -26 -26 -26 -22 22 -22 22 24 25 c13 14 25 25 27 25 2 0 13 -10 24 -21z m-106 -109 c19 -21 17 -23 -195 -235 -153 -153 -221 -215 -237 -215 -17 0 -23 6 -23 22 0 16 62 85 212 235 117 117 216 213 219 213 3 0 14 -9 24 -20z"/> </g>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-6">
                                     <div class="form-title">
                                         <h4 class="card-title">PassWord</h4>
                                     </div>
-                                    <div class="form-body">
+                                    <div class="form-body d-flex">
                                         <input type="text" class="form-control" value="newbird1234">
+                                        <button type="button" class="btn">
+                                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 96.000000 96.000000" preserveAspectRatio="xMidYMid meet">
+                                                <g transform="translate(0.000000,96.000000) scale(0.100000,-0.100000)"  fill="#777" stroke="none"> <path d="M418 583 l-298 -297 0 -83 0 -83 78 0 77 0 300 299 c165 165 302 307 303 316 5 23 -116 145 -142 145 -12 0 -130 -110 -318 -297z m343 176 l21 -21 -26 -26 -26 -26 -22 22 -22 22 24 25 c13 14 25 25 27 25 2 0 13 -10 24 -21z m-106 -109 c19 -21 17 -23 -195 -235 -153 -153 -221 -215 -237 -215 -17 0 -23 6 -23 22 0 16 62 85 212 235 117 117 216 213 219 213 3 0 14 -9 24 -20z"/> </g>
+                                            </svg>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="row">
                                 <div class="col-xl-12">
-                                    <div class="form-title">
+                                    <div class="form-title d-flex align-items-center">
                                         <h4 class="card-title">Location</h4>
+                                        <button type="button" class="btn">
+                                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 96.000000 96.000000" preserveAspectRatio="xMidYMid meet">
+                                                <g transform="translate(0.000000,96.000000) scale(0.100000,-0.100000)"  fill="#777" stroke="none"> <path d="M418 583 l-298 -297 0 -83 0 -83 78 0 77 0 300 299 c165 165 302 307 303 316 5 23 -116 145 -142 145 -12 0 -130 -110 -318 -297z m343 176 l21 -21 -26 -26 -26 -26 -22 22 -22 22 24 25 c13 14 25 25 27 25 2 0 13 -10 24 -21z m-106 -109 c19 -21 17 -23 -195 -235 -153 -153 -221 -215 -237 -215 -17 0 -23 6 -23 22 0 16 62 85 212 235 117 117 216 213 219 213 3 0 14 -9 24 -20z"/> </g>
+                                            </svg>
+                                        </button>
                                     </div>
                                     <div class="form-body">
                                         <div class="d-flex">
-                                            <select name="" id="" class="form-control mr-1">
-                                                <option value="">Country</option>
-                                            </select>
-                                            <select name="" id="" class="form-control">
-                                                <option value="">Cithy</option>
-                                            </select>
-                                        </div>
-                                        <div class="mt-1">
+                                            <input type="text" class="form-control" value="Country">
+                                            <input type="text" class="form-control ml-2 mr-2" value="City">
                                             <input type="text" class="form-control" value="Zip Code">
                                         </div>
                                     </div>
@@ -664,31 +690,9 @@
                             <div class="row">
                                 <div class="col-xl-6">
                                     <div class="form-title">
-                                        <h4 class="card-title">Email Notifications</h4>
-                                    </div>
-                                    <div class="form-body">
-                                        <div class="d-flex">
-                                            <div class="checkbox mr-3">
-                                                <input type="checkbox" class="checkbox-input" id="noti01">
-                                                <label for="noti01">My Activity</label>
-                                            </div>
-                                            <div class="checkbox">
-                                                <input type="checkbox" class="checkbox-input" id="noti02">
-                                                <label for="noti02">Promotionl</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-                            <div class="row">
-                                <div class="col-xl-6">
-                                    <div class="form-title">
                                         <h4 class="card-title">가입일</h4>
                                     </div>
-                                    <div class="form-body">
+                                    <div class="form-body" style="width: 40%;">
                                         <input type="text" class="form-control" value="20-11-2020 15:12:08" readonly>
                                     </div>
                                 </div>
@@ -705,31 +709,29 @@
                             <div class="row">
                                 <div class="col-xl-6">
                                     <div class="form-title">
-                                        <h4 class="card-title">탈퇴일자</h4>
+                                        <div class="checkbox" style="width: 100%;">
+                                            <input type="checkbox" class="checkbox-input" id="resign_today">
+                                            <label for="resign_today card-title">탈퇴일자</label>
+                                        </div>
                                     </div>
-                                    <div class="form-body">
+                                    <div class="form-body w-50">
                                         <div class="d-flex align-items-center">
-                                            <input type="text" class="form-control" value="20-11-2020 15:12:08"
-                                                readonly>
-                                            <div class="checkbox ml-2" style="width: 100%;">
-                                                <input type="checkbox" class="checkbox-input" id="resign_today">
-                                                <label for="resign_today">탈퇴일을 오늘로 지정</label>
-                                            </div>
+                                            <input type="text" class="form-control" value="20-11-2020 15:12:08" readonly>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-xl-6">
                                     <div class="form-title">
-                                        <h4 class="card-title">접근차단일자</h4>
+                                        <div class="checkbox" style="width: 100%;">
+                                            <input type="checkbox" class="checkbox-input" id="block_today">
+                                            <label for="block_today">접근차단일자</label>
+                                        </div>
                                     </div>
-                                    <div class="form-body">
+                                    <div class="form-body w-50">
                                         <div class="d-flex align-items-center">
                                             <input type="text" class="form-control" value="20-11-2020 15:12:08"
                                                 readonly>
-                                            <div class="checkbox ml-2" style="width: 100%;">
-                                                <input type="checkbox" class="checkbox-input" id="block_today">
-                                                <label for="block_today">접근차단일을 오늘로 지정</label>
-                                            </div>
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -737,34 +739,14 @@
 
                             <hr>
 
-                            <div class="row">
+                            <div class="row pt-5">
                                 <div class="col-xl-12">
                                     <div class="form-title">
-                                        <h4 class="card-title">구매내역</h4>
+                                        <h4 class="card-title">Purchase History</h4>
                                     </div>
 
                                     <!-- 구매내역 테이블 :: 시작 -->
-                                    <ul class="nav nav-tabs" role="tablist">
-                                        <li class="nav-item">
-                                            <a class="nav-link active" id="class-tab" data-toggle="tab"
-                                                href="#tabLinkAll" aria-controls="All" role="tab" aria-selected="true">
-                                                <span class="align-middle">All</span>
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" id="coahing-tab" data-toggle="tab" href="#tabLinkActive"
-                                                aria-controls="Active" role="tab" aria-selected="false">
-                                                <span class="align-middle">Active</span>
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" id="refund-tab" data-toggle="tab"
-                                                href="#tabLinkCompleted" aria-controls="Completed" role="tab"
-                                                aria-selected="false">
-                                                <span class="align-middle">Completed</span>
-                                            </a>
-                                        </li>
-                                    </ul>
+                                    
                                     <div class="tab-content">
                                         <div class="tab-pane active" id="tabLinkAll" aria-labelledby="all-tab"
                                             role="tabpanel">
@@ -774,10 +756,9 @@
                                                         <col width="200px;">
                                                         <col width="120px;">
                                                         <col width="400px">
+                                                        <col width="150px;">
+                                                        <col width="150px;">
                                                         <col width="100px;">
-                                                        <col width="100px;">
-                                                        <col width="100px;">
-                                                        <col width="120px;">
                                                         <col width="100px;">
                                                     </colgroup>
                                                     <thead>
@@ -785,161 +766,23 @@
                                                             <th>Name</th>
                                                             <th>Type</th>
                                                             <th>Title</th>
-                                                            <th>Active/<br />Non-active</th>
-                                                            <th>Date</th>
-                                                            <th>수강 유효기간</th>
-                                                            <th>수강률<br>(시청회차/전체회차)</th>
+                                                            <th>Purchase date</th>
+                                                            <th>Status</th>
+                                                            <th>Refund</th>
                                                             <th>상세보기</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                         <tr>
                                                             <td>Jonne</td>
-                                                            <td>Class</td> <!-- type : Class / Coaching -->
-                                                            <td class="td_title"><a href="javascript:;"
-                                                                    class="text-ellipsis01">강의 or 코칭 제목 일부를 노출합니다</a>
-                                                            </td>
-                                                            <td>Active</td>
-                                                            <td>April 22 20 </td>
-                                                            <td>July 22 20</td>
-                                                            <td>12/20</td>
-                                                            <!--수강률 : 강의만 표시-->
-                                                            <td><button type="button" class="btn btn-sm btn-primary"
-                                                                    data-toggle="modal"
-                                                                    data-target="#earningDetailPop">View</button></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Jonne</td>
                                                             <td>Coaching</td>
                                                             <td class="td_title"><a href="javascript:;"
                                                                     class="text-ellipsis01">강의 or 코칭 제목 일부를 노출합니다</a>
                                                             </td>
-                                                            <td>Active</td>
                                                             <td>April 22 20 </td>
-                                                            <td>July 22 20</td>
-                                                            <td>-</td>
-                                                            <td><button type="button" class="btn btn-sm btn-primary"
-                                                                    data-toggle="modal"
-                                                                    data-target="#earningDetailPop">View</button></td>
-                                                        </tr>
-
-                                                        <tr>
-                                                            <td>Jonne</td>
-                                                            <td>Coaching</td>
-                                                            <td class="td_title"><a href="javascript:;"
-                                                                    class="text-ellipsis01">강의 or 코칭 제목 일부를 노출합니다</a>
-                                                            </td>
-                                                            <td>Active</td>
-                                                            <td>April 22 20 </td>
-                                                            <td>July 22 20</td>
-                                                            <td>-</td>
-                                                            <td><button type="button" class="btn btn-sm btn-primary"
-                                                                    data-toggle="modal"
-                                                                    data-target="#earningDetailPop">View</button></td>
-                                                        </tr>
-
-                                                        <tr>
-                                                            <td>Jonne</td>
-                                                            <td>Coaching</td>
-                                                            <td class="td_title"><a href="javascript:;"
-                                                                    class="text-ellipsis01">강의 or 코칭 제목 일부를 노출합니다</a>
-                                                            </td>
-                                                            <td>Active</td>
-                                                            <td>April 22 20 </td>
-                                                            <td>July 22 20</td>
-                                                            <td>-</td>
-                                                            <td><button type="button" class="btn btn-sm btn-primary"
-                                                                    data-toggle="modal"
-                                                                    data-target="#earningDetailPop">View</button></td>
-                                                        </tr>
-
-                                                        <tr>
-                                                            <td>Jonne</td>
-                                                            <td>Coaching</td>
-                                                            <td class="td_title"><a href="javascript:;"
-                                                                    class="text-ellipsis01">강의 or 코칭 제목 일부를 노출합니다</a>
-                                                            </td>
-                                                            <td>Active</td>
-                                                            <td>April 22 20 </td>
-                                                            <td>July 22 20</td>
-                                                            <td>-</td>
-                                                            <td><button type="button" class="btn btn-sm btn-primary"
-                                                                    data-toggle="modal"
-                                                                    data-target="#earningDetailPop">View</button></td>
-                                                        </tr>
-
-                                                    </tbody>
-                                                </table>
-                                            </div>
-
-                                            <!-- pagination -->
-                                            <nav aria-label="Page navigation">
-                                                <ul class="pagination justify-content-center mt-2">
-                                                    <li class="page-item previous disabled"><a class="page-link"
-                                                            href="javascript:void(0);">
-                                                            <i class="bx bx-chevron-left"></i>
-                                                        </a></li>
-                                                    <li class="page-item active" aria-current="page"><a
-                                                            class="page-link" href="javascript:void(0);">1</a></li>
-                                                    <li class="page-item"><a class="page-link"
-                                                            href="javascript:void(0);">2</a></li>
-                                                    <li class="page-item"><a class="page-link"
-                                                            href="javascript:void(0);">3</a></li>
-                                                    <li class="page-item"><a class="page-link"
-                                                            href="javascript:void(0);">4</a></li>
-                                                    <li class="page-item"><a class="page-link"
-                                                            href="javascript:void(0);">5</a></li>
-                                                    <li class="page-item"><a class="page-link"
-                                                            href="javascript:void(0);">6</a></li>
-                                                    <li class="page-item"><a class="page-link"
-                                                            href="javascript:void(0);">7</a></li>
-                                                    <li class="page-item next"><a class="page-link"
-                                                            href="javascript:void(0);">
-                                                            <i class="bx bx-chevron-right"></i>
-                                                        </a></li>
-                                                </ul>
-                                            </nav>
-                                        </div>
-                                        <div class="tab-pane" id="tabLinkActive" aria-labelledby="Active-tab"
-                                            role="tabpanel">
-                                            <div class="table-responsive">
-                                                <table class="table">
-                                                    <colgroup>
-                                                        <col width="200px;">
-                                                        <col width="120px;">
-                                                        <col width="400px">
-                                                        <col width="100px;">
-                                                        <col width="100px;">
-                                                        <col width="100px;">
-                                                        <col width="120px;">
-                                                        <col width="100px;">
-                                                    </colgroup>
-                                                    <thead>
-                                                        <tr>
-                                                            <th>Name</th>
-                                                            <th>Type</th>
-                                                            <th>Title</th>
-                                                            <th>Active/<br />Non-active</th>
-                                                            <th>Date</th>
-                                                            <th>수강 유효기간</th>
-                                                            <th>수강률<br>(시청회차/전체회차)</th>
-                                                            <th>상세보기</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>Jonne222</td>
-                                                            <td>Coaching</td>
-                                                            <td class="td_title"><a href="javascript:;"
-                                                                    class="text-ellipsis01">강의 or 코칭 제목 일부를 노출합니다</a>
-                                                            </td>
-                                                            <td>Active</td>
-                                                            <td>April 22 20 </td>
-                                                            <td>July 22 20</td>
-                                                            <td>-</td>
-                                                            <td><button type="button" class="btn btn-sm btn-primary"
-                                                                    data-toggle="modal"
-                                                                    data-target="#earningDetailPop">View</button></td>
+                                                            <td>100%</td>
+                                                            <td>Refunded</td>
+                                                            <td><button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#earningDetailPop">View</button></td>
                                                         </tr>
                                                         <tr>
                                                             <td>Jonne</td>
@@ -947,190 +790,32 @@
                                                             <td class="td_title"><a href="javascript:;"
                                                                     class="text-ellipsis01">강의 or 코칭 제목 일부를 노출합니다</a>
                                                             </td>
-                                                            <td>Active</td>
                                                             <td>April 22 20 </td>
-                                                            <td>July 22 20</td>
-                                                            <td>12/20</td>
-                                                            <td><button type="button" class="btn btn-sm btn-primary"
-                                                                    data-toggle="modal"
-                                                                    data-target="#earningDetailPop">View</button></td>
+                                                            <td>100%</td>
+                                                            <td>Refunded</td>
+                                                            <td><button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#earningDetailPop">View</button></td>
                                                         </tr>
-
                                                         <tr>
                                                             <td>Jonne</td>
-                                                            <td>Coaching</td>
-                                                            <td class="td_title"><a href="javascript:;"
-                                                                    class="text-ellipsis01">강의 or 코칭 제목 일부를 노출합니다</a>
-                                                            </td>
-                                                            <td>Active</td>
-                                                            <td>April 22 20 </td>
-                                                            <td>July 22 20</td>
-                                                            <td>-</td>
-                                                            <td><button type="button" class="btn btn-sm btn-primary"
-                                                                    data-toggle="modal"
-                                                                    data-target="#earningDetailPop">View</button></td>
-                                                        </tr>
-
-                                                        <tr>
-                                                            <td>Jonne</td>
-                                                            <td>Coaching</td>
-                                                            <td class="td_title"><a href="javascript:;"
-                                                                    class="text-ellipsis01">강의 or 코칭 제목 일부를 노출합니다</a>
-                                                            </td>
-                                                            <td>Active</td>
-                                                            <td>April 22 20 </td>
-                                                            <td>July 22 20</td>
-                                                            <td>-</td>
-                                                            <td><button type="button" class="btn btn-sm btn-primary"
-                                                                    data-toggle="modal"
-                                                                    data-target="#earningDetailPop">View</button></td>
-                                                        </tr>
-
-                                                        <tr>
-                                                            <td>Jonne</td>
-                                                            <td>Coaching</td>
-                                                            <td class="td_title"><a href="javascript:;"
-                                                                    class="text-ellipsis01">강의 or 코칭 제목 일부를 노출합니다</a>
-                                                            </td>
-                                                            <td>Active</td>
-                                                            <td>April 22 20 </td>
-                                                            <td>July 22 20</td>
-                                                            <td>-</td>
-                                                            <td><button type="button" class="btn btn-sm btn-primary"
-                                                                    data-toggle="modal"
-                                                                    data-target="#earningDetailPop">View</button></td>
-                                                        </tr>
-
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                            <!-- pagination -->
-                                            <nav aria-label="Page navigation">
-                                                <ul class="pagination justify-content-center mt-2">
-                                                    <li class="page-item previous disabled"><a class="page-link"
-                                                            href="javascript:void(0);">
-                                                            <i class="bx bx-chevron-left"></i>
-                                                        </a></li>
-                                                    <li class="page-item active" aria-current="page"><a
-                                                            class="page-link" href="javascript:void(0);">1</a></li>
-                                                    <li class="page-item"><a class="page-link"
-                                                            href="javascript:void(0);">2</a></li>
-                                                    <li class="page-item"><a class="page-link"
-                                                            href="javascript:void(0);">3</a></li>
-                                                    <li class="page-item"><a class="page-link"
-                                                            href="javascript:void(0);">4</a></li>
-                                                    <li class="page-item"><a class="page-link"
-                                                            href="javascript:void(0);">5</a></li>
-                                                    <li class="page-item"><a class="page-link"
-                                                            href="javascript:void(0);">6</a></li>
-                                                    <li class="page-item"><a class="page-link"
-                                                            href="javascript:void(0);">7</a></li>
-                                                    <li class="page-item next"><a class="page-link"
-                                                            href="javascript:void(0);">
-                                                            <i class="bx bx-chevron-right"></i>
-                                                        </a></li>
-                                                </ul>
-                                            </nav>
-                                        </div>
-                                        <div class="tab-pane" id="tabLinkCompleted" aria-labelledby="Completed-tab"
-                                            role="tabpanel">
-                                            <div class="table-responsive">
-                                                <table class="table">
-                                                    <colgroup>
-                                                        <col width="200px;">
-                                                        <col width="120px;">
-                                                        <col width="400px">
-                                                        <col width="100px;">
-                                                        <col width="100px;">
-                                                        <col width="100px;">
-                                                        <col width="120px;">
-                                                        <col width="100px;">
-                                                    </colgroup>
-                                                    <thead>
-                                                        <tr>
-                                                            <th>Name</th>
-                                                            <th>Type</th>
-                                                            <th>Title</th>
-                                                            <th>Active/<br />Non-active</th>
-                                                            <th>Date</th>
-                                                            <th>수강 유효기간</th>
-                                                            <th>수강률<br>(시청회차/전체회차)</th>
-                                                            <th>상세보기</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>Jonne3333</td>
                                                             <td>Class</td>
                                                             <td class="td_title"><a href="javascript:;"
                                                                     class="text-ellipsis01">강의 or 코칭 제목 일부를 노출합니다</a>
                                                             </td>
-                                                            <td>Active</td>
                                                             <td>April 22 20 </td>
-                                                            <td>July 22 20</td>
-                                                            <td>12/20</td>
-                                                            <td><button type="button" class="btn btn-sm btn-primary"
-                                                                    data-toggle="modal"
-                                                                    data-target="#earningDetailPop">View</button></td>
+                                                            <td>Request sent</td>
+                                                            <td></td>
+                                                            <td><button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#earningDetailPop">View</button></td>
                                                         </tr>
                                                         <tr>
                                                             <td>Jonne</td>
-                                                            <td>Coaching</td>
+                                                            <td>Class</td>
                                                             <td class="td_title"><a href="javascript:;"
                                                                     class="text-ellipsis01">강의 or 코칭 제목 일부를 노출합니다</a>
                                                             </td>
-                                                            <td>Active</td>
                                                             <td>April 22 20 </td>
-                                                            <td>July 22 20</td>
-                                                            <td>-</td>
-                                                            <td><button type="button" class="btn btn-sm btn-primary"
-                                                                    data-toggle="modal"
-                                                                    data-target="#earningDetailPop">View</button></td>
-                                                        </tr>
-
-                                                        <tr>
-                                                            <td>Jonne</td>
-                                                            <td>Coaching</td>
-                                                            <td class="td_title"><a href="javascript:;"
-                                                                    class="text-ellipsis01">강의 or 코칭 제목 일부를 노출합니다</a>
-                                                            </td>
-                                                            <td>Active</td>
-                                                            <td>April 22 20 </td>
-                                                            <td>July 22 20</td>
-                                                            <td>-</td>
-                                                            <td><button type="button" class="btn btn-sm btn-primary"
-                                                                    data-toggle="modal"
-                                                                    data-target="#earningDetailPop">View</button></td>
-                                                        </tr>
-
-                                                        <tr>
-                                                            <td>Jonne</td>
-                                                            <td>Coaching</td>
-                                                            <td class="td_title"><a href="javascript:;"
-                                                                    class="text-ellipsis01">강의 or 코칭 제목 일부를 노출합니다</a>
-                                                            </td>
-                                                            <td>Active</td>
-                                                            <td>April 22 20 </td>
-                                                            <td>July 22 20</td>
-                                                            <td>-</td>
-                                                            <td><button type="button" class="btn btn-sm btn-primary"
-                                                                    data-toggle="modal"
-                                                                    data-target="#earningDetailPop">View</button></td>
-                                                        </tr>
-
-                                                        <tr>
-                                                            <td>Jonne</td>
-                                                            <td>Coaching</td>
-                                                            <td class="td_title"><a href="javascript:;"
-                                                                    class="text-ellipsis01">강의 or 코칭 제목 일부를 노출합니다</a>
-                                                            </td>
-                                                            <td>Active</td>
-                                                            <td>April 22 20 </td>
-                                                            <td>July 22 20</td>
-                                                            <td>-</td>
-                                                            <td><button type="button" class="btn btn-sm btn-primary"
-                                                                    data-toggle="modal"
-                                                                    data-target="#earningDetailPop">View</button></td>
+                                                            <td>100%</td>
+                                                            <td>Refunded</td>
+                                                            <td><button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#earningDetailPop">View</button></td>
                                                         </tr>
 
                                                     </tbody>
