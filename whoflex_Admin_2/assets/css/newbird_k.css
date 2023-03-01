@@ -243,8 +243,8 @@ hr {
 .form-control {
     color: #888;
     border-color: #ddd;
-    min-width: 200px;
-    padding-right: 55px;
+    min-width: 186px;
+    padding-right: 10px;
 }
 
 .form-control:disabled,
