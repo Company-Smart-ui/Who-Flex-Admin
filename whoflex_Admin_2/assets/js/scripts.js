@@ -141,6 +141,7 @@
             </div>
             </div>`));
             removeExperience();
+            calendarCode();
     });
 
 
@@ -166,6 +167,7 @@ $(".skills-btn").on("click", function() {
             </div>
         </div>`));
         removeExperience();
+        calendarCode();
 });
 
 
@@ -227,6 +229,7 @@ $(".education-btn").on("click", function() {
                     </div>
                 </div>`));
         removeExperience();
+        calendarCode();
 });
 
 
