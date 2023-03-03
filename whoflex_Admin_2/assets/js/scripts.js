@@ -98,7 +98,7 @@
 
     $(".experience-btn").on("click", function() {
         $(this).closest('.authors-wrap').find('.authors-card').append($(` <div class="authors-block"> <hr> <div class="form-body"> 
-                <div class="d-flex del-row align-items-center">
+                <div class="d-flex del-row align-items-center mt-3">
                     <div class="form-group del-form-wrap form-resume-wrap">
                         <div class="form-resume">
                             <input type="text" class="form-control mr-1"
@@ -148,7 +148,7 @@
 // add Skils
 
 $(".skills-btn").on("click", function() {
-    $(this).closest('.authors-wrap').find('.authors-card').append($(`<div class="authors-block"> <hr>
+    $(this).closest('.authors-wrap').find('.authors-card').append($(`<div class="authors-block">
             <div class="form-body">
                 <div class="d-flex del-row">
                     <div class="form-group del-form-wrap">
