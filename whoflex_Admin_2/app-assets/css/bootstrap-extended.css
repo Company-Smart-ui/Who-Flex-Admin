@@ -2038,9 +2038,13 @@ input[type=number]::-webkit-outer-spin-button {
 .card .card-title {
     font-weight: normal;
     letter-spacing: 0.05rem;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-bottom: 1.2rem;
     text-transform: capitalize;
+}
+
+.card  .resume-title {
+    font-size: 1.3rem;
 }
 
 .card .card-bordered {
@@ -2798,7 +2802,7 @@ ul.list-inline.list-inline-pipe>li+li:before {
     border: solid 1px #DFE3E7;
     padding: 1rem 1.7rem;
     border-radius: 0.267rem !important;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-family: "Rubik", Helvetica, Arial, serif;
     cursor: pointer;
 }

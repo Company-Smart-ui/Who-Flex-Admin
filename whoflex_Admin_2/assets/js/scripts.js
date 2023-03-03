@@ -94,4 +94,197 @@
 
 
 
+    // add new Experience
+
+    $(".experience-btn").on("click", function() {
+        $(this).closest('.authors-wrap').find('.authors-card').append($(`<div class="authors-block"> <div class="form-body"> <div class="d-flex del-row">
+                    <div class="form-group del-form-wrap form-resume-wrap">
+                        <div class="form-resume">
+                            <input type="text" class="form-control mr-1"
+                                placeholder="Company name">
+                            <input type="text" class="form-control" placeholder="Position (e.g Marketing Manager)">
+                        </div>
+                        <div class="form-resume mt-1">
+                            <div class="date-wrap">
+                                <div class="position-relative has-icon-left">
+                                    <input type="text" class="form-control pickadate"
+                                        placeholder="Start Date">
+                                    <div class="form-control-position">
+                                        <i class='bx bx-calendar'></i>
+                                    </div>
+                                </div>
+                                <span class="bar">~</span>
+                                <div class="position-relative has-icon-left">
+                                    <input type="text" class="form-control pickadate"
+                                        placeholder="End Date">
+                                    <div class="form-control-position">
+                                        <i class='bx bx-calendar'></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-resume mt-1">
+                            <input type="text" class="form-control" id="" name=""
+                                placeholder="Description">
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex del-row">
+                    <div class="form-group del-form-wrap form-resume-wrap">
+                        <div class="form-resume">
+                            <input type="text" class="form-control mr-1"
+                                placeholder="Company name">
+                            <input type="text" class="form-control" placeholder="position">
+                        </div>
+                        <div class="form-resume mt-1">
+                            <div class="date-wrap">
+                                <div class="position-relative has-icon-left">
+                                    <input type="text" class="form-control pickadate"
+                                        placeholder="Start Date">
+                                    <div class="form-control-position">
+                                        <i class='bx bx-calendar'></i>
+                                    </div>
+                                </div>
+                                <span class="bar">~</span>
+                                <div class="position-relative has-icon-left">
+                                    <input type="text" class="form-control pickadate"
+                                        placeholder="End Date">
+                                    <div class="form-control-position">
+                                        <i class='bx bx-calendar'></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-resume mt-1">
+                            <input type="text" class="form-control" id="" name=""
+                                placeholder="Description">
+                        </div>
+                    </div>
+                    <div class="del-btn-wrap">
+                        <button
+                            class="btn btn-icon btn-light rounded-circle text-nowrap px-1 authors-delete"
+                            data-repeater-delete="" type="button">
+                            <i class="bx bx-x"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            </div>`));
+            removeExperience();
+    });
+
+
+// add Skils
+
+$(".skills-btn").on("click", function() {
+    $(this).closest('.authors-wrap').find('.authors-card').append($(`<div class="authors-block">
+            <div class="form-body">
+                <div class="d-flex del-row">
+                    <div class="form-group del-form-wrap">
+                        <input type="text" class="form-control" id=""
+                            placeholder="Add any skills or certificates relevant to your field of expertise">
+                    </div>
+                </div>
+                <div class="d-flex del-row">
+                    <div class="form-group del-form-wrap">
+                        <input type="text" class="form-control" id=""
+                            placeholder="Add any skills or certificates relevant to your field of expertise">
+                    </div>
+                    <div class="del-btn-wrap">
+                        <button
+                            class="btn btn-icon btn-light rounded-circle text-nowrap px-1 authors-delete"
+                            data-repeater-delete="" type="button">
+                            <i class="bx bx-x"></i>
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>`));
+        removeExperience();
+});
+
+
+// add Education
+
+$(".education-btn").on("click", function() {
+    $(this).closest('.authors-wrap').find('.authors-card').append($(`<div class="authors-block">
+                    <div class="form-body">
+                        <div class="d-flex del-row">
+                            <div class="form-group del-form-wrap form-resume-wrap">
+                                <div class="form-resume">
+                                    <input type="text" style="width: 49%;" class="form-control mr-1"
+                                        placeholder="School name (e.g. Boston University)">
+                                
+                                </div>
+                                <div class="form-resume mt-1">
+                                    <div class="date-wrap">
+                                        <div class="position-relative has-icon-left">
+                                            <input type="text" class="form-control pickadate"
+                                                placeholder="Start Date">
+                                            <div class="form-control-position">
+                                                <i class='bx bx-calendar'></i>
+                                            </div>
+                                        </div>
+                                        <span class="bar">~</span>
+                                        <div class="position-relative has-icon-left">
+                                            <input type="text" class="form-control pickadate"
+                                                placeholder="End Date">
+                                            <div class="form-control-position">
+                                                <i class='bx bx-calendar'></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex del-row">
+                            <div class="form-group del-form-wrap form-resume-wrap">
+                                <div class="form-resume">
+                                    <select name="" id="" class="form-control mr-1">
+                                        <option value="">Degree type</option>
+                                    </select>
+                                    <input type="text" class="form-control" name=""
+                                        placeholder="Field of study (e.g. Biology)">
+                                </div>
+                                <div class="form-resume mt-1">
+                                    <input type="text" class="form-control" id="" name=""
+                                        placeholder="Description">
+                                </div>
+                            </div>
+                            <div class="del-btn-wrap">
+                                <button
+                                    class="btn btn-icon btn-light authors-delete rounded-circle text-nowrap px-1"
+                                    data-repeater-delete="" type="button">
+                                    <i class="bx bx-x"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>`));
+        removeExperience();
+});
+
+
+
+function removeExperience() {
+    let removeExperienceBtn = $(".authors-delete");
+    if(removeExperienceBtn){
+        removeExperienceBtn.each(function() {
+            $(this).on("click", function() {
+                const removeExperienceBLock =  $(this).closest('.authors-block');
+                removeExperienceBLock.remove();
+            });
+        });
+    }
+} removeExperience();
+
+
+$('.edit-field').click(function() {
+    $(this).closest(".edit-input-block").find('input').removeAttr('readonly').first().focus();
+});
+
+
+
 })(window);
