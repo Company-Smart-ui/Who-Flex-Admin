@@ -97,39 +97,8 @@
     // add new Experience
 
     $(".experience-btn").on("click", function() {
-        $(this).closest('.authors-wrap').find('.authors-card').append($(`<div class="authors-block"> <div class="form-body"> <div class="d-flex del-row">
-                    <div class="form-group del-form-wrap form-resume-wrap">
-                        <div class="form-resume">
-                            <input type="text" class="form-control mr-1"
-                                placeholder="Company name">
-                            <input type="text" class="form-control" placeholder="Position (e.g Marketing Manager)">
-                        </div>
-                        <div class="form-resume mt-1">
-                            <div class="date-wrap">
-                                <div class="position-relative has-icon-left">
-                                    <input type="text" class="form-control pickadate"
-                                        placeholder="Start Date">
-                                    <div class="form-control-position">
-                                        <i class='bx bx-calendar'></i>
-                                    </div>
-                                </div>
-                                <span class="bar">~</span>
-                                <div class="position-relative has-icon-left">
-                                    <input type="text" class="form-control pickadate"
-                                        placeholder="End Date">
-                                    <div class="form-control-position">
-                                        <i class='bx bx-calendar'></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-resume mt-1">
-                            <input type="text" class="form-control" id="" name=""
-                                placeholder="Description">
-                        </div>
-                    </div>
-                </div>
-                <div class="d-flex del-row">
+        $(this).closest('.authors-wrap').find('.authors-card').append($(` <div class="authors-block"> <hr> <div class="form-body"> 
+                <div class="d-flex del-row align-items-center">
                     <div class="form-group del-form-wrap form-resume-wrap">
                         <div class="form-resume">
                             <input type="text" class="form-control mr-1"
@@ -178,14 +147,8 @@
 // add Skils
 
 $(".skills-btn").on("click", function() {
-    $(this).closest('.authors-wrap').find('.authors-card').append($(`<div class="authors-block">
+    $(this).closest('.authors-wrap').find('.authors-card').append($(`<div class="authors-block"> <hr>
             <div class="form-body">
-                <div class="d-flex del-row">
-                    <div class="form-group del-form-wrap">
-                        <input type="text" class="form-control" id=""
-                            placeholder="Add any skills or certificates relevant to your field of expertise">
-                    </div>
-                </div>
                 <div class="d-flex del-row">
                     <div class="form-group del-form-wrap">
                         <input type="text" class="form-control" id=""
@@ -209,7 +172,7 @@ $(".skills-btn").on("click", function() {
 // add Education
 
 $(".education-btn").on("click", function() {
-    $(this).closest('.authors-wrap').find('.authors-card').append($(`<div class="authors-block">
+    $(this).closest('.authors-wrap').find('.authors-card').append($(`<div class="authors-block"> <hr>
                     <div class="form-body">
                         <div class="d-flex del-row">
                             <div class="form-group del-form-wrap form-resume-wrap">

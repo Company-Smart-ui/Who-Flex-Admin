@@ -247,6 +247,10 @@ hr {
     padding-right: 10px;
 }
 
+textarea {
+    padding-right: 44px!important;
+}
+
 .form-control:disabled,
 .form-control[readonly] {
     background: #f9f9f9;

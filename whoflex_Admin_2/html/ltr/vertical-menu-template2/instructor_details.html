@@ -704,6 +704,291 @@
                         </div>
 
 
+                        <div class="card-body collapsible collapse-icon accordion-icon-rotate">
+  <!-- START :: 분류 2  -->
+  <div class="card collapse-header open">
+    <div id="" class="card-header collapsed"  data-toggle="collapse" data-target="#profile02"
+        aria-expanded="false" aria-controls="profile02" role="tablist">
+        <span class="collapse-title">
+            <span class="align-middle">Author profile
+            </span>
+        </span>
+        <div style="font-size: 16px;padding-right: 40px;">*Required</div>
+    </div>
+
+    <div id="profile02" class="card-content collapse show">
+        <div class="card-body pt-2">
+            <div role="tabpanel" class="tab-pane active" id="account-vertical-general"
+                aria-labelledby="account-pill-general" aria-expanded="true">
+                <div class="media">
+                    <a href="javascript: void(0);" class="profile_img">
+                        <img src="../../../app-assets/images/portrait/small/avatar-s-16.jpg"
+                            class="rounded mr-75" alt="profile image" height="64"
+                            width="64">
+                    </a>
+                    <div class="media-body mt-25">
+                        <div class="col-12 px-0 d-flex justify-content-start">
+                            <label for="select-files"
+                                class="btn btn-sm btn-primary ml-50  mb-sm-0">
+                                <span>Upload new photo</span>
+                                <input id="select-files" type="file" hidden="">
+                            </label>
+                        </div>
+                        <p class="text-muted ml-1 mt-50"><small>Upload an image no larger
+                                than 2 MB in JPG, PNG, or GIF format</small></p>
+                    </div>
+                </div>
+                <hr>
+                <form class="validate-form" novalidate="novalidate">
+                    <div class="row">
+                        <div class="col-xl-6">
+                            <div class="form-group">
+                                <div class="controls">
+                                    <label class="card-title">Instructor name*</label>
+                                    <div class="d-flex">
+                                        <input type="text" class="form-control"
+                                            placeholder="Enter your instructor name for Whoflex. You can use your nikname or any name you go by"
+                                            name="instructor-name">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="form-group">
+                                <div class="controls">
+                                    <label class="card-title">Job title*</label>
+                                    <input type="text" class="form-control"
+                                            placeholder="Please explain your work" 
+                                            name="job-title">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-group">
+                                <div class="controls">
+                                    <label class="card-title">About the Author *</label>
+                                    <fieldset style="position: relative; width: 100%;">
+                                         <textarea class="form-control" maxlength="1000" rows="5" placeholder="Introduce yourself to students so they can understand you and your work"></textarea>
+                                        <span class="counter-symbols">1000</span>
+                                    </fieldset>
+                                   
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="form-group">
+                                <div class="controls">
+                                    <label class="card-title">A Word from the Author *</label>
+                                    <fieldset style="position: relative; width: 100%;">
+                                        <textarea class="form-control"  rows="4" maxlength="200" placeholder="Write your goals or anything you want to say to students here"></textarea>
+                                       <span class="counter-symbols">200</span>
+                                   </fieldset>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="form-group">
+                                <label class="card-title">Website</label>
+                                <input type="text" class="form-control"
+                                    placeholder="Enter your website address">
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="form-group">
+                                <label class="card-title">Twitter</label>
+                                <input type="text" class="form-control"
+                                    placeholder="www.twitter.com/">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center">
+                <h3 class="resume-title">Resume</h3>
+                <div style="font-size: 16px;padding-right: 40px;">*Required</div>
+            </div>
+            
+            <div class="form-title">
+                <h4 class="card-title">Experience*</h4>
+            </div>
+            <div class="authors-wrap">
+                <div class="authors-card">
+                    <div class="authors-block">
+                        <div class="form-body">
+                            <!-- //라인1 -->
+                            <!-- 추가된 라인 1 -->
+                            <div class="d-flex del-row align-items-center">
+                                <div class="form-group del-form-wrap form-resume-wrap">
+                                    <div class="form-resume">
+                                        <input type="text" class="form-control mr-1"
+                                            placeholder="Company name">
+                                        <input type="text" class="form-control" placeholder="position">
+                                    </div>
+                                    <div class="form-resume mt-1">
+                                        <div class="date-wrap">
+                                            <div class="position-relative has-icon-left">
+                                                <input type="text" class="form-control pickadate"
+                                                    placeholder="Start Date">
+                                                <div class="form-control-position">
+                                                    <i class='bx bx-calendar'></i>
+                                                </div>
+                                            </div>
+                                            <span class="bar">~</span>
+                                            <div class="position-relative has-icon-left">
+                                                <input type="text" class="form-control pickadate"
+                                                    placeholder="End Date">
+                                                <div class="form-control-position">
+                                                    <i class='bx bx-calendar'></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-resume mt-1">
+                                        <input type="text" class="form-control" id="" name=""
+                                            placeholder="Description">
+                                    </div>
+                                </div>
+                                <div class="del-btn-wrap">
+                                    <button
+                                        class="btn btn-icon btn-light rounded-circle text-nowrap px-1 authors-delete"
+                                        data-repeater-delete="" type="button">
+                                        <i class="bx bx-x"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- //추가된 라인 1 -->    
+
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="form-group">
+                    <button class="btn btn-primary experience-btn" data-repeater-create="" type="button"><i
+                            class="bx bx-plus"></i>
+                        Add
+                    </button>
+                    <!-- 버튼 클릭 시, 경험 라인 추가 (삭제가능한 영역으로 추가) -->
+                </div>
+            </div>
+
+
+            <div class="form-title">
+                <h4 class="card-title">Skills & Certificates</h4>
+            </div>
+
+            <div class="authors-wrap">
+                <div class="authors-card">
+                    <div class="authors-block">
+                        <div class="form-body">
+                            <div class="d-flex del-row">
+                                <div class="form-group del-form-wrap">
+                                    <input type="text" class="form-control" id=""
+                                        placeholder="Add any skills or certificates relevant to your field of expertise">
+                                </div>
+                                <div class="del-btn-wrap">
+                                    <button
+                                        class="btn btn-icon btn-light rounded-circle text-nowrap px-1 authors-delete"
+                                        data-repeater-delete="" type="button">
+                                        <i class="bx bx-x"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <button class="btn btn-primary skills-btn" data-repeater-create="" type="button"><i
+                            class="bx bx-plus"></i>
+                        Add
+                    </button>
+                </div>
+            </div>
+            
+
+            <div class="form-title">
+                <h4 class="card-title">Education</h4>
+            </div>
+            <div class="authors-wrap">
+                <div class="authors-card">
+                    <div class="authors-block">
+                        <div class="form-body">
+                            <div class="d-flex del-row">
+                                <div class="form-group del-form-wrap form-resume-wrap">
+                                    <div class="form-resume">
+                                        <input type="text" style="width: 49%;" class="form-control mr-1"
+                                            placeholder="School name (e.g. Boston University)">
+                                     
+                                    </div>
+                                    <div class="form-resume mt-1">
+                                        <div class="date-wrap">
+                                            <div class="position-relative has-icon-left">
+                                                <input type="text" class="form-control pickadate"
+                                                    placeholder="Start Date">
+                                                <div class="form-control-position">
+                                                    <i class='bx bx-calendar'></i>
+                                                </div>
+                                            </div>
+                                            <span class="bar">~</span>
+                                            <div class="position-relative has-icon-left">
+                                                <input type="text" class="form-control pickadate"
+                                                    placeholder="End Date">
+                                                <div class="form-control-position">
+                                                    <i class='bx bx-calendar'></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex del-row">
+                                <div class="form-group del-form-wrap form-resume-wrap">
+                                    <div class="form-resume">
+                                        <select name="" id="" class="form-control mr-1">
+                                            <option value="">Degree type</option>
+                                        </select>
+                                        <input type="text" class="form-control" name=""
+                                            placeholder="Field of study (e.g. Biology)">
+                                    </div>
+                                    <div class="form-resume mt-1">
+                                        <input type="text" class="form-control" id="" name=""
+                                            placeholder="Description">
+                                    </div>
+                                </div>
+                                <div class="del-btn-wrap">
+                                    <button
+                                        class="btn btn-icon btn-light rounded-circle authors-delete text-nowrap px-1"
+                                        data-repeater-delete="" type="button">
+                                        <i class="bx bx-x"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary education-btn" data-repeater-create="" type="button"><i
+                            class="bx bx-plus"></i>
+                        Add
+                    </button>
+                </div>
+            </div>
+           
+
+        </div>
+    </div>
+</div>
+<!-- END :: 분류 2  -->
+                        </div> 
+
+                       
+
                         <div class="form-btns-wrap">
                             <hr>
                             <div class="col-12 d-flex mt-1">

@@ -170,7 +170,7 @@
 						<li class="active">
 							<a class="d-flex align-items-center" href="./profile_author.html">
 								<i class="bx bx-right-arrow-alt"></i>
-								<span class="menu-item text-truncate" data-i18n="Author profile">Author profile</span>
+								<span class="menu-item text-truncate" data-i18n="Author Profile">Author Profile</span>
 								<span class="badge badge-light-primary badge-pill badge-round float-right mr-50 ml-auto">2</span>
 							</a>
 						</li>
@@ -315,12 +315,13 @@
 
                             <!-- START :: 분류 2  -->
                             <div class="card collapse-header open">
-                                <div id="" class="card-header collapsed" data-toggle="collapse" data-target="#profile02"
+                                <div id="" class="card-header collapsed" data-target="#profile02"
                                     aria-expanded="false" aria-controls="profile02" role="tablist">
                                     <span class="collapse-title">
                                         <span class="align-middle">Author profile
                                         </span>
                                     </span>
+                                    <div style="font-size: 16px;padding-right: 40px;">*Required</div>
                                 </div>
 
                                 <div id="profile02" class="card-content collapse show">
@@ -351,10 +352,10 @@
                                                     <div class="col-xl-6">
                                                         <div class="form-group">
                                                             <div class="controls">
-                                                                <label>Instructor name*</label>
+                                                                <label class="card-title">Instructor name*</label>
                                                                 <div class="d-flex">
                                                                     <input type="text" class="form-control"
-                                                                        placeholder="Enter your instructor name for Whoflex.You can use your nikname or any name you go by"
+                                                                        placeholder="Enter your instructor name for Whoflex. You can use your nikname or any name you go by"
                                                                         name="instructor-name">
                                                                 </div>
                                                             </div>
@@ -363,7 +364,7 @@
                                                     <div class="col-xl-6">
                                                         <div class="form-group">
                                                             <div class="controls">
-                                                                <label>Job title*</label>
+                                                                <label class="card-title">Job title*</label>
                                                                 <input type="text" class="form-control"
                                                                         placeholder="Please explain your work" 
                                                                         name="job-title">
@@ -373,7 +374,7 @@
                                                     <div class="col-12">
                                                         <div class="form-group">
                                                             <div class="controls">
-                                                                <label>About the Author *</label>
+                                                                <label class="card-title">About the Author *</label>
                                                                 <fieldset style="position: relative; width: 100%;">
                                                                      <textarea class="form-control" maxlength="1000" rows="5" placeholder="Introduce yourself to students so they can understand you and your work"></textarea>
                                                                     <span class="counter-symbols">1000</span>
@@ -386,7 +387,7 @@
                                                     <div class="col-12">
                                                         <div class="form-group">
                                                             <div class="controls">
-                                                                <label>A Word from the Author *</label>
+                                                                <label class="card-title">A Word from the Author *</label>
                                                                 <fieldset style="position: relative; width: 100%;">
                                                                     <textarea class="form-control"  rows="4" maxlength="200" placeholder="Write your goals or anything you want to say to students here"></textarea>
                                                                    <span class="counter-symbols">200</span>
@@ -397,14 +398,14 @@
                                                     </div>
                                                     <div class="col-xl-6">
                                                         <div class="form-group">
-                                                            <label>Website</label>
+                                                            <label class="card-title">Website</label>
                                                             <input type="text" class="form-control"
                                                                 placeholder="Enter your website address">
                                                         </div>
                                                     </div>
                                                     <div class="col-xl-6">
                                                         <div class="form-group">
-                                                            <label>Twitter</label>
+                                                            <label class="card-title">Twitter</label>
                                                             <input type="text" class="form-control"
                                                                 placeholder="www.twitter.com/">
                                                         </div>
@@ -416,7 +417,11 @@
                                 </div>
                                 <div id="profile03" class="card-content collapse show">
                                     <div class="card-body">
-                                        <h3 class="resume-title">Resume</h3>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h3 class="resume-title">Resume</h3>
+                                            <div style="font-size: 16px;padding-right: 40px;">*Required</div>
+                                        </div>
+                                        
                                         <div class="form-title">
                                             <h4 class="card-title">Experience*</h4>
                                         </div>
@@ -424,43 +429,9 @@
                                             <div class="authors-card">
                                                 <div class="authors-block">
                                                     <div class="form-body">
-
-                                                        <!-- 라인 1 -->
-                                                        <div class="d-flex del-row">
-                                                            <div class="form-group del-form-wrap form-resume-wrap">
-                                                                <div class="form-resume">
-                                                                    <input type="text" class="form-control mr-1"
-                                                                        placeholder="Company name">
-                                                                    <input type="text" class="form-control" placeholder="Position (e.g Marketing Manager)">
-                                                                </div>
-                                                                <div class="form-resume mt-1">
-                                                                    <div class="date-wrap">
-                                                                        <div class="position-relative has-icon-left">
-                                                                            <input type="text" class="form-control pickadate"
-                                                                                placeholder="Start Date">
-                                                                            <div class="form-control-position">
-                                                                                <i class='bx bx-calendar'></i>
-                                                                            </div>
-                                                                        </div>
-                                                                        <span class="bar">~</span>
-                                                                        <div class="position-relative has-icon-left">
-                                                                            <input type="text" class="form-control pickadate"
-                                                                                placeholder="End Date">
-                                                                            <div class="form-control-position">
-                                                                                <i class='bx bx-calendar'></i>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="form-resume mt-1">
-                                                                    <input type="text" class="form-control" id="" name=""
-                                                                        placeholder="Description">
-                                                                </div>
-                                                            </div>
-                                                        </div>
                                                         <!-- //라인1 -->
                                                         <!-- 추가된 라인 1 -->
-                                                        <div class="d-flex del-row">
+                                                        <div class="d-flex del-row align-items-center">
                                                             <div class="form-group del-form-wrap form-resume-wrap">
                                                                 <div class="form-resume">
                                                                     <input type="text" class="form-control mr-1"
@@ -524,12 +495,6 @@
                                             <div class="authors-card">
                                                 <div class="authors-block">
                                                     <div class="form-body">
-                                                        <div class="d-flex del-row">
-                                                            <div class="form-group del-form-wrap">
-                                                                <input type="text" class="form-control" id=""
-                                                                    placeholder="Add any skills or certificates relevant to your field of expertise">
-                                                            </div>
-                                                        </div>
                                                         <div class="d-flex del-row">
                                                             <div class="form-group del-form-wrap">
                                                                 <input type="text" class="form-control" id=""
@@ -766,6 +731,8 @@
 
     <!-- BEGIN: Page JS-->
     <script src="../../../assets/js/scripts.js"></script>
+    <script src="../../../app-assets/js/scripts/forms/form-repeater.js"></script>
+    <script src="../../../app-assets/js/scripts/pickers/dateTime/pick-a-datetime.js"></script>
     <!-- END: Page JS-->
 
 </body>
