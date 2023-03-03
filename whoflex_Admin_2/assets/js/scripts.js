@@ -176,7 +176,7 @@ $(".skills-btn").on("click", function() {
 $(".education-btn").on("click", function() {
     $(this).closest('.authors-wrap').find('.authors-card').append($(`<div class="authors-block"> <hr>
                     <div class="form-body">
-                        <div class="d-flex del-row">
+                        <div class="d-flex del-row mt-3">
                             <div class="form-group del-form-wrap form-resume-wrap">
                                 <div class="form-resume">
                                     <input type="text" style="width: 49%;" class="form-control mr-1"
