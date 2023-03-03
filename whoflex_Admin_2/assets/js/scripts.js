@@ -149,7 +149,7 @@
 
 $(".skills-btn").on("click", function() {
     $(this).closest('.authors-wrap').find('.authors-card').append($(`<div class="authors-block">
-            <div class="form-body">
+            <div class="">
                 <div class="d-flex del-row">
                     <div class="form-group del-form-wrap">
                         <input type="text" class="form-control" id=""
