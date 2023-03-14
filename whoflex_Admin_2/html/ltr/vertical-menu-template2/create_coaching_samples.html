@@ -121,13 +121,13 @@
                 <li class=" nav-item">
                     <a href="./create_coaching_samples.html">
                         <input class="custom-checkbox" checked type="checkbox" id="samples" name="samples" value="yes">
-                        <span class="menu-title text-truncate" data-i18n="">Samples</span>
+                        <span class="menu-title text-truncate" data-i18n="">Showcase</span>
                     </a>
                 </li>
                 <li class=" nav-item">
                     <a href="./create_coaching_reviews.html">
-                        <input class="custom-checkbox" type="checkbox" id="reviews" name="reviews" value="yes">
-                        <span class="menu-title text-truncate" data-i18n="">Reviews</span>
+                        <input class="custom-checkbox" type="checkbox" id="testimonials" name="testimonials" value="yes">
+                        <span class="menu-title text-truncate" data-i18n="">Testimonials</span>
                     </a>
                 </li>
                 <li class="">
@@ -150,14 +150,14 @@
                     <div class="card">
                         <div class="card-header">
                             <div>
-                                <h2>Samples</h2>
-                                <p>Add a sample question and answer or video coaching message. Your students can easily grasp the essence of your coaching</p>
+                                <h2>Showcase</h2>
+                                <p>Add a sample question and answer or video coaching message to help your students understand your coaching style.</p>
                             </div>
-                            <div>*Required</div>
+                            <div style="font-size: 18px;">*Required</div>
                         </div>
 
                         <div class="card-header">
-                            <h4 class="card-title">Classic Coaching</h4>
+                            <h4 class="card-title">Sample Q&A</h4>
                         </div>
                         <div class="card-body">
                             <div class="collapse-deletable w-100">
@@ -168,14 +168,14 @@
                                             <div class="samples-form-name">Q.</div>
                                             <fieldset style="position: relative; width: 100%;">
                                                 
-                                                <textarea class="form-control" id="basicTextarea" rows="10" maxlength="300" onkeyup="countLetters();" style="height: 38px;" required placeholder="Write a sample question"></textarea>
+                                                <textarea class="form-control" id="basicTextarea" rows="10" maxlength="300" onkeyup="countLetters();" style="height: 38px;" required placeholder="Please provide an example of a question that your students could ask"></textarea>
                                                 <span class="counter-symbols">300</span>
                                             </fieldset>
                                         </div>
                                         <div class="samples-form-input d-flex align-items-center">
                                             <div class="samples-form-name">A.</div>
                                             <fieldset style="position: relative; width: 100%;">
-                                                <textarea class="form-control" id="basicTextarea" rows="10" maxlength="1000" onkeyup="countLetters();" style="height: 150px;" required placeholder="Write the actual coaching you would give in response to that question here"></textarea>
+                                                <textarea class="form-control" id="basicTextarea" rows="10" maxlength="1000" onkeyup="countLetters();" style="height: 150px;" required placeholder="Give an example of a practical solution and the benefits you can offer through your coaching. Please keep in mind that at Whoflex Coaching, we value practicality"></textarea>
                                                 <span class="counter-symbols">1000</span>
                                             </fieldset>
                                         </div>
@@ -186,14 +186,16 @@
 
                         <div class="card-header">
                             <div>
-                                <h4 class="card-title ">Promotional Video</h4>
-                                <p>Students who watch a well-made promo video are 5X more likely to enroll in your course. We've seen that statistic go up to 10X for exceptionally awesome videos.</p>
+                                <h4 class="card-title ">Sample Video</h4>
                             </div>
                         </div>
 
                         <div class="card-body">
                             <div class="collapse-deletable w-100">
                                 <div class="del-form-wrap del-form-wrap-block itemChapters">
+                                    <p>
+                                        Add a video that effectively showcases your insights and knowledge to your students. <br> We recommend keeping the video length to no more than three minutes.
+                                    </p>
                                     <div class="input__wrapper">
                                         <input name="file" type="file" id="input__file2" class="input input__file" multiple accept="video/*">
                                         <label for="input__file2" class="input__file-button">
@@ -227,7 +229,6 @@
                             <div class="d-flex justify-content-between">
                                 <a href="./create_coaching_about.html" class="btn btn-lg btn-outline-primary">Previous</a>
                                 <div>
-                                    <button type="button" class="btn btn-lg btn-outline-primary">Draft</button>
                                     <button type="button" class="btn btn-lg btn-outline-primary">Save</button>
                                     <a href="./create_coaching_reviews.html" class="btn btn-lg btn-primary disabled">Submit</a>
                                     <!-- 필수 정보 다 입력하면 우측 하단의 Register 버튼과 좌측 리스트가 활성화되도록, 

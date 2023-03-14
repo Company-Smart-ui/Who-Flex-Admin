@@ -441,18 +441,30 @@ table.dataTable th {
 }
 
 .badge-gold {
-    background-color: #e0b263;
+    background-color: orange;
     color: #fff;
 }
 
 .badge-silver {
-    background-color: #a29e9d;
-    color: #fff;
+    color: #000000; 
+    border: 1px solid #000; 
+    background-color:#fff;
 }
 
 .badge-black {
     background-color: #111;
     color: #fff;
+}
+
+.btn-light-color {
+    color: #333; 
+    border: 1px solid #333; 
+    background-color:#fff;
+}
+
+.btn-light-color:hover {
+    color: #fff;
+    background-color:#333;
 }
 
 /* card */

@@ -122,14 +122,14 @@
             </li>
             <li class=" nav-item">
                 <a href="./create_coaching_samples.html">
-                    <input class="custom-checkbox" type="checkbox" id="samples" name="samples" value="yes">
-                    <span class="menu-title text-truncate" data-i18n="">Samples</span>
+                    <input class="custom-checkbox" type="checkbox" id="showcase" name="showcase" value="yes">
+                    <span class="menu-title text-truncate" data-i18n="">Showcase</span>
                 </a>
             </li>
             <li class=" nav-item">
                 <a href="./create_coaching_reviews.html">
-                    <input class="custom-checkbox" type="checkbox" id="reviews" name="reviews" value="yes">
-                    <span class="menu-title text-truncate" data-i18n="">Reviews</span>
+                    <input class="custom-checkbox" type="checkbox" id="testimonials" name="restimonials" value="yes">
+                    <span class="menu-title text-truncate" data-i18n="">Testimonials</span>
                 </a>
             </li>
             <li class="">
@@ -151,14 +151,17 @@
             <section>
                 <div class="card">
                     <div class="card-header">
-                        <h2>Details</h2>
-                        <div>*Required</div>
+                        <div>
+                            <h2>Details</h2>
+                            <p>Enhance your coaching profile by providing basic information about your practice.</p>
+                        </div>
+                        <div style="font-size: 18px;">*Required</div>
                     </div>
 
                     <div class="card-header">
                         <div class="form-group counter-symbols-wrap">
                             <h4 class="card-title mb-2">Title*</h4>
-                            <input type="text" class="form-control" id="as-title" name="as-title" maxlength="70" onkeyup="countLetters();" placeholder="Enter a title">
+                            <input type="text" class="form-control" id="as-title" name="as-title" maxlength="70" onkeyup="countLetters();" placeholder="Enter your coaching title">
                             <span class="counter-symbols">70</span>
                         </div>
                     </div>
@@ -170,7 +173,7 @@
                                 Select the class where this coaching belongs. Think about which class this fits best or where it will improve student's learning experience.
                             </p>
                             <select name="Class tag" class="form-control" style="width: 50%;">
-                                <option selected>Select Class</option>
+                                <option selected>Select class</option>
                                 <option value="Class 01">Class 01</option>
                                 <option value="Class 02">Class 02</option>
                                 <option value="Class 04">Class 03</option>
@@ -183,8 +186,7 @@
                         <div class="form-group mb-0">
                             <h4 class="card-title mb-2">Thumbnail</h4>
                             <div class="text-more ">
-                                <p class="d-inline">Select or upload a picture that shows what's in your video. A good thumbnail stands out and draws viewer's attention.<span id="dots">...</span><span id="more"> Text lorem ... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eius expedita id omnis, porro saepe! Ipsum iusto molestiae nisi vel? Ab atque aut autem commodi consectetur consequatur debitis deserunt dicta distinctio dolorum eligendi eveniet harum illum, inventore ipsa iusto laborum magnam mollitia neque nesciunt nisi nulla numquam officiis pariatur perspiciatis placeat quasi qui ratione sapiente sunt tempore ullam voluptas voluptatum. Corporis dolorem est eum fugit laborum natus, necessitatibus optio porro quidem quod similique ullam velit voluptates. Amet aut beatae corporis dolor dolorum error eveniet excepturi, exercitationem facere impedit, inventore nisi nobis odit omnis quidem repudiandae saepe suscipit velit voluptas voluptates?</span></p>
-                                <button class="learnMore" onclick="learnMoreF()">Learn more</button>
+                                <p class="d-inline">Choose or upload an image that represents the essence of your class. A well-designed thumbnail can help your class stand out and attract the attention of potential students.</p>
                             </div>
 
                             <div class="input__wrapper">
@@ -218,7 +220,6 @@
                         <div class="d-flex justify-content-between">
                             <a href="./classes.html" class="btn btn-lg btn-outline-primary">Previous</a>
                             <div>
-                                <button type="button" class="btn btn-lg btn-outline-primary">Draft</button>
                                 <button type="button" class="btn btn-lg btn-outline-primary">Save</button>
                                 <a href="./create_coaching_products.html" class="btn btn-lg btn-primary">Continue</a>
                             </div>

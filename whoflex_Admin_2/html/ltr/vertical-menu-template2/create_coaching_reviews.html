@@ -120,14 +120,14 @@
                 </li>
                 <li class=" nav-item">
                     <a href="./create_coaching_samples.html">
-                        <input class="custom-checkbox" checked type="checkbox" id="samples" name="samples" value="yes">
-                        <span class="menu-title text-truncate" data-i18n="">Samples</span>
+                        <input class="custom-checkbox" checked type="checkbox" id="showcase" name="showcase" value="yes">
+                        <span class="menu-title text-truncate" data-i18n="">Showcase</span>
                     </a>
                 </li>
                 <li class=" nav-item">
                     <a href="./create_coaching_reviews.html">
-                        <input class="custom-checkbox" checked type="checkbox" id="reviews" name="reviews" value="yes">
-                        <span class="menu-title text-truncate" data-i18n="">Reviews</span>
+                        <input class="custom-checkbox" checked type="checkbox" id="testimonials" name="testimonials" value="yes">
+                        <span class="menu-title text-truncate" data-i18n="">Testimonials</span>
                     </a>
                 </li>
                 <li class="">
@@ -150,17 +150,17 @@
                     <div class="card">
                         <div class="card-header">
                             <div>
-                                <h2>Reviews</h2>
-                                <p>Add what people saying about your knowledge and insight and help your students to learn  more about your coaching</p>
+                                <h2>Testimonials</h2>
+                                <p>Showcase your coaching expertise by including testimonials that highlight your knowledge, insights, and achievements.</p>
                             </div>
                         </div>
                         <div class="card-body">
                             <div class="collapse-deletable w-100 ">
-                                <div class="coaching-reviews w-65-200 mb-2">
+                                <div class="coaching-reviews w-65-200 mb-3">
                                     <div class="d-flex align-items-center">
                                         <div>Reviews <span class="reviews-numb"></span></div>
                                         <div class="del-btn-wrap ml-1">
-                                            <button class="btn btn-icon btn-light rounded-circle text-nowrap px-1 removeReviews" data-repeater-delete="" type="button">
+                                            <button class="btn btn-icon btn-light rounded-circle removeReviews" data-repeater-delete="" style="width: 40px; height: 40px;" type="button">
                                                 <i class="bx bx-x"></i>
                                             </button>
                                         </div>
@@ -169,22 +169,22 @@
                                     <div class="d-flex align-items-end">
                                         <div class="form-group w-50">
                                             <label class="form-label" for="">Name</label>
-                                            <input type="text" class="form-control mr-1" placeholder="Title">
+                                            <input type="text" class="form-control mr-1" placeholder="Enter reviewer's name">
                                         </div>
                                         <div class="form-group ml-3 w-50">
                                             <label class="form-label" for="">Job title</label>
-                                            <input type="text" class="form-control mr-1" placeholder="Title">
+                                            <input type="text" class="form-control mr-1" placeholder="Enter reviewer's occupation">
                                         </div>
                                     </div>
                                     <div class="">
-                                        <label class="form-label">Upload reviewer's photo</label>
+                                        <label class="form-label">PHOTO (OPTIONAL)</label>
                                         <div class="wrapVideos">
                                             <div class="del-row mb-1">
                                                 <div class="w-xxl-75 d-flex position-relative">
                                                     <div class="custom-file ">
                                                         <input type="file" class="custom-file-input" id="cusFile01" multiple accept="image/*">
                                                         <label class="custom-file-label" for="cusFile01">
-                                                            Choose profile pic
+                                                            Upload reviewer's picture
                                                             <button>Browse</button>
                                                         </label>
                                                         <button class="class_delete d-none" type="button">
@@ -201,8 +201,8 @@
                                         <div>
                                             <fieldset style="position: relative; width: 92%;">
                                                 <label class="form-label" for="">Details</label>
-                                                <textarea class="form-control" id="basicTextarea" rows="10" maxlength="300" onkeyup="countLetters();" style="height: 100px;" required placeholder="Feedbacks from your coaching or any other appreciation on your work or knowledge"></textarea>
-                                                <span class="counter-symbols">300</span>
+                                                <textarea class="form-control" id="basicTextarea" rows="10" maxlength="500" onkeyup="countLetters();" style="height: 100px;" required placeholder="Share detailed reviews and examples to help your students learn more about your coaching"></textarea>
+                                                <span class="counter-symbols">500</span>
                                             </fieldset>
                                         </div>
                                         <!-- </form> -->
@@ -213,7 +213,7 @@
 
                             <div class="form-group mt-2">
                                 <div class="col p-0">
-                                    <button class="btn btn-outline-primary addChapter" data-repeater-create="" type="button">
+                                    <button class="btn btn-primary addChapter" data-repeater-create="" type="button">
                                         <i class="bx bx-plus"></i>
                                         Review
                                     </button>
@@ -226,7 +226,6 @@
                             <div class="d-flex justify-content-between">
                                 <a href="./create_coaching_samples.html" class="btn btn-lg btn-outline-primary">Previous</a>
                                 <div>
-                                    <button type="button" class="btn btn-lg btn-outline-primary">Draft</button>
                                     <button type="button" class="btn btn-lg btn-outline-primary">Save</button>
                                     <a href="#" class="btn btn-lg btn-primary">Continue</a>
                                 </div>
@@ -286,7 +285,7 @@
                    let buttons = this.previousElementSibling.previousElementSibling;
                    buttons.value = "";
                    this.previousElementSibling.innerHTML =  `
-                        Choose profile pic
+                        Upload reviewer's picture
                         <button>Browse</button>
                    `;
                    this.classList.add("d-none");
@@ -348,11 +347,11 @@
                 addAccItem.className = 'coaching-reviews  mb-2 ';
                 addAccItem.innerHTML =  `
                                     <hr>
-                                    <div class=" w-65-200 mb-2">
+                                    <div class=" w-65-200 mb-2 mt-3">
                                     <div class="d-flex align-items-center">
                                         <div>Reviews <span class="reviews-numb"></span> </div>
                                         <div class="del-btn-wrap ml-1">
-                                            <button class="btn btn-icon btn-light rounded-circle text-nowrap px-1 removeReviews" data-repeater-delete="" type="button">
+                                            <button class="btn btn-icon btn-light rounded-circle removeReviews" data-repeater-delete="" style="width: 40px; height: 40px;" type="button">
                                                 <i class="bx bx-x"></i>
                                             </button>
                                         </div>
@@ -376,7 +375,7 @@
                                                     <div class="custom-file ">
                                                         <input type="file" class="custom-file-input" id="cusFile01" multiple accept="image/*">
                                                         <label class="custom-file-label" for="cusFile01">
-                                                            Choose profile pic
+                                                            Upload reviewer's picture
                                                             <button>Browse</button>
                                                         </label>
                                                         <button class="class_delete d-none" type="button">
@@ -392,8 +391,8 @@
                                         <div>
                                             <fieldset style="position: relative; width: 92%;">
                                                 <label class="form-label" for="">Details</label>
-                                                <textarea class="form-control" id="basicTextarea" rows="10" maxlength="300" onkeyup="countLetters();" style="height: 100px;" required placeholder="Feedbacks from your coaching or any other appreciation on your work or knowledge"></textarea>
-                                                <span class="counter-symbols">300</span>
+                                                <textarea class="form-control" id="basicTextarea" rows="10" maxlength="500" onkeyup="countLetters();" style="height: 100px;" required placeholder="Share detailed reviews and examples to help your students learn more about your coaching"></textarea>
+                                                <span class="counter-symbols">500</span>
                                             </fieldset>
                                         </div>
                                         <!-- </form> -->

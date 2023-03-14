@@ -526,7 +526,7 @@ select.select-light-white~.select2-container .select2-selection--multiple .selec
 /* ------ */
 
 .badge.badge-black {
-    background-color: #000000;
+    background-color: #5aee94;
 }
 
 .badge.badge-light-black {
@@ -3248,6 +3248,10 @@ input:focus~.bg-secondary {
 
 .badge.badge-requested {
     background-color:#5aee94;
+}
+
+.badge-light-blue {
+    background-color: #5A8DEE;
 }
 
 .badge.badge-light-secondary {
