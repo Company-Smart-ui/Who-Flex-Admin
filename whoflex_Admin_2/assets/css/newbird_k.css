@@ -1506,16 +1506,8 @@ html .newclss_crt_cont.content.app-content {
     margin-left: auto;
 }
 
-.settings-modal-close .modal-close-line {
-    width: 22px;
-    height: 1.4px;
-    background: #636262;
-    transform: rotate(40deg);
-}
-
-.settings-modal-close .modal-close-line:last-child {
-    transform: rotate(-40deg);
-    margin: -0.6px;
+.settings-modal-close g {
+    fill: #777777;
 }
 
 .settings-card-title {

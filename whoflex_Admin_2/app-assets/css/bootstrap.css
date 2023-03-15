@@ -3994,12 +3994,13 @@ input[type="button"].btn-block {
     left: 0;
     z-index: 1;
     height: 38px;
+    font-size: 1rem;
     text-transform: initial;
     padding: 0.65rem 0.8rem;
     overflow: hidden;
     font-weight: 400;
     line-height: 1.4;
-    color: #475F7B;
+    color: #9a9a9a;
     background-color: #FFFFFF;
     border: 1px solid #DFE3E7;
     border-radius: 0.267rem;
