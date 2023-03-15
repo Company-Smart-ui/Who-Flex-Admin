@@ -149,7 +149,7 @@
                 <section>
                     <div class="card">
                         <div class="card-header">
-                            <div>
+                            <div style="width: 81%;">
                                 <h2>About</h2>
                                 <p>Describe the practical benefits of your coaching that will help students solve their problems and achieve their goals.</p>
                             </div>
@@ -172,7 +172,7 @@
                                 <a href="./create_coaching_products.html" class="btn btn-lg btn-outline-primary">Previous</a>
                                 <div>
                                     <button type="button" class="btn btn-lg btn-outline-primary">Save</button>
-                                    <a href="./create_coaching_samples.html" class="btn btn-lg btn-primary disabled">Submit</a>
+                                    <a href="./create_coaching_samples.html" class="btn btn-lg btn-primary">Submit</a>
                                     <!-- 필수 정보 다 입력하면 우측 하단의 Register 버튼과 좌측 리스트가 활성화되도록, 
                                         register :: class="disabled"제거 -->
                                 </div>
@@ -229,6 +229,22 @@
     <!-- BEGIN: Page JS-->
     <script src="../../../app-assets/js/scripts/forms/form-repeater.js"></script>
     <!-- END: Page JS-->
+
+
+    <script>
+        // function count for text
+            const countWrap = document.querySelectorAll(".counter-symbols-wrap");
+
+        function countLetters(){
+            countWrap.forEach(item => {
+                const count = item.querySelector(".counter-symbols");
+                const textarea = item.querySelector(".form-control");
+                const maxLength = textarea.maxLength;
+                const textLength = textarea.value.length;
+                count.innerText = maxLength - textLength;
+            })
+        }
+    </script>
 
 </body>
 <!-- END: Body-->

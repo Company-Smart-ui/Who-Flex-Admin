@@ -2297,6 +2297,10 @@ input[type=number]::-webkit-outer-spin-button {
     background-color: #3d5f9f;
     text-transform: uppercase;
 }
+ 
+.badge-navy-blue {
+    background-color: #0e3072;
+}
 
 .badge.badge-up {
     /* badge-up - To align badge over any element */

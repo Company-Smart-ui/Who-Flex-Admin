@@ -3994,6 +3994,7 @@ input[type="button"].btn-block {
     left: 0;
     z-index: 1;
     height: 38px;
+    text-transform: initial;
     padding: 0.65rem 0.8rem;
     overflow: hidden;
     font-weight: 400;
@@ -10865,6 +10866,7 @@ a.text-dark:focus {
 
 .text-reset {
     color: inherit !important;
+    text-transform: inherit;
 }
 
 .visible {
