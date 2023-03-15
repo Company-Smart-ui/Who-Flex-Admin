@@ -607,6 +607,58 @@
     </footer>
     <!-- END: Footer-->
 
+
+
+    <div id="settingsModal" class="settings-modal">
+        <div class="settings-card">
+            <button type="button" class="settings-modal-close">
+                <div class="modal-close-line"></div>
+                <div class="modal-close-line"></div>
+            </button>
+            <div class="settings-card-title">Time Away</div>
+            <p class="settings-card-text">
+                If you need to take a break or won't be able to process coaching requests as usual, you can activate the 'Time Away' mode. Please note that any pending coaching requests must be completed before activating this mode.
+            </p>
+            <p class="settings-card-text">
+                To temporarily pause sales and activate the 'Time Away' mode, simply swith the toggle to the 'on' position
+            </p>
+            <div class="settings-input">
+                <span>Classic</span>
+                <div class="settings-checkbox">
+                    <input type="checkbox" >
+                </div>   
+            </div>
+            <div class="settings-input">
+                <span>Video</span>
+                <div class="settings-checkbox">
+                    <input type="checkbox" >
+                </div>   
+            </div>
+            <div class="settings-input">
+                <span>Classic</span>
+                <div class="settings-checkbox">
+                    <input type="checkbox" >
+                </div>   
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        const settingsButton = document.querySelector('.class_settings');
+        const settingsModal = document.getElementById('settingsModal');
+        const settingsModalClose =  document.querySelector('.settings-modal-close');
+        settingsButton.addEventListener('click', function (){
+            settingsModal.classList.toggle('active');
+        })
+
+        settingsModalClose.addEventListener('click', function (){
+            settingsModal.classList.toggle('active');
+        })
+
+
+    </script>
+
     <!--  removing Classes  -->
     <script>
         const classDeleteBtn = document.querySelectorAll('.class_delete');

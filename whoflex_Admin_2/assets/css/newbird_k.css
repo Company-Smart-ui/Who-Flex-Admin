@@ -1467,3 +1467,110 @@ html .newclss_crt_cont.content.app-content {
     background-color: #f2f2f2;
     border-radius: 10px;
 }
+
+
+/* Settings Modal */
+
+.settings-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(0 0 0 / 79%);
+    height: 100%;
+    z-index: 9999;
+}
+
+.settings-modal.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.settings-card {
+    background: #Fff;
+    border-radius: 10px;
+    padding: 20px 30px;
+    max-width: 670px;
+    width: 100%;
+    font-weight: 500;
+    color: #353535;
+}
+
+.settings-modal-close {
+    background: transparent;
+    border: none;
+    height: 30px;
+    display: block;
+    margin-left: auto;
+}
+
+.settings-modal-close .modal-close-line {
+    width: 22px;
+    height: 1.4px;
+    background: #636262;
+    transform: rotate(40deg);
+}
+
+.settings-modal-close .modal-close-line:last-child {
+    transform: rotate(-40deg);
+    margin: -0.6px;
+}
+
+.settings-card-title {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.settings-input {
+    display: flex;
+    justify-content: space-between;
+    max-width: 300px;
+    margin: 30px auto;
+    align-items: center;
+}
+
+.settings-checkbox {
+    width: 60px;
+}
+
+.settings-checkbox input {
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    background: gainsboro;
+    -webkit-appearance: none;
+    height: 25px;
+    background: #efefef;
+    outline: none;
+    border-radius: 30px;
+    box-shadow: inset 0px 0px 4px 1px rgba(0, 0, 0, 0.08);
+    transition: 0.5s;
+}
+
+.settings-checkbox input[type="checkbox"]:checked{
+    background:#5A8DEE;
+}
+    
+.settings-checkbox input[type="checkbox"]:before{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: -2px;
+    background: #fff;
+    box-shadow: 0px 1px 6px 1px gainsboro;
+    border-radius: 50%;
+    top: 0px;
+    transform: scale(1.1);transition: 0.5s;
+}
+
+.settings-checkbox input[type="checkbox"]:checked:before{
+    left:40px;
+}
+
+.settings-input span {
+    font-size: 17px;
+}
