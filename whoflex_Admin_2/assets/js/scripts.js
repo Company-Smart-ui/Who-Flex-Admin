@@ -252,4 +252,49 @@ $('.edit-field').click(function() {
 
 
 
+// changing password (on the account settings page)
+$(".edit-password").click(function() {
+    $(this).hide();
+    $(this).prev().hide();
+    $(".password-edit-block").removeClass("d-none");
+});
+
+// changing name (on the account settings page)
+
+function editNamaAndLastName() {
+    $(".edit-name").toggle();
+    $("#editNamaAndLastName, #editName, #editName, #editLastName, .name-edit-btn").toggle();
+    const editName = $("#editName").val();
+    const editLastName = $("#editLastName").val();
+    $("#editNamaAndLastName").val(editName +" "+ editLastName);
+
+   
+}
+$(".edit-name, .name-edit-btn").click(function(e) {
+    editNamaAndLastName();
+});
+
+$(".name-edit-btn").click(function(e) {
+    $(".save-change-block").css({'display':'flex'});
+});
+
+
+// change email  (on the account settings page)
+
+$(".edit-mail").click(function() {
+    $(this).hide();
+    $('#editEmail').hide();
+    $(".email-edit-block").show();
+});
+
+
+$(".email-save-btn").click(function() {
+    $(".email-password-block").hide();
+    $(".edit-mail, #editEmail").show();
+    $("#editEmail").val($("#newEmail").val());
+    $(".save-change-block").css({'display':'flex'});
+});
+
+
+
 })(window);

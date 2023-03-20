@@ -167,14 +167,14 @@
 						<span class="badge badge-light-primary badge-pill badge-round float-right mr-50 ml-auto">2</span>
 					</a>
 					<ul class="menu-content">
-						<li class="active">
+						<li>
 							<a class="d-flex align-items-center" href="./author_profile.html">
 								<i class="bx bx-right-arrow-alt"></i>
 								<span class="menu-item text-truncate" data-i18n="Author Profile">Author Profile</span>
 								<span class="badge badge-light-primary badge-pill badge-round float-right mr-50 ml-auto">2</span>
 							</a>
 						</li>
-						<li>
+						<li class="active">
 							<a class="d-flex align-items-center" href="./account_settings.html">
 								<i class="bx bx-right-arrow-alt"></i>
 								<span class="menu-item text-truncate" data-i18n="Account Settings">Account Settings</span>
@@ -318,279 +318,113 @@
                                 <div id="" class="card-header collapsed" style="padding-bottom: 0;font-size: 1.2rem;border-bottom: 1px transparent!important;" data-target="#profile02"
                                     aria-expanded="false" aria-controls="profile02" role="tablist">
                                     <span class="collapse-title">
-                                        <span class="align-middle">Author profile
+                                        <span class="align-middle">Account Settings
                                         </span>
                                     </span>
-                                    <div style="font-size: 16px;padding-right: 40px;">*Required</div>
+                                </div>
+                                <div class="save-change-block p-2 border rounded m-2 w-50" style="display: none; box-shadow: inset 0px 0px 7px 0px #58d518;">
+                                    <div class="save-change-icon mr-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24px" height="24px" fill="#459e1b"><path fill-rule="#5A8DEE" d="M 22.59375 3.5 L 8.0625 18.1875 L 1.40625 11.5625 L 0 13 L 8.0625 21 L 24 4.9375 Z"/></svg>
+                                    </div>
+                                    <div class="save-change-content">
+                                        <div class="save-change-title" style="color:#5A8DEE;">Success</div>
+                                        <div class="save-change-text">
+                                            You have successfully modified your account!
+                                        </div>
+                                    </div>
                                 </div>
 
                                 <div id="profile02" class="card-content collapse show">
                                     <div class="card-body pt-2">
                                         <div role="tabpanel" class="tab-pane active" id="account-vertical-general"
                                             aria-labelledby="account-pill-general" aria-expanded="true">
-                                            <div class="media">
-                                                <a href="javascript: void(0);" class="profile_img">
-                                                    <img src="../../../app-assets/images/portrait/small/avatar-s-16.jpg"
-                                                        class="rounded mr-75" alt="profile image" height="64"
-                                                        width="64">
-                                                </a>
-                                                <div class="media-body mt-25">
-                                                    <div class="col-12 px-0 d-flex justify-content-start">
-                                                        <label for="select-files"
-                                                            class="btn btn-sm btn-primary ml-50  mb-sm-0">
-                                                            <span>Upload new photo</span>
-                                                            <input id="select-files" type="file" hidden="">
-                                                        </label>
-                                                    </div>
-                                                    <p class="text-muted ml-1 mt-50"><small>Upload an image no larger
-                                                            than 2 MB in JPG, PNG, or GIF format</small></p>
-                                                </div>
-                                            </div>
-                                            <hr>
                                             <form class="validate-form" novalidate="novalidate">
                                                 <div class="row">
-                                                    <div class="col-xl-6">
-                                                        <div class="form-group">
+                                                    <div class="col-12">
+                                                        <div class="form-group" style="width: 57%;">
                                                             <div class="controls">
-                                                                <label>Instructor name*</label>
-                                                                <div class="d-flex">
-                                                                    <input type="text" class="form-control"
-                                                                        placeholder="Enter your instructor name for Whoflex. You can use your nikname or any name you go by"
-                                                                        name="instructor-name">
+                                                                <label>Name</label>
+                                                                <div class="form-body d-flex edit-input-block">
+                                                                    <input type="text" id="editNamaAndLastName" class="form-control" placeholder="Sarah Blakely" readonly>
+                                                                    <input type="text" id="editName" class="form-control" style="display: none;" placeholder="Sarah">
+                                                                    <input type="text" id="editLastName" class="form-control  ml-1" style="display: none;" placeholder="Blakely">
+                                                                    <button type="button" class="btn edit-name">
+                                                                        <img width="18" src="../../../app-assets//images/pages/before_modification_btn.png" alt="edit">
+                                                                    </button>
+                                                                    
+                                                                </div> 
+                                                            </div>
+                                                            <button type="button"class="name-edit-btn btn btn-primary" style="display: none;">Save changes</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="form-group" style="width: 57%;">
+                                                            <div class="controls">
+                                                                <label>Email</label>
+                                                                <div class="form-body d-flex">
+                                                                    <input type="text" class="form-control" id="editEmail" placeholder="sarah_blakely@gmail.com" readonly>
+                                                                    <button type="button" class="btn edit-mail">
+                                                                        <img width="18" src="../../../app-assets//images/pages/before_modification_btn.png" alt="edit">
+                                                                    </button>
+                                                                </div> 
+                                                                <div class="email-edit-block p-2 border rounded" style="width: 90%; display: none;">
+                                                                    <label class="password-edit-label mb-1" style="display: block;">Enter new email address</label>
+                                                                    <input class="form-control" id="newEmail" type="email" >
+                                                                    <button type="button"  onclick="openModalSendCode()" class="email-edit-btn btn btn-primary mt-2">Continue</button>
+                                                                </div>
+                                                                <div class="email-password-block p-2 border rounded" style="width: 90%; display: none;">
+                                                                    <label class="password-edit-label mb-1" style="display: block;">We've sent a One Time Password (OTP) to your email address. Please enter it below.</label>
+                                                                    <input class="form-control" type="text" >
+                                                                    <button type="button" class="email-save-btn btn btn-primary mt-2">Save changes</button>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-xl-6">
-                                                        <div class="form-group">
-                                                            <div class="controls">
-                                                                <label>Job title*</label>
-                                                                <input type="text" class="form-control"
-                                                                        placeholder="Please explain your work" 
-                                                                        name="job-title">
-                                                            </div>
-                                                        </div>
-                                                    </div>
                                                     <div class="col-12">
-                                                        <div class="form-group">
+                                                        <div class="form-group" style="width: 57%;">
                                                             <div class="controls">
-                                                                <label>About the Author *</label>
-                                                                <fieldset style="position: relative; width: 100%;">
-                                                                     <textarea class="form-control" maxlength="1000" rows="5" placeholder="Introduce yourself to students so they can understand you and your work"></textarea>
-                                                                    <span class="counter-symbols">1000</span>
-                                                                </fieldset>
-                                                               
+                                                                <label>Password</label>
+                                                                <div class="form-body d-flex">
+                                                                    <input type="password" class="form-control" id="settingsPassword" placeholder="********" readonly>
+                                                                    <button type="button" class="btn edit-password">
+                                                                        <img width="18" src="../../../app-assets//images/pages/before_modification_btn.png" alt="edit">
+                                                                    </button>
+                                                                </div> 
+                                                                <div class="password-edit-block p-2 border rounded d-none" style="width: 90%;">
+                                                                    <div class="password-edit-title mb-2">
+                                                                        Password must be at least 6 characters
+                                                                    </div>
+                                                                    <form action="#" class="password-edit-form" >
+                                                                        <div class="password-edit-input mb-2" style="width: 65%;">
+                                                                            <label class="password-edit-label mb-1" style="display: block;">Current password</label>
+                                                                            <input class="form-control" id="oldPass" type="password" style="display: none;"  required>
+                                                                            <input type="text" class="password-wrap form-control" onkeyup="repeatPass(this)" data-sign="∗">
+                                                                        </div>
+                                                                        <div class="password-edit-input mb-2" style="width: 65%;">
+                                                                            <label class="password-edit-label mb-1" style="display: block;">New password</label>
+                                                                            <input class="form-control newPassword" id="newPass" onkeyup="resetPass(this)" type="password" style="display: none;"  required>
+                                                                            <input type="text" class="password-wrap form-control newPassword" onkeyup="resetPass(this)" data-sign="∗">
+
+                                                                            <span class="error-message d-none" id="newPass-error-message" style="color:red;">Password must be at least 6 characters.</span>
+                                                                        </div>
+                                                                        <div class="password-edit-input mb-2" style="width: 65%;">
+                                                                            <label class="password-edit-label mb-1" style="display: block;">Reenter new password</label>
+                                                                            <input class="form-control"  type="password" style="display: none;" id="confirmNewPass" required>
+                                                                            <input type="text" class="password-wrap form-control"   onkeyup="repeatPass(this)" data-sign="∗">
+
+                                                                            <span class="error-message d-none" id="confirmNewPass-error-message" style="color:red;">Passwords must be the same.</span>
+                                                                        </div>
+                                                                        <button type="submit" onclick="comparisonPassword()" class="password-edit-btn btn btn-primary">Save changes</button>
+                                                                    </form>
+                                                                    
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
 
-                                                    <div class="col-12">
-                                                        <div class="form-group">
-                                                            <div class="controls">
-                                                                <label>A Word from the Author *</label>
-                                                                <fieldset style="position: relative; width: 100%;">
-                                                                    <textarea class="form-control"  rows="4" maxlength="200" placeholder="Write your goals or anything you want to say to students here"></textarea>
-                                                                   <span class="counter-symbols">200</span>
-                                                               </fieldset>
-                                                               
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-xl-6">
-                                                        <div class="form-group">
-                                                            <label>Website</label>
-                                                            <input type="text" class="form-control"
-                                                                placeholder="Enter your website address">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-xl-6">
-                                                        <div class="form-group">
-                                                            <label>Twitter</label>
-                                                            <input type="text" class="form-control"
-                                                                placeholder="www.twitter.com/">
-                                                        </div>
-                                                    </div>
                                                 </div>
                                             </form>
                                         </div>
-                                    </div>
-                                </div>
-                                <div id="profile03" class="card-content collapse show">
-                                    <div class="card-body">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <h3 class="resume-title">Resume</h3>
-                                            <div style="font-size: 16px;padding-right: 40px;">*Required</div>
-                                        </div>
-                                        
-                                        <div class="form-title">
-                                            <h4 class="card-title">Experience*</h4>
-                                        </div>
-                                        <div class="authors-wrap">
-                                            <div class="authors-card">
-                                                <div class="authors-block">
-                                                    <div class="">
-                                                        <!-- //라인1 -->
-                                                        <!-- 추가된 라인 1 -->
-                                                        <div class="d-flex del-row">
-                                                            <div class="form-group del-form-wrap form-resume-wrap">
-                                                                <div class="form-resume">
-                                                                    <input type="text" class="form-control mr-1"
-                                                                        placeholder="Company name">
-                                                                    <input type="text" class="form-control" placeholder="Position (e.g. Marketing Manager)">
-                                                                </div>
-                                                                <div class="form-resume mt-1">
-                                                                    <div class="date-wrap">
-                                                                        <div class="position-relative has-icon-left">
-                                                                            <input type="text" class="form-control pickadate"
-                                                                                placeholder="Start Date">
-                                                                            <div class="form-control-position">
-                                                                                <i class='bx bx-calendar'></i>
-                                                                            </div>
-                                                                        </div>
-                                                                        <span class="bar">~</span>
-                                                                        <div class="position-relative has-icon-left">
-                                                                            <input type="text" class="form-control pickadate"
-                                                                                placeholder="End Date">
-                                                                            <div class="form-control-position">
-                                                                                <i class='bx bx-calendar'></i>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="form-resume mt-1">
-                                                                    <input type="text" class="form-control" id="" name=""
-                                                                        placeholder="Description">
-                                                                </div>
-                                                            </div>
-                                                            <div class="del-btn-wrap">
-                                                                <button
-                                                                    class="btn btn-icon btn-light rounded-circle text-nowrap px-1 authors-delete"
-                                                                    data-repeater-delete="" type="button">
-                                                                    <i class="bx bx-x"></i>
-                                                                </button>
-                                                            </div>
-                                                        </div>
-                                                        <!-- //추가된 라인 1 -->    
-            
-                                                    </div>
-                                                </div>
-                                                
-                                            </div>
-
-                                            <div class="form-group">
-                                                <button class="btn btn-primary experience-btn" data-repeater-create="" type="button"><i
-                                                        class="bx bx-plus"></i>
-                                                    Add
-                                                </button>
-                                                <!-- 버튼 클릭 시, 경험 라인 추가 (삭제가능한 영역으로 추가) -->
-                                            </div>
-                                        </div>
-
-
-                                        <div class="form-title">
-                                            <h4 class="card-title">Skills & Certificates</h4>
-                                        </div>
-
-                                        <div class="authors-wrap">
-                                            <div class="authors-card">
-                                                <div class="authors-block">
-                                                    <div class="">
-                                                        <div class="d-flex del-row">
-                                                            <div class="form-group del-form-wrap">
-                                                                <input type="text" class="form-control" id=""
-                                                                    placeholder="Add any skills or certificates relevant to your field of expertise">
-                                                            </div>
-                                                            <div class="del-btn-wrap">
-                                                                <button
-                                                                    class="btn btn-icon btn-light rounded-circle text-nowrap px-1 authors-delete"
-                                                                    data-repeater-delete="" type="button">
-                                                                    <i class="bx bx-x"></i>
-                                                                </button>
-                                                            </div>
-                                                        </div>
-                                                        
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="form-group mt-2">
-                                                <button class="btn btn-primary skills-btn" data-repeater-create="" type="button"><i
-                                                        class="bx bx-plus"></i>
-                                                    Add
-                                                </button>
-                                            </div>
-                                        </div>
-                                        
-
-                                        <div class="form-title">
-                                            <h4 class="card-title">Education</h4>
-                                        </div>
-                                        <div class="authors-wrap">
-                                            <div class="authors-card">
-                                                <div class="authors-block">
-                                                    <div class="form-body">
-                                                        <div class="d-flex del-row">
-                                                                <div class="form-group del-form-wrap form-resume-wrap">
-                                                                    <div class="form-resume">
-                                                                        <input type="text" style="width: 49%;" class="form-control mr-1"
-                                                                            placeholder="School name (e.g. Boston University)">
-                                                                     
-                                                                    </div>
-                                                                    <div class="form-resume mt-1">
-                                                                        <div class="date-wrap">
-                                                                            <div class="position-relative has-icon-left">
-                                                                                <input type="text" class="form-control pickadate"
-                                                                                    placeholder="Start Date">
-                                                                                <div class="form-control-position">
-                                                                                    <i class='bx bx-calendar'></i>
-                                                                                </div>
-                                                                            </div>
-                                                                            <span class="bar">~</span>
-                                                                            <div class="position-relative has-icon-left">
-                                                                                <input type="text" class="form-control pickadate"
-                                                                                    placeholder="End Date">
-                                                                                <div class="form-control-position">
-                                                                                    <i class='bx bx-calendar'></i>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="form-resume mt-1">
-                                                                        <select name="" id="" class="form-control mr-1">
-                                                                            <option value="">Degree type</option>
-                                                                        </select>
-                                                                        <input type="text" class="form-control" name=""
-                                                                            placeholder="Field of study (e.g. Biology)">
-                                                                    </div>
-                                                                    <div class="form-resume mt-1">
-                                                                        <input type="text" class="form-control" id="" name=""
-                                                                            placeholder="Description">
-                                                                    </div>
-                                                                </div>
-                                                                <div class="del-btn-wrap">
-                                                                    <button
-                                                                        class="btn btn-icon btn-light rounded-circle authors-delete text-nowrap px-1"
-                                                                        data-repeater-delete="" type="button">
-                                                                        <i class="bx bx-x"></i>
-                                                                    </button>
-                                                                </div>
-                                                       
-
-                                                            
-                                                        </div>
-                                                    </div>
-                                                    
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <button class="btn btn-primary education-btn" data-repeater-create="" type="button"><i
-                                                        class="bx bx-plus"></i>
-                                                    Add
-                                                </button>
-                                            </div>
-                                        </div>
-                                       
-
                                     </div>
                                 </div>
                             </div>
@@ -703,6 +537,155 @@
     </footer>
     <!-- END: Footer-->
 
+    <script>
+        const newPassErrorMessage = document.getElementById('newPass-error-message');
+        const newPssword = document.querySelectorAll('.newPassword');
+        const oldPssword = document.getElementById('oldPass');
+        const settingsPassword = document.getElementById('settingsPassword');
+        const confirmNewPassInput = document.getElementById('confirmNewPass');
+        const confirmNewPassErrorMessage = document.getElementById('confirmNewPass-error-message');
+        const newPassInput = document.getElementById('newPass');
+        
+
+        // START Validating fields
+        function resetPass(e){
+            e.addEventListener('change', function(){
+                if (e.value.length < 6) {
+                    newPassErrorMessage.classList.remove('d-none');
+                    newPssword.forEach(input => {
+                        input.style.border = "1px solid #ea4335";
+                    });
+                    
+                };
+            })
+
+            e.addEventListener('input', function(){
+                if (e.value.length >= 6) {
+                    newPssword.forEach(input => {
+                        input.style.border = "1px solid #e0c463";
+                    });
+                    newPassErrorMessage.classList.add('d-none'); 
+                } 
+            })
+        }
+
+        function repeatPass(e) {
+            if (e.value.length >= 6) {
+                e.style.border = "1px solid #e0c463";
+            } else {
+                e.style.border = "1px solid #c7c7c7";
+            }
+        }
+
+        // END Validating fields
+
+
+        // Email validation
+        const resendEmail = document.querySelector('#newEmail');
+        function openModalSendCode(){
+            const filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+            if (!filter.test(resendEmail.value)) {
+                resendEmail.style.border = "1px solid #ea4335";
+                resendEmail.focus();
+                return false;
+            } else{
+                document.querySelector(".email-edit-block").style.display = "none";
+                document.querySelector(".email-password-block").style.display = "block";
+            }
+        }
+
+
+
+        // This is a field mask. So that instead of the standard asterisks, there are custom icons on all devices
+        function Mask() {
+            let inputMask = document.querySelectorAll(".password-wrap");
+            
+            inputMask.forEach(search => {
+                let password = search.previousElementSibling;
+            
+                password.addEventListener("input", function() {
+                    search.value = password.value;
+                    let sign = search.dataset.sign;
+
+                    search.value = search.value.replace(/[\s\S]/g, sign);
+                });
+
+                search.addEventListener("input", function() {
+                    let password = search.previousElementSibling;
+                    let passwordString = "";
+                    let del;
+                    let sign = search.dataset.sign;
+                
+                    if(password.value.length < search.value.length){
+                        password.value = password.value + search.value[search.value.length - 1];
+                        passwordString = password.value;
+                    } else{
+                        del = password.value.length - search.value.length;
+                        passwordString = password.value;
+                        passwordString = passwordString.substring(0, String(passwordString).length - (del));
+                        password.value = passwordString;
+                    }
+
+                    search.value = search.value.replace(/[\s\S]/g, sign);
+                });
+            });
+            
+        }Mask();
+
+
+        // When submitting the form, check that all the fields are correct
+        function comparisonPassword() {
+            event.preventDefault();
+
+            if(newPassInput.value === confirmNewPassInput.value && newPassInput.value.length >= 6 && oldPssword.value.length >= 6 ){
+                confirmNewPassInput.nextElementSibling.style.border = "1px solid #e0c463";
+                confirmNewPassErrorMessage.classList.add('d-none');
+
+                // Here you should write what should happen after you successfully complete the form.
+
+                settingsPassword.value = newPassInput.value;
+
+                document.querySelector(".password-edit-block").classList.add('d-none');
+                settingsPassword.style.display = "block";
+                settingsPassword.nextElementSibling.style.display = "block";
+
+                document.querySelector(".save-change-block").style.display = "flex";
+
+            } else{
+                fieldVerification();
+            }
+            
+        };
+
+        function fieldVerification() {
+            if(newPassInput.value !== confirmNewPassInput.value) {
+                confirmNewPassInput.nextElementSibling.focus();
+                confirmNewPassErrorMessage.classList.remove('d-none');
+                confirmNewPassInput.nextElementSibling.style.border = "1px solid #ea4335";
+            }    
+            if(confirmNewPassInput.value === ""){
+                confirmNewPassInput.nextElementSibling.focus();
+            }
+            if(newPassInput.value === ""){
+                newPassInput.focus();
+            }
+            if(oldPssword.value.length < 6 || oldPssword.value === ""){
+                oldPssword.nextElementSibling.focus();
+            }
+            if(confirmNewPassInput.value.length < 6 && confirmNewPassInput.value !== ""){
+                confirmNewPassErrorMessage.classList.remove('d-none');
+                confirmNewPassInput.nextElementSibling.style.border = "1px solid #ea4335";
+            }
+            confirmNewPassInput.addEventListener('keyup', function(){
+                if(confirmNewPassInput.value === newPassInput.value){
+                    confirmNewPassErrorMessage.classList.add('d-none');
+                    confirmNewPassInput.nextElementSibling.style.border = "1px solid #dddddd";
+                }
+            })
+        }
+
+    </script>
+
 
     <!-- BEGIN: Vendor JS-->
     <script src="../../../app-assets/vendors/js/vendors.min.js"></script>
@@ -734,7 +717,6 @@
     <!-- BEGIN: Page JS-->
     <script src="../../../assets/js/scripts.js"></script>
     <script src="../../../app-assets/js/scripts/forms/form-repeater.js"></script>
-    <script src="../../../app-assets/js/scripts/pickers/dateTime/pick-a-datetime.js"></script>
     <!-- END: Page JS-->
 
 </body>
