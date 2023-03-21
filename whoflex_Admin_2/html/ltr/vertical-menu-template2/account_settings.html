@@ -404,8 +404,8 @@
                                                                         <div class="password-edit-input mb-2" style="width: 65%;">
                                                                             <label class="password-edit-label mb-1 text-reset" style="display: block;">Current password</label>
                                                                             <input class="form-control" id="oldPass" type="password" style="display: none;"  required>
-                                                                            <input type="text" class="password-wrap form-control" onclick="vlidPass(this)" data-sign="∗">
-                                                                            <span class="d-none" style="color:red;">Password must be at least 6 characters.</span>
+                                                                            <input type="text" class="password-wrap form-control" onclick="vlidOldPass(this)" data-sign="∗">
+                                                                            <span class="d-none password-edit-error" style="color:red;">Password must be at least 6 characters.</span>
                                                                         </div>
                                                                         <div class="password-edit-input mb-2" style="width: 65%;">
                                                                             <label class="password-edit-label mb-1 text-reset" style="display: block;">New password</label>
@@ -418,7 +418,6 @@
                                                                             <label class="password-edit-label mb-1 text-reset" style="display: block;">Reenter new password</label>
                                                                             <input class="form-control"  type="password" style="display: none;" id="confirmNewPass" required>
                                                                             <input type="text" class="password-wrap form-control"   onclick="vlidPass(this)" data-sign="∗">
-                                                                            <span class="d-none" style="color:red;">Password must be at least 6 characters.</span>
                                                                             <span class="error-message d-none" id="confirmNewPass-error-message" style="color:red;">Passwords must be the same.</span>
                                                                         </div>
                                                                         <button type="submit" onclick="comparisonPassword()" class="password-edit-btn btn btn-primary">Save changes</button>
@@ -564,18 +563,36 @@
                 } 
             })
         }
-
+        
         function vlidPass(e) {
             e.addEventListener('input', function(){
                 if (e.value.length >= 6) {
                     e.style.border = "1px solid #e0c463";
-                    e.nextElementSibling.classList.add('d-none'); 
+                };
+
+                if(confirmNewPassInput.value === newPassInput.value){
+                    confirmNewPassErrorMessage.classList.add('d-none');
+                    confirmNewPassInput.nextElementSibling.style.border = "1px solid #dddddd";
+                };
+            });
+            e.addEventListener('blur', function(){
+                if (e.value.length < 6) {
+                    e.style.border = "1px solid #ea4335";
+                }
+            });
+        }
+
+        function vlidOldPass(e) {
+            e.addEventListener('input', function(){
+                if (e.value.length >= 6 || e.value === newPassInput.value) {
+                    e.style.border = "1px solid #e0c463";
+                    document.querySelector(".password-edit-error").classList.add('d-none');
                 }
             });
             e.addEventListener('blur', function(){
                 if (e.value.length < 6) {
                     e.style.border = "1px solid #ea4335";
-                    e.nextElementSibling.classList.remove('d-none'); 
+                    document.querySelector(".password-edit-error").classList.remove('d-none');
                 }
             });
         }
@@ -590,7 +607,7 @@
             if (!filter.test(resendEmail.value)) {
                 resendEmail.style.border = "1px solid #ea4335";
                 resendEmail.focus();
-                resendEmail.addEventListener('inputs', function(){
+                resendEmail.addEventListener('input', function(){
                     if (filter.test(resendEmail.value)) {
                         resendEmail.style.border = "1px solid #e0c463";
                     }
@@ -684,7 +701,7 @@
                 confirmNewPassErrorMessage.classList.remove('d-none');
                 confirmNewPassInput.nextElementSibling.style.border = "1px solid #ea4335";
             }
-            confirmNewPassInput.addEventListener('keyup', function(){
+            confirmNewPassInput.addEventListener('input', function(){
                 if(confirmNewPassInput.value === newPassInput.value){
                     confirmNewPassErrorMessage.classList.add('d-none');
                     confirmNewPassInput.nextElementSibling.style.border = "1px solid #dddddd";
