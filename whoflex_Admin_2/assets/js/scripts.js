@@ -267,17 +267,22 @@ function editNamaAndLastName() {
     const editName = $("#editName").val();
     const editLastName = $("#editLastName").val();
     $("#editNamaAndLastName").val(editName +" "+ editLastName);
+    
 
-   
+    $('.nameChangeBlock').toggleClass('active');
+    if($(".nameChangeBlock").hasClass('active')) {
+        $(".nameChangeBlock").css({'width':'51%'});
+    } else {
+        $(".nameChangeBlock").css({'width':'57%'});
+    }
 }
-$(".edit-name, .name-edit-btn").click(function(e) {
+$(".edit-name, .name-edit-btn").click(function() {
     editNamaAndLastName();
 });
 
-$(".name-edit-btn").click(function(e) {
+$(".name-edit-btn").click(function() {
     $(".save-change-block").css({'display':'flex'});
 });
-
 
 // change email  (on the account settings page)
 
@@ -290,6 +295,11 @@ $(".edit-mail").click(function() {
 
 $(".email-save-btn").click(function() {
     $(".email-password-block").hide();
+    $(".email-enter-block").show();
+});
+
+$(".email-change-btn").click(function() {
+    $(".email-enter-block").hide();
     $(".edit-mail, #editEmail").show();
     $("#editEmail").val($("#newEmail").val());
     $(".save-change-block").css({'display':'flex'});

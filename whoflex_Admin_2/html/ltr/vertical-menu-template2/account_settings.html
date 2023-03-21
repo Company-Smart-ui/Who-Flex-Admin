@@ -112,7 +112,7 @@
                     <ul class="nav navbar-nav float-right">
                         <li class="d-flex align-items-center dropdown dropdown-user nav-item">
                             <a href="http://ec2-52-79-241-249.ap-northeast-2.compute.amazonaws.com/"
-                                class="btn btn-primary" target="_balnk">Homepage</a>
+                                class="btn btn-primary" target="_balnk">Student</a>
                             <a class="dropdown-toggle nav-link dropdown-user-link" href="javascript:void(0);"
                                 data-toggle="dropdown">
                                 <div class="user-nav d-sm-flex d-none">
@@ -341,7 +341,7 @@
                                             <form class="validate-form" novalidate="novalidate">
                                                 <div class="row">
                                                     <div class="col-12">
-                                                        <div class="form-group" style="width: 57%;">
+                                                        <div class="form-group nameChangeBlock" style="width: 57%;">
                                                             <div class="controls">
                                                                 <label>Name</label>
                                                                 <div class="form-body d-flex edit-input-block">
@@ -368,14 +368,20 @@
                                                                     </button>
                                                                 </div> 
                                                                 <div class="email-edit-block p-2 border rounded" style="width: 90%; display: none;">
-                                                                    <label class="password-edit-label mb-1" style="display: block;">Enter new email address</label>
-                                                                    <input class="form-control" id="newEmail" type="email" >
-                                                                    <button type="button"  onclick="openModalSendCode()" class="email-edit-btn btn btn-primary mt-2">Continue</button>
+                                                                    <label class="password-edit-label mb-1 text-reset" style="display: block;">Enter new email address</label>
+                                                                    <input class="form-control"  id="newEmail" type="email" >
+                                                                    <button type="button"  onclick="emailValidation()" class="email-edit-btn btn btn-primary mt-2">Continue</button>
                                                                 </div>
                                                                 <div class="email-password-block p-2 border rounded" style="width: 90%; display: none;">
-                                                                    <label class="password-edit-label mb-1" style="display: block;">We've sent a One Time Password (OTP) to your email address. Please enter it below.</label>
+                                                                    <label class="password-edit-label mb-1 text-reset" style="display: block;">We've sent a One Time Password (OTP) to your email address. Please enter it below.</label>
                                                                     <input class="form-control" type="text" >
-                                                                    <button type="button" class="email-save-btn btn btn-primary mt-2">Save changes</button>
+                                                                    <button type="button" class="email-save-btn btn btn-primary mt-2">Continue</button>
+                                                                </div>
+                                                                <div class="email-enter-block p-2 border rounded" style="width: 90%; display: none;">
+                                                                    <label class="password-edit-label mb-1 text-reset" style="display: block;">Enter your password to confirm email change</label>
+                                                                    <input class="form-control" type="password" style="display: none;"  required>
+                                                                    <input type="text" class="password-wrap form-control" onkeyup="repeatPass(this)" data-sign="∗">
+                                                                    <button type="button" class="email-change-btn btn btn-primary mt-2">Save changes</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -396,22 +402,23 @@
                                                                     </div>
                                                                     <form action="#" class="password-edit-form" >
                                                                         <div class="password-edit-input mb-2" style="width: 65%;">
-                                                                            <label class="password-edit-label mb-1" style="display: block;">Current password</label>
+                                                                            <label class="password-edit-label mb-1 text-reset" style="display: block;">Current password</label>
                                                                             <input class="form-control" id="oldPass" type="password" style="display: none;"  required>
-                                                                            <input type="text" class="password-wrap form-control" onkeyup="repeatPass(this)" data-sign="∗">
+                                                                            <input type="text" class="password-wrap form-control" onclick="vlidPass(this)" data-sign="∗">
+                                                                            <span class="d-none" style="color:red;">Password must be at least 6 characters.</span>
                                                                         </div>
                                                                         <div class="password-edit-input mb-2" style="width: 65%;">
-                                                                            <label class="password-edit-label mb-1" style="display: block;">New password</label>
+                                                                            <label class="password-edit-label mb-1 text-reset" style="display: block;">New password</label>
                                                                             <input class="form-control newPassword" id="newPass" onkeyup="resetPass(this)" type="password" style="display: none;"  required>
                                                                             <input type="text" class="password-wrap form-control newPassword" onkeyup="resetPass(this)" data-sign="∗">
 
                                                                             <span class="error-message d-none" id="newPass-error-message" style="color:red;">Password must be at least 6 characters.</span>
                                                                         </div>
                                                                         <div class="password-edit-input mb-2" style="width: 65%;">
-                                                                            <label class="password-edit-label mb-1" style="display: block;">Reenter new password</label>
+                                                                            <label class="password-edit-label mb-1 text-reset" style="display: block;">Reenter new password</label>
                                                                             <input class="form-control"  type="password" style="display: none;" id="confirmNewPass" required>
-                                                                            <input type="text" class="password-wrap form-control"   onkeyup="repeatPass(this)" data-sign="∗">
-
+                                                                            <input type="text" class="password-wrap form-control"   onclick="vlidPass(this)" data-sign="∗">
+                                                                            <span class="d-none" style="color:red;">Password must be at least 6 characters.</span>
                                                                             <span class="error-message d-none" id="confirmNewPass-error-message" style="color:red;">Passwords must be the same.</span>
                                                                         </div>
                                                                         <button type="submit" onclick="comparisonPassword()" class="password-edit-btn btn btn-primary">Save changes</button>
@@ -430,17 +437,6 @@
                             </div>
                             <!-- END :: 분류 2  -->
                 
-                        </div>
-
-
-                        <div class="form-btns-wrap">
-                            <hr>
-                            <div class=" col-12 d-flex justify-content-end">
-                                <div>
-                                    <button type="button" class="btn btn-lg btn-outline-primary mr-1">Save</button>
-                                    <a href="#" class="btn btn-lg btn-primary disabled">Publish</a>
-                                </div>
-                            </div>
                         </div>
                     </div>
             </div>
@@ -569,12 +565,19 @@
             })
         }
 
-        function repeatPass(e) {
-            if (e.value.length >= 6) {
-                e.style.border = "1px solid #e0c463";
-            } else {
-                e.style.border = "1px solid #c7c7c7";
-            }
+        function vlidPass(e) {
+            e.addEventListener('input', function(){
+                if (e.value.length >= 6) {
+                    e.style.border = "1px solid #e0c463";
+                    e.nextElementSibling.classList.add('d-none'); 
+                }
+            });
+            e.addEventListener('blur', function(){
+                if (e.value.length < 6) {
+                    e.style.border = "1px solid #ea4335";
+                    e.nextElementSibling.classList.remove('d-none'); 
+                }
+            });
         }
 
         // END Validating fields
@@ -582,12 +585,16 @@
 
         // Email validation
         const resendEmail = document.querySelector('#newEmail');
-        function openModalSendCode(){
+        function emailValidation(){
             const filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
             if (!filter.test(resendEmail.value)) {
                 resendEmail.style.border = "1px solid #ea4335";
                 resendEmail.focus();
-                return false;
+                resendEmail.addEventListener('inputs', function(){
+                    if (filter.test(resendEmail.value)) {
+                        resendEmail.style.border = "1px solid #e0c463";
+                    }
+                })
             } else{
                 document.querySelector(".email-edit-block").style.display = "none";
                 document.querySelector(".email-password-block").style.display = "block";
@@ -671,6 +678,7 @@
             }
             if(oldPssword.value.length < 6 || oldPssword.value === ""){
                 oldPssword.nextElementSibling.focus();
+                oldPssword.nextElementSibling.style.border = "1px solid #ea4335";
             }
             if(confirmNewPassInput.value.length < 6 && confirmNewPassInput.value !== ""){
                 confirmNewPassErrorMessage.classList.remove('d-none');

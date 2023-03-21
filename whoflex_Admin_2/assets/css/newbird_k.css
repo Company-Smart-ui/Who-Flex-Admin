@@ -267,8 +267,9 @@ textarea {
 }
 
 .form-control:not(:read-only):focus {
-    border-color: #777 !important;
     color: #888;
+    outline: none;
+    border-color:transparent;
 }
 
 .checkbox label:after {
