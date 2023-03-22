@@ -8686,13 +8686,3 @@ input:focus~.bg-danger {
     background: #ffd3d7;
     background: rgba(255, 211, 215, 0.6);
 }
-
-.password-edit-btn {
-    color: #424242;
-    border-radius: 5px;
-    padding: 5px 20px;
-}
-
-.password-edit-btn:hover {
-    color: #222222;
-}

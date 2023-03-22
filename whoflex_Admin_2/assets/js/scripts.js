@@ -254,8 +254,7 @@ $('.edit-field').click(function() {
 
 // changing password (on the account settings page)
 $(".edit-password").click(function() {
-    $(this).hide();
-    $(this).prev().hide();
+    $(".password-body-wrap").hide();
     $(".password-edit-block").removeClass("d-none");
 });
 
@@ -268,13 +267,6 @@ function editNamaAndLastName() {
     const editLastName = $("#editLastName").val();
     $("#editNamaAndLastName").val(editName +" "+ editLastName);
     
-
-    $('.nameChangeBlock').toggleClass('active');
-    if($(".nameChangeBlock").hasClass('active')) {
-        $(".nameChangeBlock").css({'width':'51%'});
-    } else {
-        $(".nameChangeBlock").css({'width':'57%'});
-    }
 }
 $(".edit-name, .name-edit-btn").click(function() {
     editNamaAndLastName();
@@ -287,8 +279,7 @@ $(".name-edit-btn").click(function() {
 // change email  (on the account settings page)
 
 $(".edit-mail").click(function() {
-    $(this).hide();
-    $('#editEmail').hide();
+    $('.email-body-wrap').hide();
     $(".email-edit-block").show();
 });
 
@@ -300,11 +291,9 @@ $(".email-save-btn").click(function() {
 
 $(".email-change-btn").click(function() {
     $(".email-enter-block").hide();
-    $(".edit-mail, #editEmail").show();
+    $(".email-body-wrap").show();
     $("#editEmail").val($("#newEmail").val());
     $(".save-change-block").css({'display':'flex'});
 });
-
-
 
 })(window);

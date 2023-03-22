@@ -177,7 +177,7 @@
 						<li class="active">
 							<a class="d-flex align-items-center" href="./account_settings.html">
 								<i class="bx bx-right-arrow-alt"></i>
-								<span class="menu-item text-truncate" data-i18n="Account Settings">Account Settings</span>
+								<span class="menu-item text-truncate" data-i18n="Settings">Settings</span>
 								<span class="badge badge-light-primary badge-pill badge-round float-right mr-50 ml-auto">2</span>
 							</a>
 						</li>
@@ -327,7 +327,7 @@
                                         <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24px" height="24px" fill="#459e1b"><path fill-rule="#5A8DEE" d="M 22.59375 3.5 L 8.0625 18.1875 L 1.40625 11.5625 L 0 13 L 8.0625 21 L 24 4.9375 Z"/></svg>
                                     </div>
                                     <div class="save-change-content">
-                                        <div class="save-change-title" style="color:#5A8DEE;">Success</div>
+                                        <div class="save-change-title" style="color:#5A8DEE;font-size: 16px;">Success</div>
                                         <div class="save-change-text">
                                             You have successfully modified your account!
                                         </div>
@@ -341,44 +341,47 @@
                                             <form class="validate-form" novalidate="novalidate">
                                                 <div class="row">
                                                     <div class="col-12">
-                                                        <div class="form-group nameChangeBlock" style="width: 57%;">
+                                                        <div class="form-group nameChangeBlock" style="width: 750px;">
                                                             <div class="controls">
                                                                 <label>Name</label>
                                                                 <div class="form-body d-flex edit-input-block">
-                                                                    <input type="text" id="editNamaAndLastName" class="form-control" placeholder="Sarah Blakely" readonly>
-                                                                    <input type="text" id="editName" class="form-control" style="display: none;" placeholder="Sarah">
-                                                                    <input type="text" id="editLastName" class="form-control  ml-1" style="display: none;" placeholder="Blakely">
-                                                                    <button type="button" class="btn edit-name">
+                                                                    <div style="width: 686px;display: flex;">
+                                                                        <input type="text" id="editNamaAndLastName" class="form-control" placeholder="Sarah Blakely">
+                                                                        <input type="text" id="editName" class="form-control" style="display: none;" placeholder="Sarah" style="width: 50%;">
+                                                                        <input type="text" id="editLastName" class="form-control  ml-1" style="display: none;" placeholder="Blakely" style="width: 50%;">
+                                                                    </div>
+                                                                    
+                                                                    <button type="button" class="btn edit-name pencil">
                                                                         <img width="18" src="../../../app-assets//images/pages/before_modification_btn.png" alt="edit">
                                                                     </button>
                                                                     
                                                                 </div> 
                                                             </div>
-                                                            <button type="button"class="name-edit-btn btn btn-primary" style="display: none;">Save changes</button>
+                                                            <button type="button"class="name-edit-btn btn btn-primary mb-1" style="display: none;">Save</button>
                                                         </div>
                                                     </div>
                                                     <div class="col-12">
-                                                        <div class="form-group" style="width: 57%;">
+                                                        <div class="form-group" style="width: 750px;">
                                                             <div class="controls">
                                                                 <label>Email</label>
-                                                                <div class="form-body d-flex">
+                                                                <div class="form-body email-body-wrap" style="display: flex;">
                                                                     <input type="text" class="form-control" id="editEmail" placeholder="sarah_blakely@gmail.com" readonly>
-                                                                    <button type="button" class="btn edit-mail">
+                                                                    <button type="button" class="btn edit-mail pencil">
                                                                         <img width="18" src="../../../app-assets//images/pages/before_modification_btn.png" alt="edit">
                                                                     </button>
                                                                 </div> 
-                                                                <div class="email-edit-block p-2 border rounded" style="width: 90%; display: none;">
-                                                                    <label class="password-edit-label mb-1 text-reset" style="display: block;">Enter new email address</label>
+                                                                <div class="email-edit-block p-2 border rounded mb-3" style="width: 686px;display: none;">
+                                                                    <label class="password-edit-label text-reset" style="display: block;font-size: 15px;">Enter new email address</label>
                                                                     <input class="form-control"  id="newEmail" type="email" >
                                                                     <button type="button"  onclick="emailValidation()" class="email-edit-btn btn btn-primary mt-2">Continue</button>
                                                                 </div>
-                                                                <div class="email-password-block p-2 border rounded" style="width: 90%; display: none;">
-                                                                    <label class="password-edit-label mb-1 text-reset" style="display: block;">We've sent a One Time Password (OTP) to your email address. Please enter it below.</label>
+                                                                <div class="email-password-block p-2 border rounded mb-3" style="width: 686px;display: none;">
+                                                                    <label class="password-edit-label  text-reset" style="display: block;font-size: 15px;">We've sent a One Time Password (OTP) to your email address. Please enter it below.</label>
                                                                     <input class="form-control" type="text" >
                                                                     <button type="button" class="email-save-btn btn btn-primary mt-2">Continue</button>
                                                                 </div>
-                                                                <div class="email-enter-block p-2 border rounded" style="width: 90%; display: none;">
-                                                                    <label class="password-edit-label mb-1 text-reset" style="display: block;">Enter your password to confirm email change</label>
+                                                                <div class="email-enter-block p-2 border rounded mb-3" style=" width: 686px;display: none;">
+                                                                    <label class="password-edit-label  text-reset" style="display: block;font-size: 15px;">Enter your password to confirm email change</label>
                                                                     <input class="form-control" type="password" style="display: none;"  required>
                                                                     <input type="text" class="password-wrap form-control" onkeyup="repeatPass(this)" data-sign="∗">
                                                                     <button type="button" class="email-change-btn btn btn-primary mt-2">Save changes</button>
@@ -387,35 +390,35 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-12">
-                                                        <div class="form-group" style="width: 57%;">
+                                                        <div class="form-group" style="width: 750px;">
                                                             <div class="controls">
                                                                 <label>Password</label>
-                                                                <div class="form-body d-flex">
+                                                                <div class="form-body password-body-wrap" style="display: flex;">
                                                                     <input type="password" class="form-control" id="settingsPassword" placeholder="********" readonly>
-                                                                    <button type="button" class="btn edit-password">
+                                                                    <button type="button" class="btn edit-password pencil">
                                                                         <img width="18" src="../../../app-assets//images/pages/before_modification_btn.png" alt="edit">
                                                                     </button>
                                                                 </div> 
-                                                                <div class="password-edit-block p-2 border rounded d-none" style="width: 90%;">
+                                                                <div class="password-edit-block p-2 border rounded d-none" style="width: 686px;">
                                                                     <div class="password-edit-title mb-2">
                                                                         Password must be at least 6 characters
                                                                     </div>
                                                                     <form action="#" class="password-edit-form" >
                                                                         <div class="password-edit-input mb-2" style="width: 65%;">
-                                                                            <label class="password-edit-label mb-1 text-reset" style="display: block;">Current password</label>
+                                                                            <label class="password-edit-label mb-1 text-reset" style="display: block;font-size: 15px;">Enter current password</label>
                                                                             <input class="form-control" id="oldPass" type="password" style="display: none;"  required>
                                                                             <input type="text" class="password-wrap form-control" onclick="vlidOldPass(this)" data-sign="∗">
                                                                             <span class="d-none password-edit-error" style="color:red;">Password must be at least 6 characters.</span>
                                                                         </div>
                                                                         <div class="password-edit-input mb-2" style="width: 65%;">
-                                                                            <label class="password-edit-label mb-1 text-reset" style="display: block;">New password</label>
+                                                                            <label class="password-edit-label mb-1 text-reset" style="display: block;font-size: 15px;">Enter new password</label>
                                                                             <input class="form-control newPassword" id="newPass" onkeyup="resetPass(this)" type="password" style="display: none;"  required>
                                                                             <input type="text" class="password-wrap form-control newPassword" onkeyup="resetPass(this)" data-sign="∗">
 
                                                                             <span class="error-message d-none" id="newPass-error-message" style="color:red;">Password must be at least 6 characters.</span>
                                                                         </div>
                                                                         <div class="password-edit-input mb-2" style="width: 65%;">
-                                                                            <label class="password-edit-label mb-1 text-reset" style="display: block;">Reenter new password</label>
+                                                                            <label class="password-edit-label mb-1 text-reset" style="display: block;font-size: 15px;">Reenter new password</label>
                                                                             <input class="form-control"  type="password" style="display: none;" id="confirmNewPass" required>
                                                                             <input type="text" class="password-wrap form-control"   onclick="vlidPass(this)" data-sign="∗">
                                                                             <span class="error-message d-none" id="confirmNewPass-error-message" style="color:red;">Passwords must be the same.</span>
@@ -572,7 +575,7 @@
 
                 if(confirmNewPassInput.value === newPassInput.value){
                     confirmNewPassErrorMessage.classList.add('d-none');
-                    confirmNewPassInput.nextElementSibling.style.border = "1px solid #dddddd";
+                    confirmNewPassInput.nextElementSibling.style.border = "1px solid #d9c580";
                 };
             });
             e.addEventListener('blur', function(){
@@ -670,8 +673,7 @@
                 settingsPassword.value = newPassInput.value;
 
                 document.querySelector(".password-edit-block").classList.add('d-none');
-                settingsPassword.style.display = "block";
-                settingsPassword.nextElementSibling.style.display = "block";
+                document.querySelector(".password-body-wrap").style.display = "flex";
 
                 document.querySelector(".save-change-block").style.display = "flex";
 

@@ -1567,3 +1567,7 @@ html .newclss_crt_cont.content.app-content {
 .settings-input span {
     font-size: 17px;
 }
+
+.pencil:hover img {
+    filter: brightness(0.3);
+}
