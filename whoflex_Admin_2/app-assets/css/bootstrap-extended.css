@@ -366,7 +366,7 @@ pre code {
 
 label {
     color: #475F7B;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     text-transform: uppercase;
     font-weight: 500;
 }
@@ -2040,7 +2040,6 @@ input[type=number]::-webkit-outer-spin-button {
     letter-spacing: 0.05rem;
     font-size: 1.1rem;
     margin-bottom: 1.2rem;
-    text-transform: capitalize;
 }
 
 .card  .resume-title {
@@ -2299,7 +2298,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
  
 .badge-navy-blue {
-    background-color: #0e3072;
+    background-color: #5A8DEE;
 }
 
 .badge.badge-up {

@@ -446,6 +446,10 @@ table.dataTable th {
     color: #fff;
 }
 
+.badge-light-mint { 
+    background-color: #5aee94;
+}
+
 .badge-silver {
     color: #000000; 
     border: 1px solid #000; 
@@ -1502,18 +1506,23 @@ html .newclss_crt_cont.content.app-content {
 .settings-modal-close {
     background: transparent;
     border: none;
-    height: 30px;
+    height: 37px;
     display: block;
     margin-left: auto;
+    border-radius: 50%;
 }
 
 .settings-modal-close g {
     fill: #777777;
 }
 
+.settings-modal-close:hover {
+    background: #eaeaea;
+}
+
 .settings-card-title {
     text-align: center;
-    font-size: 22px;
+    font-size: 24px;
     margin-bottom: 15px;
 }
 
@@ -1526,7 +1535,7 @@ html .newclss_crt_cont.content.app-content {
 }
 
 .settings-checkbox {
-    width: 55px;
+    width: 45px;
 }
 
 .settings-checkbox input {
@@ -1561,7 +1570,7 @@ html .newclss_crt_cont.content.app-content {
 }
 
 .settings-checkbox input[type="checkbox"]:checked:before{
-    left:40px;
+    left:20px;
 }
 
 .settings-input span {
@@ -1570,4 +1579,8 @@ html .newclss_crt_cont.content.app-content {
 
 .pencil:hover img {
     filter: brightness(0.3);
+}
+
+.addChapter:focus {
+    background: #777 !important;
 }

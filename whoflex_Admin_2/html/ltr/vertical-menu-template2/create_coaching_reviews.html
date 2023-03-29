@@ -151,19 +151,14 @@
                         <div class="card-header">
                             <div>
                                 <h2>Testimonials</h2>
-                                <p>Showcase your coaching expertise by including testimonials that highlight your knowledge, insights, and achievements.</p>
+                                <p style="margin-top: 7px;font-size: 17px;">Showcase your coaching expertise by including testimonials that highlight your knowledge, insights, and achievements.</p>
                             </div>
                         </div>
                         <div class="card-body">
                             <div class="collapse-deletable w-100 ">
                                 <div class="coaching-reviews w-65-200 mb-3">
-                                    <div class="d-flex align-items-center" style="margin-top: 10px;">
-                                        <div>Reviews <span class="reviews-numb"></span></div>
-                                        <div class="del-btn-wrap ml-1">
-                                            <button class="btn btn-icon btn-light rounded-circle removeReviews" data-repeater-delete="" style="width: 40px; height: 40px;" type="button">
-                                                <i class="bx bx-x"></i>
-                                            </button>
-                                        </div>
+                                    <div class="d-flex align-items-center mb-1" style="margin-top: 10px;">
+                                        <div style="font-size: 18px;">Review <span class="reviews-numb"></span></div>
                                     </div>
                                     
                                     <div class="d-flex align-items-end">
@@ -198,10 +193,10 @@
                                             </div>
                                         </div>
 
-                                        <div>
-                                            <fieldset style="position: relative; width: 92%;">
+                                        <div >
+                                            <fieldset class="counter-wrap" style="position: relative; width: 92%;">
                                                 <label class="form-label" for="">Details</label>
-                                                <textarea class="form-control" id="basicTextarea" rows="10" maxlength="500" onkeyup="countLetters();" style="height: 100px;" required placeholder="Share detailed reviews and examples to help your students learn more about your coaching"></textarea>
+                                                <textarea class="form-control" id="basicTextarea" rows="10" maxlength="500" onkeyup="countLetters();" style="height: 110px;" required placeholder="Share detailed reviews and examples to help your students learn more about your coaching"></textarea>
                                                 <span class="counter-symbols">500</span>
                                             </fieldset>
                                         </div>
@@ -253,9 +248,10 @@
 
     <script>
         // function count for text
-        const countWrap = document.querySelectorAll(".counter-symbols-wrap");
+        
 
         function countLetters(){
+            let countWrap = document.querySelectorAll(".counter-wrap");
             countWrap.forEach(item => {
                 const count = item.querySelector(".counter-symbols");
                 const textarea = item.querySelector(".form-control");
@@ -265,37 +261,6 @@
             })
         }  
 
-        const customFileInput = document.querySelectorAll('.custom-file-label button');
-        function clickInput(){
-            customFileInput.forEach(item => {
-                item.addEventListener('click', function (){
-                    const parentLabel = item.closest('.custom-file-label');
-                    parentLabel.click();
-                    
-                });
-                
-                item.closest('.custom-file-label').previousElementSibling.addEventListener('change', function(){
-                    if( this.value ){
-                        let openBasket = item.closest('.custom-file-label').nextElementSibling;
-                        openBasket.classList.remove("d-none");
-                    };
-                });
-
-                item.closest('.custom-file-label').nextElementSibling.addEventListener('click', function(){
-                   let buttons = this.previousElementSibling.previousElementSibling;
-                   buttons.value = "";
-                   this.previousElementSibling.innerHTML =  `
-                        Upload reviewer's picture
-                        <button>Browse</button>
-                   `;
-                   this.classList.add("d-none");
-                });
-                
-        
-            })
-        }clickInput();
-
-       
         // checked required fields (Filled)
         let Arr = Array();
         function fieldsFilled(){
@@ -349,7 +314,7 @@
                                     <hr>
                                     <div class=" w-65-200 mb-2 mt-3">
                                     <div class="d-flex align-items-center">
-                                        <div>Reviews <span class="reviews-numb"></span> </div>
+                                        <div style="font-size: 18px;">Review <span class="reviews-numb"></span> </div>
                                         <div class="del-btn-wrap ml-1">
                                             <button class="btn btn-icon btn-light rounded-circle removeReviews" data-repeater-delete="" style="width: 40px; height: 40px;" type="button">
                                                 <i class="bx bx-x"></i>
@@ -360,15 +325,15 @@
                                     <div class="d-flex align-items-end">
                                         <div class="form-group w-50">
                                             <label class="form-label" for="">Name</label>
-                                            <input type="text" class="form-control mr-1" placeholder="Title">
+                                            <input type="text" class="form-control mr-1" placeholder="Enter reviewer's name">
                                         </div>
                                         <div class="form-group ml-3 w-50">
                                             <label class="form-label" for="">Job title</label>
-                                            <input type="text" class="form-control mr-1" placeholder="Title">
+                                            <input type="text" class="form-control mr-1" placeholder="Enter reviewer's occupation">
                                         </div>
                                     </div>
                                     <div class="">
-                                        <label class="form-label">Upload reviewer's photo</label>
+                                        <label class="form-label">PHOTO (OPTIONAL)</label>
                                         <div class="wrapVideos">
                                             <div class="del-row mb-1">
                                                 <div class="w-xxl-75 d-flex position-relative">
@@ -384,14 +349,15 @@
                                                             </svg>
                                                         </button>
                                                     </div>
+                                                    
                                                 </div>
                                             </div>
                                         </div>
 
-                                        <div>
-                                            <fieldset style="position: relative; width: 92%;">
+                                        <div> 
+                                            <fieldset class="counter-wrap" style="position: relative; width: 92%;">
                                                 <label class="form-label" for="">Details</label>
-                                                <textarea class="form-control" id="basicTextarea" rows="10" maxlength="500" onkeyup="countLetters();" style="height: 100px;" required placeholder="Share detailed reviews and examples to help your students learn more about your coaching"></textarea>
+                                                <textarea class="form-control" id="basicTextarea" rows="10" maxlength="500" onkeyup="countLetters();" style="height: 110px;" required placeholder="Share detailed reviews and examples to help your students learn more about your coaching"></textarea>
                                                 <span class="counter-symbols">500</span>
                                             </fieldset>
                                         </div>
@@ -401,13 +367,15 @@
                                     
                 wrapReviews.append(addAccItem);
                 removeReviews();
+                clickInput();
+                Upload();
                 Numbering();
             })
         }
 
         // upload
-        (function (){
-            const inputs = document.querySelectorAll('.custom-file-input');
+        function Upload(){
+            let inputs = document.querySelectorAll('.custom-file-input');
             Array.prototype.forEach.call(inputs, function (input) {
                 const label = input.nextElementSibling;
                 if(label.closest('.wrapper-upload')){
@@ -435,7 +403,38 @@
                 }
 
             });
-        }());
+        };
+
+        
+        function clickInput(){
+            let customFileInput = document.querySelectorAll('.custom-file-label button');
+            customFileInput.forEach(item => {
+                item.addEventListener('click', function (){
+                    const parentLabel = item.closest('.custom-file-label');
+                    parentLabel.click();
+                    
+                });
+                
+                item.closest('.custom-file-label').previousElementSibling.addEventListener('change', function(){
+                    if( this.value ){
+                        let openBasket = item.closest('.custom-file-label').nextElementSibling;
+                        openBasket.classList.remove("d-none");
+                    };
+                });
+
+                item.closest('.custom-file-label').nextElementSibling.addEventListener('click', function(){
+                   let buttons = this.previousElementSibling.previousElementSibling;
+                   buttons.value = "";
+                   this.previousElementSibling.innerHTML =  `
+                        Upload reviewer's picture
+                        <button>Browse</button>
+                   `;
+                   this.classList.add("d-none");
+                });
+                
+        
+            })
+        }clickInput();
 
         // block numbering
         function Numbering() {
