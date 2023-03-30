@@ -261,8 +261,8 @@ $(".edit-password").click(function() {
 // changing name (on the account settings page)
 
 function editNamaAndLastName() {
-    $(".edit-name").toggle();
-    $("#editNamaAndLastName, #editName, #editName, #editLastName, .name-edit-btn").toggle();
+    $(".edit-name, .dop-field").toggle();
+    $("#editNamaAndLastName ,.name-edit-btn").toggle();
     const editName = $("#editName").val();
     const editLastName = $("#editLastName").val();
     $("#editNamaAndLastName").val(editName +" "+ editLastName);

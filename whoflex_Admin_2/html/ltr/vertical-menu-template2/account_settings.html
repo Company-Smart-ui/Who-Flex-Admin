@@ -345,10 +345,16 @@
                                                             <div class="controls">
                                                                 <label>Name</label>
                                                                 <div class="form-body d-flex edit-input-block">
-                                                                    <div style="width: 686px;display: flex;">
-                                                                        <input type="text" id="editNamaAndLastName" class="form-control" placeholder="Sarah Blakely">
-                                                                        <input type="text" id="editName" class="form-control" style="display: none;" placeholder="Sarah" style="width: 50%;">
-                                                                        <input type="text" id="editLastName" class="form-control  ml-1" style="display: none;" placeholder="Blakely" style="width: 50%;">
+                                                                    <div style="width: 686px;">
+                                                                        <input type="text" id="editNamaAndLastName" class="form-control" placeholder="Sarah Blakely" readonly>
+                                                                        <div class="dop-field p-2 border rounded" style="display: none;">
+                                                                            <div class=" mb-2" style="display: flex;">
+                                                                                <input type="text" id="editName" class="form-control"  placeholder="Sarah" style="width: 50%;">
+                                                                                <input type="text" id="editLastName" class="form-control  ml-1" placeholder="Blakely" style="width: 50%;">
+                                                                            </div>
+                                                                            <button type="button"class="name-edit-btn btn btn-primary" style="display: none;">Save</button>
+                                                                        </div>
+                                                                        
                                                                     </div>
                                                                     
                                                                     <button type="button" class="btn edit-name pencil">
@@ -357,7 +363,7 @@
                                                                     
                                                                 </div> 
                                                             </div>
-                                                            <button type="button"class="name-edit-btn btn btn-primary mb-1" style="display: none;">Save</button>
+                                                            
                                                         </div>
                                                     </div>
                                                     <div class="col-12">
@@ -370,8 +376,8 @@
                                                                         <img width="18" src="../../../app-assets//images/pages/before_modification_btn.png" alt="edit">
                                                                     </button>
                                                                 </div> 
-                                                                <div class="email-edit-block p-2 border rounded mb-3" style="width: 686px;display: none;">
-                                                                    <label class="password-edit-label text-reset" style="display: block;font-size: 15px;">Enter new email address</label>
+                                                                <div class="email-edit-block p-2 border rounded" style="margin-bottom: 36px; width: 686px;display: none;">
+                                                                    <label class="password-edit-label text-reset" style="display: block;font-size: 15px;font-weight: 400;">Enter new email address</label>
                                                                     <input class="form-control"  id="newEmail" type="email" >
                                                                     <button type="button"  onclick="emailValidation()" class="email-edit-btn btn btn-primary mt-2">Continue</button>
                                                                 </div>
@@ -384,7 +390,7 @@
                                                                     <label class="password-edit-label  text-reset" style="display: block;font-size: 15px;">Enter your password to confirm email change</label>
                                                                     <input class="form-control" type="password" style="display: none;"  required>
                                                                     <input type="text" class="password-wrap form-control" onkeyup="repeatPass(this)" data-sign="∗">
-                                                                    <button type="button" class="email-change-btn btn btn-primary mt-2">Save changes</button>
+                                                                    <button type="button" class="email-change-btn btn btn-primary mt-2">Save</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -405,25 +411,25 @@
                                                                     </div>
                                                                     <form action="#" class="password-edit-form" >
                                                                         <div class="password-edit-input mb-2" style="width: 65%;">
-                                                                            <label class="password-edit-label mb-1 text-reset" style="display: block;font-size: 15px;">Enter current password</label>
+                                                                            <label class="password-edit-label mb-1 text-reset" style="display: block;font-size: 15px;font-weight: 400;">Enter current password</label>
                                                                             <input class="form-control" id="oldPass" type="password" style="display: none;"  required>
                                                                             <input type="text" class="password-wrap form-control" onclick="vlidOldPass(this)" data-sign="∗">
                                                                             <span class="d-none password-edit-error" style="color:red;">Password must be at least 6 characters.</span>
                                                                         </div>
                                                                         <div class="password-edit-input mb-2" style="width: 65%;">
-                                                                            <label class="password-edit-label mb-1 text-reset" style="display: block;font-size: 15px;">Enter new password</label>
+                                                                            <label class="password-edit-label mb-1 text-reset" style="display: block;font-size: 15px;font-weight: 400;">Enter new password</label>
                                                                             <input class="form-control newPassword" id="newPass" onkeyup="resetPass(this)" type="password" style="display: none;"  required>
                                                                             <input type="text" class="password-wrap form-control newPassword" onkeyup="resetPass(this)" data-sign="∗">
 
                                                                             <span class="error-message d-none" id="newPass-error-message" style="color:red;">Password must be at least 6 characters.</span>
                                                                         </div>
                                                                         <div class="password-edit-input mb-2" style="width: 65%;">
-                                                                            <label class="password-edit-label mb-1 text-reset" style="display: block;font-size: 15px;">Reenter new password</label>
+                                                                            <label class="password-edit-label mb-1 text-reset" style="display: block;font-size: 15px;font-weight: 400;">Reenter new password</label>
                                                                             <input class="form-control"  type="password" style="display: none;" id="confirmNewPass" required>
                                                                             <input type="text" class="password-wrap form-control"   onclick="vlidPass(this)" data-sign="∗">
                                                                             <span class="error-message d-none" id="confirmNewPass-error-message" style="color:red;">Passwords must be the same.</span>
                                                                         </div>
-                                                                        <button type="submit" onclick="comparisonPassword()" class="password-edit-btn btn btn-primary">Save changes</button>
+                                                                        <button type="submit" onclick="comparisonPassword()" class="password-edit-btn btn btn-primary">Save</button>
                                                                     </form>
                                                                     
                                                                 </div>
@@ -560,7 +566,7 @@
             e.addEventListener('input', function(){
                 if (e.value.length >= 6) {
                     newPssword.forEach(input => {
-                        input.style.border = "1px solid #e0c463";
+                        input.style.border = "1px solid #DFE3E7";
                     });
                     newPassErrorMessage.classList.add('d-none'); 
                 } 
@@ -570,12 +576,12 @@
         function vlidPass(e) {
             e.addEventListener('input', function(){
                 if (e.value.length >= 6) {
-                    e.style.border = "1px solid #e0c463";
+                    e.style.border = "1px solid #DFE3E7";
                 };
 
                 if(confirmNewPassInput.value === newPassInput.value){
                     confirmNewPassErrorMessage.classList.add('d-none');
-                    confirmNewPassInput.nextElementSibling.style.border = "1px solid #d9c580";
+                    confirmNewPassInput.nextElementSibling.style.border = "1px solid #DFE3E7";
                 };
             });
             e.addEventListener('blur', function(){
@@ -588,7 +594,7 @@
         function vlidOldPass(e) {
             e.addEventListener('input', function(){
                 if (e.value.length >= 6 || e.value === newPassInput.value) {
-                    e.style.border = "1px solid #e0c463";
+                    e.style.border = "1px solid #DFE3E7";
                     document.querySelector(".password-edit-error").classList.add('d-none');
                 }
             });
@@ -612,7 +618,7 @@
                 resendEmail.focus();
                 resendEmail.addEventListener('input', function(){
                     if (filter.test(resendEmail.value)) {
-                        resendEmail.style.border = "1px solid #e0c463";
+                        resendEmail.style.border = "1px solid #DFE3E7";
                     }
                 })
             } else{
@@ -665,7 +671,7 @@
             event.preventDefault();
 
             if(newPassInput.value === confirmNewPassInput.value && newPassInput.value.length >= 6 && oldPssword.value.length >= 6 ){
-                confirmNewPassInput.nextElementSibling.style.border = "1px solid #e0c463";
+                confirmNewPassInput.nextElementSibling.style.border = "1px solid #DFE3E7";
                 confirmNewPassErrorMessage.classList.add('d-none');
 
                 // Here you should write what should happen after you successfully complete the form.
